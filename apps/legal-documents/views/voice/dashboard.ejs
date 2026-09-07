@@ -1,0 +1,328 @@
+<%- include('../base-pm', {
+    title: 'Voice Notes',
+    description: 'Voice-to-text transcription'
+}) %>
+
+<%- include('../partials/pm-nav') %>
+
+<div class="container-fluid py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2><i class="fas fa-microphone me-2"></i>Voice Notes</h2>
+            <p class="text-muted mb-0">Record and transcribe voice notes with AI</p>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <h3 class="mb-0"><%= stats.total_transcriptions || 0 %></h3>
+                    <small>Total Transcriptions</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <h3 class="mb-0"><%= Math.round((stats.total_duration || 0) / 60) %> min</h3>
+                    <small>Total Duration</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h3 class="mb-0"><%= stats.notes_created || 0 %></h3>
+                    <small>Case Notes Created</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Voice Recorder -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5 class="mb-0"><i class="fas fa-microphone me-2"></i>Record New Note</h5>
+        </div>
+        <div class="card-body text-center">
+            <div class="mb-3">
+                <button id="recordBtn" class="btn btn-lg btn-outline-danger rounded-circle" style="width: 80px; height: 80px;">
+                    <i class="fas fa-microphone fa-2x"></i>
+                </button>
+            </div>
+            <p id="recordStatus" class="text-muted">Click to start recording</p>
+            <div id="recordTimer" class="h4 d-none">00:00</div>
+
+            <!-- Demo Data Button -->
+            <div class="mt-3">
+                <button id="loadDemoBtn" class="btn btn-outline-secondary">
+                    <i class="fas fa-file-alt me-1"></i>Load Sample Transcription
+                </button>
+            </div>
+
+            <div id="transcriptionResult" class="text-start mt-4 d-none">
+                <hr>
+                <h6>Transcription:</h6>
+                <div id="transcriptionText" class="border rounded p-3 bg-light mb-3"></div>
+                <button id="cleanupBtn" class="btn btn-outline-primary me-2">
+                    <i class="fas fa-magic me-1"></i>AI Cleanup
+                </button>
+                <button id="saveBtn" class="btn btn-success">
+                    <i class="fas fa-save me-1"></i>Save
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Transcriptions -->
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0"><i class="fas fa-history me-2"></i>Recent Transcriptions</h5>
+        </div>
+        <div class="card-body">
+            <% if (transcriptions.length > 0) { %>
+            <div class="list-group">
+                <% transcriptions.forEach(t => { %>
+                <div class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <p class="mb-1"><%= (t.cleaned_transcription || t.raw_transcription || '').substring(0, 200) %>...</p>
+                            <small class="text-muted">
+                                <%= new Date(t.created_at).toLocaleString() %>
+                                <% if (t.case_title) { %> | Case: <%= t.case_title %><% } %>
+                                <% if (t.case_note_id) { %>
+                                    <span class="badge bg-success ms-1">Note Created</span>
+                                <% } %>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+            <% } else { %>
+            <p class="text-muted text-center">No transcriptions yet</p>
+            <% } %>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+let mediaRecorder;
+let audioChunks = [];
+let isRecording = false;
+let transcription = '';
+let startTime;
+let timerInterval;
+let audioBlob;
+
+const recordBtn = document.getElementById('recordBtn');
+const recordStatus = document.getElementById('recordStatus');
+const recordTimer = document.getElementById('recordTimer');
+const transcriptionResult = document.getElementById('transcriptionResult');
+const transcriptionText = document.getElementById('transcriptionText');
+const cleanupBtn = document.getElementById('cleanupBtn');
+const saveBtn = document.getElementById('saveBtn');
+
+recordBtn.addEventListener('click', async function() {
+    if (!isRecording) {
+        await startRecording();
+    } else {
+        stopRecording();
+    }
+});
+
+async function startRecording() {
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mediaRecorder = new MediaRecorder(stream, { mimeType: 'audio/webm' });
+        audioChunks = [];
+
+        mediaRecorder.ondataavailable = (event) => {
+            if (event.data.size > 0) {
+                audioChunks.push(event.data);
+            }
+        };
+
+        mediaRecorder.onstop = async () => {
+            audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+            await transcribeAudio(audioBlob);
+        };
+
+        mediaRecorder.start(1000); // Collect data every second
+        isRecording = true;
+        startTime = Date.now();
+
+        recordBtn.classList.remove('btn-outline-danger');
+        recordBtn.classList.add('btn-danger');
+        recordBtn.innerHTML = '<i class="fas fa-stop fa-2x"></i>';
+        recordStatus.textContent = 'Recording... (click to stop)';
+        recordTimer.classList.remove('d-none');
+
+        timerInterval = setInterval(() => {
+            const elapsed = Math.floor((Date.now() - startTime) / 1000);
+            const mins = Math.floor(elapsed / 60).toString().padStart(2, '0');
+            const secs = (elapsed % 60).toString().padStart(2, '0');
+            recordTimer.textContent = `${mins}:${secs}`;
+        }, 1000);
+
+    } catch (error) {
+        console.error('Microphone error:', error);
+        alert('Could not access microphone. Please allow microphone permission.');
+    }
+}
+
+function stopRecording() {
+    if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+        mediaRecorder.stop();
+        mediaRecorder.stream.getTracks().forEach(track => track.stop());
+    }
+    isRecording = false;
+    clearInterval(timerInterval);
+
+    recordBtn.classList.remove('btn-danger');
+    recordBtn.classList.add('btn-outline-danger');
+    recordBtn.innerHTML = '<i class="fas fa-microphone fa-2x"></i>';
+    recordStatus.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Transcribing...';
+}
+
+async function transcribeAudio(blob) {
+    try {
+        const formData = new FormData();
+        formData.append('audio', blob, 'recording.webm');
+
+        const res = await fetch('/api/voice-notes/transcribe-audio', {
+            method: 'POST',
+            body: formData
+        });
+        const data = await res.json();
+
+        if (data.success) {
+            transcription = data.transcription;
+            transcriptionText.textContent = transcription;
+            transcriptionResult.classList.remove('d-none');
+            saveBtn.disabled = true; // Already saved
+            recordStatus.textContent = 'Transcription complete! Click to record again.';
+
+            // Show success message
+            transcriptionText.innerHTML = `<div class="alert alert-success mb-2">Saved automatically!</div>${transcription}`;
+        } else {
+            recordStatus.textContent = 'Error: ' + data.error;
+            transcriptionResult.classList.remove('d-none');
+            transcriptionText.textContent = 'Transcription failed: ' + data.error;
+        }
+    } catch (error) {
+        console.error('Transcription error:', error);
+        recordStatus.textContent = 'Error transcribing audio';
+        transcriptionResult.classList.remove('d-none');
+        transcriptionText.textContent = 'Error: ' + error.message;
+    }
+}
+
+cleanupBtn.addEventListener('click', async function() {
+    if (!transcription.trim()) {
+        alert('No transcription to clean up');
+        return;
+    }
+
+    this.disabled = true;
+    this.innerHTML = '<span class="spinner-border spinner-border-sm me-1"></span>Cleaning with AI...';
+    console.log('Sending cleanup request with text:', transcription.substring(0, 100) + '...');
+
+    try {
+        const res = await fetch('/api/voice-notes/cleanup', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ raw_text: transcription })
+        });
+
+        console.log('Cleanup response status:', res.status);
+
+        if (!res.ok) {
+            const errorText = await res.text();
+            console.error('Cleanup error response:', errorText);
+            alert('Error: Server returned ' + res.status + ' - ' + errorText);
+            return;
+        }
+
+        const data = await res.json();
+        console.log('Cleanup response data:', data);
+
+        if (data.success) {
+            transcriptionText.innerHTML = `
+                <div class="alert alert-success mb-2">
+                    <i class="fas fa-check-circle me-1"></i>AI Cleanup Complete!
+                </div>
+                <div class="mb-3">${data.cleanedText}</div>
+                ${data.summary ? `<div class="alert alert-info"><strong>Summary:</strong> ${data.summary}</div>` : ''}
+                ${data.tags && data.tags.length ? `<div class="mt-2"><strong>Tags:</strong> ${data.tags.map(t => '<span class="badge bg-secondary me-1">' + t + '</span>').join('')}</div>` : ''}
+            `;
+            transcription = data.cleanedText;
+        } else {
+            alert('Error: ' + (data.error || 'Unknown error'));
+        }
+    } catch (e) {
+        console.error('Cleanup exception:', e);
+        alert('Error: ' + e.message);
+    } finally {
+        this.disabled = false;
+        this.innerHTML = '<i class="fas fa-magic me-1"></i>AI Cleanup';
+    }
+});
+
+saveBtn.addEventListener('click', async function() {
+    if (!transcription.trim()) return;
+
+    try {
+        const res = await fetch('/api/voice-notes/transcribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                raw_transcription: transcription,
+                audio_duration_seconds: Math.floor((Date.now() - startTime) / 1000) || 120
+            })
+        });
+        const data = await res.json();
+        if (data.success) {
+            alert('Transcription saved!');
+            location.reload();
+        } else {
+            alert('Error: ' + data.error);
+        }
+    } catch (e) {
+        alert('Error: ' + e.message);
+    }
+});
+
+// Demo Data Button
+const loadDemoBtn = document.getElementById('loadDemoBtn');
+loadDemoBtn.addEventListener('click', function() {
+    const sampleTranscriptions = [
+        `Meeting with client John Smith regarding the personal injury case. He was involved in a car accident on December 15th at the intersection of Main Street and Oak Avenue. The other driver ran a red light and T-boned his vehicle on the driver's side. John sustained injuries including whiplash, a fractured rib, and contusions. He has accumulated medical bills totaling approximately $45,000. He missed six weeks of work resulting in lost wages of around $12,000. We discussed filing a claim against the at-fault driver's insurance company. I advised him to continue documenting all medical treatments and keep receipts for any out-of-pocket expenses. Next steps include sending a demand letter to the insurance company and gathering witness statements from two bystanders who saw the accident.`,
+
+        `Client consultation with Sarah Williams about her divorce proceedings. She has been married for 12 years and has two children ages 8 and 10. She is seeking primary custody of the children and equitable distribution of marital assets including the family home valued at $450,000 and retirement accounts totaling $280,000. Her husband has been uncooperative in negotiations. We discussed filing a motion for temporary support while the divorce is pending. I recommended she start gathering financial documents including tax returns, bank statements, and credit card statements for the past three years. We also discussed the possibility of mediation before going to trial.`,
+
+        `Deposition preparation notes for the Martinez employment discrimination case. Key points to cover: timeline of events from initial hiring in March 2022 through termination in November 2024. Document the three formal complaints filed with HR regarding discriminatory comments from supervisor. Review the email chain from September showing disparate treatment compared to similarly situated employees. Prepare exhibits including performance reviews which were all satisfactory prior to the complaints. Anticipate defendant's likely argument that termination was due to restructuring. Counter with evidence that plaintiff's position was filled within two weeks by a younger employee with less experience.`
+    ];
+
+    // Pick a random sample
+    const randomSample = sampleTranscriptions[Math.floor(Math.random() * sampleTranscriptions.length)];
+
+    transcription = randomSample;
+    transcriptionText.textContent = transcription;
+    transcriptionResult.classList.remove('d-none');
+    recordStatus.textContent = 'Sample transcription loaded. You can edit, clean up with AI, or save it.';
+    startTime = Date.now() - 120000; // Simulate 2 minutes recording
+
+    // Make transcription editable
+    transcriptionText.contentEditable = true;
+    transcriptionText.addEventListener('input', function() {
+        transcription = this.textContent;
+    });
+});
+</script>
+<%- include('../partials/footer') %>
+</body>
+</html>

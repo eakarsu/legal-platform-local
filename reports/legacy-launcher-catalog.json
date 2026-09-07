@@ -1,0 +1,505 @@
+[
+  {
+    "id": "clients",
+    "title": "Clients",
+    "owner": "practice-management",
+    "path": "/clients",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [
+      {
+        "module": "immigration",
+        "path": "/clients"
+      },
+      {
+        "module": "salesforce",
+        "path": "/clients"
+      },
+      {
+        "module": "legal-documents",
+        "path": "/clients"
+      }
+    ],
+    "description": "Keep client details and contact records in the default practice workspace."
+  },
+  {
+    "id": "matters",
+    "title": "Matters and cases",
+    "owner": "practice-management",
+    "path": "/matters",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [
+      {
+        "module": "immigration",
+        "path": "/cases"
+      },
+      {
+        "module": "salesforce",
+        "path": "/matters"
+      },
+      {
+        "module": "legal-documents",
+        "path": "/cases"
+      }
+    ],
+    "description": "Organize matters, assignments and case progress."
+  },
+  {
+    "id": "tasks",
+    "title": "Tasks",
+    "owner": "practice-management",
+    "path": "/tasks",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [],
+    "description": "Track work to complete across your practice."
+  },
+  {
+    "id": "calendar",
+    "title": "Calendar",
+    "owner": "practice-management",
+    "path": "/calendar",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [
+      {
+        "module": "salesforce",
+        "path": "/calendar"
+      },
+      {
+        "module": "legal-documents",
+        "path": "/calendar"
+      }
+    ],
+    "description": "Review scheduled events and upcoming work."
+  },
+  {
+    "id": "deadlines",
+    "title": "Deadlines",
+    "owner": "practice-management",
+    "path": "/deadlines",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [
+      {
+        "module": "immigration",
+        "path": "/deadlines"
+      },
+      {
+        "module": "salesforce",
+        "path": "/deadlines"
+      }
+    ],
+    "description": "Track due dates and completion status."
+  },
+  {
+    "id": "document-vault",
+    "title": "Document vault",
+    "owner": "practice-management",
+    "path": "/documents",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [
+      {
+        "module": "estate-planning",
+        "path": "/documents"
+      },
+      {
+        "module": "immigration",
+        "path": "/documents"
+      },
+      {
+        "module": "salesforce",
+        "path": "/documents"
+      }
+    ],
+    "description": "Find the documents held in the practice workspace."
+  },
+  {
+    "id": "time",
+    "title": "Time tracking",
+    "owner": "practice-management",
+    "path": "/time",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [
+      {
+        "module": "salesforce",
+        "path": "/time-billing"
+      }
+    ],
+    "description": "Record time spent on client and matter work."
+  },
+  {
+    "id": "billing",
+    "title": "Invoices and billing",
+    "owner": "practice-management",
+    "path": "/billing",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [
+      {
+        "module": "immigration",
+        "path": "/billing"
+      },
+      {
+        "module": "salesforce",
+        "path": "/invoices"
+      },
+      {
+        "module": "legal-documents",
+        "path": "/billing"
+      }
+    ],
+    "description": "Manage invoices and billing records."
+  },
+  {
+    "id": "expenses",
+    "title": "Expenses",
+    "owner": "practice-management",
+    "path": "/expenses",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [],
+    "description": "Record costs associated with your matters."
+  },
+  {
+    "id": "messages",
+    "title": "Messages",
+    "owner": "practice-management",
+    "path": "/messages",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [],
+    "description": "Review communications in the practice workspace."
+  },
+  {
+    "id": "filings",
+    "title": "Court filing records",
+    "owner": "practice-management",
+    "path": "/filings",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [],
+    "description": "Maintain court filing records and their status."
+  },
+  {
+    "id": "notifications",
+    "title": "Notifications",
+    "owner": "practice-management",
+    "path": "/notifications",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [
+      {
+        "module": "estate-planning",
+        "path": "/notifications"
+      }
+    ],
+    "description": "Review updates that need your attention."
+  },
+  {
+    "id": "drafting",
+    "title": "General document drafting",
+    "owner": "legal-documents",
+    "path": "/ai-drafting",
+    "group": "Shared workspace",
+    "ai": true,
+    "alternatives": [
+      {
+        "module": "salesforce",
+        "path": "/ai/document-drafting"
+      },
+      {
+        "module": "practice-management",
+        "path": "/ai"
+      }
+    ],
+    "description": "Draft general documents. Domain-specific forms stay in their specialist module."
+  },
+  {
+    "id": "research",
+    "title": "Legal research and citations",
+    "owner": "legal-documents",
+    "path": "/citation-finder",
+    "group": "Shared workspace",
+    "ai": true,
+    "alternatives": [
+      {
+        "module": "salesforce",
+        "path": "/ai/legal-research"
+      },
+      {
+        "module": "practice-management",
+        "path": "/ai"
+      }
+    ],
+    "description": "Find and review research results; verify sources before relying on them."
+  },
+  {
+    "id": "summaries",
+    "title": "Document summaries",
+    "owner": "legal-documents",
+    "path": "/document-summary",
+    "group": "Shared workspace",
+    "ai": true,
+    "alternatives": [],
+    "description": "Document summaries"
+  },
+  {
+    "id": "trust-accounting",
+    "title": "Trust accounting",
+    "owner": "salesforce",
+    "path": "/trust",
+    "group": "Shared workspace",
+    "ai": false,
+    "alternatives": [
+      {
+        "module": "legal-documents",
+        "path": "/trust"
+      }
+    ],
+    "description": "Trust accounting"
+  },
+  {
+    "id": "custody",
+    "title": "Child custody",
+    "owner": "family-law",
+    "path": "/custody",
+    "group": "Family law",
+    "ai": true,
+    "alternatives": [],
+    "description": "Child custody"
+  },
+  {
+    "id": "support",
+    "title": "Child support",
+    "owner": "family-law",
+    "path": "/child-support",
+    "group": "Family law",
+    "ai": true,
+    "alternatives": [],
+    "description": "Child support"
+  },
+  {
+    "id": "alimony",
+    "title": "Alimony",
+    "owner": "family-law",
+    "path": "/alimony",
+    "group": "Family law",
+    "ai": true,
+    "alternatives": [],
+    "description": "Alimony"
+  },
+  {
+    "id": "assets",
+    "title": "Division of assets",
+    "owner": "family-law",
+    "path": "/assets",
+    "group": "Family law",
+    "ai": true,
+    "alternatives": [],
+    "description": "Division of assets"
+  },
+  {
+    "id": "parenting",
+    "title": "Parenting plans",
+    "owner": "family-law",
+    "path": "/parenting",
+    "group": "Family law",
+    "ai": true,
+    "alternatives": [],
+    "description": "Parenting plans"
+  },
+  {
+    "id": "mediation",
+    "title": "Family mediation",
+    "owner": "family-law",
+    "path": "/mediation",
+    "group": "Family law",
+    "ai": true,
+    "alternatives": [],
+    "description": "Family mediation"
+  },
+  {
+    "id": "family-chat",
+    "title": "Family case advisor",
+    "owner": "family-law",
+    "path": "/conversations",
+    "group": "Family law",
+    "ai": true,
+    "alternatives": [],
+    "description": "Family case advisor"
+  },
+  {
+    "id": "family-forms",
+    "title": "Family law documents",
+    "owner": "family-law",
+    "path": "/document-gen",
+    "group": "Family law",
+    "ai": true,
+    "alternatives": [],
+    "description": "Family law documents"
+  },
+  {
+    "id": "wills",
+    "title": "Wills",
+    "owner": "estate-planning",
+    "path": "/wills",
+    "group": "Estate planning",
+    "ai": true,
+    "alternatives": [],
+    "description": "Wills"
+  },
+  {
+    "id": "trusts",
+    "title": "Trust planning",
+    "owner": "estate-planning",
+    "path": "/trusts",
+    "group": "Estate planning",
+    "ai": true,
+    "alternatives": [],
+    "description": "Trust planning"
+  },
+  {
+    "id": "beneficiaries",
+    "title": "Beneficiaries",
+    "owner": "estate-planning",
+    "path": "/beneficiaries",
+    "group": "Estate planning",
+    "ai": false,
+    "alternatives": [],
+    "description": "Beneficiaries"
+  },
+  {
+    "id": "poa",
+    "title": "Power of attorney",
+    "owner": "estate-planning",
+    "path": "/power-of-attorney",
+    "group": "Estate planning",
+    "ai": true,
+    "alternatives": [],
+    "description": "Power of attorney"
+  },
+  {
+    "id": "directives",
+    "title": "Healthcare directives",
+    "owner": "estate-planning",
+    "path": "/healthcare-directives",
+    "group": "Estate planning",
+    "ai": true,
+    "alternatives": [],
+    "description": "Healthcare directives"
+  },
+  {
+    "id": "digital-legacy",
+    "title": "Digital assets and legacy",
+    "owner": "estate-planning",
+    "path": "/digital-assets",
+    "group": "Estate planning",
+    "ai": true,
+    "alternatives": [],
+    "description": "Digital assets and legacy"
+  },
+  {
+    "id": "executor",
+    "title": "Executor tasks",
+    "owner": "estate-planning",
+    "path": "/executor-tasks",
+    "group": "Estate planning",
+    "ai": false,
+    "alternatives": [],
+    "description": "Executor tasks"
+  },
+  {
+    "id": "visas",
+    "title": "Visa categories",
+    "owner": "immigration",
+    "path": "/visas",
+    "group": "Immigration",
+    "ai": false,
+    "alternatives": [],
+    "description": "Visa categories"
+  },
+  {
+    "id": "immigration-forms",
+    "title": "Immigration forms",
+    "owner": "immigration",
+    "path": "/forms",
+    "group": "Immigration",
+    "ai": false,
+    "alternatives": [],
+    "description": "Immigration forms"
+  },
+  {
+    "id": "immigration-compliance",
+    "title": "Immigration compliance",
+    "owner": "immigration",
+    "path": "/compliance",
+    "group": "Immigration",
+    "ai": false,
+    "alternatives": [],
+    "description": "Immigration compliance"
+  },
+  {
+    "id": "uscis",
+    "title": "Receipt notice tracking",
+    "owner": "immigration",
+    "path": "/uscis-receipt-notice-tracker",
+    "group": "Immigration",
+    "ai": false,
+    "alternatives": [],
+    "description": "Receipt notice tracking"
+  },
+  {
+    "id": "immigration-ai",
+    "title": "Immigration AI tools",
+    "owner": "immigration",
+    "path": "/ai",
+    "group": "Immigration",
+    "ai": true,
+    "alternatives": [],
+    "description": "Immigration AI tools"
+  },
+  {
+    "id": "small-claims-cases",
+    "title": "Claims, evidence and hearings",
+    "owner": "small-claims",
+    "path": "/",
+    "group": "Small claims",
+    "ai": true,
+    "alternatives": [],
+    "description": "Select a case to open its demand letter, evidence organizer, settlement calculator and hearing preparation."
+  },
+  {
+    "id": "collection",
+    "title": "Judgment collection",
+    "owner": "small-claims",
+    "path": "/judgment-collection-tracker",
+    "group": "Small claims",
+    "ai": false,
+    "alternatives": [],
+    "description": "Judgment collection"
+  },
+  {
+    "id": "trust-reconcile",
+    "title": "Trust and retainer reconciliation",
+    "owner": "salesforce",
+    "path": "/trust-retainer-reconciliation",
+    "group": "Practice extensions",
+    "ai": false,
+    "alternatives": [],
+    "description": "Trust and retainer reconciliation"
+  },
+  {
+    "id": "opponent-analysis",
+    "title": "Opponent analysis",
+    "owner": "salesforce",
+    "path": "/ai/opponent-analysis",
+    "group": "Practice extensions",
+    "ai": true,
+    "alternatives": [],
+    "description": "Opponent analysis"
+  }
+]

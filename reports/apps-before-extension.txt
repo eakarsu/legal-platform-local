@@ -1,0 +1,27 @@
+ Project                                            Legal-question / AI attorney features
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   AIDivorceFamilyLawNavigator                        Conversational family-law AI advisor with case context
+   (AIDivorceFamilyLawNavigator/server/routes/
+   aiNew.js:55)
+  ─────────────────────────────────────────────────  ────────────────────────────────────────────────────────────────────────────
+   AIEstatePlanningDigitalLegacy                      Answers estate-planning questions; drafts wills and powers of attorney
+   (AIEstatePlanningDigitalLegacy/backend/routes/
+   ai.js:70)
+  ─────────────────────────────────────────────────  ────────────────────────────────────────────────────────────────────────────
+   AIImmigrationCaseManager                           Immigration case assessment and legal research
+   (AIImmigrationCaseManager/backend/src/routes/
+   ai.js:43)
+  ─────────────────────────────────────────────────  ────────────────────────────────────────────────────────────────────────────
+   smallLawFirm (smallLawFirm/src/app/api/ai/         AI legal-question research and drafting
+   route.ts:13)
+  ─────────────────────────────────────────────────  ────────────────────────────────────────────────────────────────────────────
+   smallLawFirm_salesforce                            AI legal research for attorneys
+   (smallLawFirm_salesforce/src/lib/ai.ts:121)
+  ─────────────────────────────────────────────────  ────────────────────────────────────────────────────────────────────────────
+   AISmallClaimsCourtGuide                            Hearing preparation, demand letters and settlement guidance
+   (AISmallClaimsCourtGuide/backend/routes/
+   ai.js:193)
+  ─────────────────────────────────────────────────  ────────────────────────────────────────────────────────────────────────────
+   legalForms (legalForms/routes/portal-ai.js:139)    Legal documents and client FAQ chat; chat explicitly excludes legal advice
+
+  Closest to a “virtual attorney”: AIDivorceFamilyLawNavigator.

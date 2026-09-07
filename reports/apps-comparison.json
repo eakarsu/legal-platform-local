@@ -1,0 +1,52 @@
+{
+  "comparedAt": "2026-09-07",
+  "previousInventory": "reports/apps-before-extension.txt",
+  "common": [
+    "AIDivorceFamilyLawNavigator",
+    "AIEstatePlanningDigitalLegacy",
+    "AIImmigrationCaseManager",
+    "AISmallClaimsCourtGuide"
+  ],
+  "retained": [
+    "smallLawFirm",
+    "smallLawFirm_salesforce",
+    "legalForms"
+  ],
+  "added": [
+    "AITenantRightsAdvisor",
+    "AIContractNegotiationAssistant",
+    "AIContractLifecycleManager"
+  ],
+  "sourceCount": 10,
+  "previousFeatures": 113,
+  "features": 139,
+  "newFeatures": [
+    "tenancies",
+    "tenant-notices",
+    "eviction-defense",
+    "rent-review",
+    "repair-issues",
+    "legal-resources",
+    "tenant-advisor",
+    "legal-referrals",
+    "contracts",
+    "clauses",
+    "obligations",
+    "contract-approvals",
+    "amendments",
+    "renewals",
+    "contract-milestones",
+    "negotiations",
+    "redlines",
+    "contract-benchmarks",
+    "plain-language",
+    "negotiation-playbooks",
+    "contract-advisor",
+    "lease-analysis",
+    "deal-rooms",
+    "regulatory-impact",
+    "contract-pricing",
+    "negotiation-sentiment"
+  ],
+  "canonicalSources": 581
+}

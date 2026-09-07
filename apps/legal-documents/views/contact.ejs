@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact LegalPracticeAI - Legal Document Generation Support</title>
+    <meta name="description" content="Contact our legal document generation experts. Get help with AI-powered legal forms, business documents, and professional legal templates.">
+    <meta name="keywords" content="legal forms support, contact legal AI, legal document help">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://legalpracticeai.com/contact">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact LegalPracticeAI - Legal Document Generation Support">
+    <meta property="og:description" content="Contact our legal document generation experts. Get help with AI-powered legal forms, business documents, and professional legal templates.">
+    <meta property="og:url" content="https://legalpracticeai.com/contact">
+    <meta property="og:type" content="website">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">Contact</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h1 class="section-title">Contact Us</h1>
+                <p class="section-subtitle">Get in touch with our legal document generation experts</p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-4 text-center mb-4">
+                <div class="contact-info-card">
+                    <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                    <h5>Email Support</h5>
+                    <p class="text-muted">support@legalpracticeai.com</p>
+                    <small>Response within 24 hours</small>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="contact-info-card">
+                    <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                    <h5>Phone Support</h5>
+                    <p class="text-muted">804-360-1129</p>
+                    <small>Mon-Fri 9AM-6PM EST</small>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="contact-info-card">
+                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                    <h5>Office Address</h5>
+                    <p class="text-muted">2807 Hampton Woods Dr<br>Richmond, VA 23233</p>
+                </div>
+            </div>
+                    </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-paper-plane me-2"></i>Send us a Message</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select class="form-select" id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="legal">Legal Document Question</option>
+                                    <option value="billing">Billing Question</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Please describe your question or concern in detail..."></textarea>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                                <label class="form-check-label" for="newsletter">
+                                    Subscribe to our newsletter for legal document tips and updates
+                                </label>
+                            </div>
+                            
+                            <div class="alert alert-info">
+                                <small>
+                                    <i class="fas fa-info-circle me-1"></i>
+                                    <strong>Important:</strong> This contact form is for general inquiries only. 
+                                    We do not provide legal advice through this form. For legal advice, please consult with a qualified attorney.
+                                </small>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h3 class="text-center mb-4">Frequently Asked Questions</h3>
+                        <p class="text-center text-muted mb-4">Before contacting us, you might find your answer in our FAQ section.</p>
+                        <div class="text-center">
+                            <a href="/faq" class="btn btn-outline-primary">
+                                <i class="fas fa-question-circle me-2"></i>View FAQ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-success text-white">
+                        <h5 class="modal-title">
+                            <i class="fas fa-check-circle me-2"></i>Message Sent Successfully
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for contacting us! We have received your message and will respond within 24 hours.</p>
+                        <p class="mb-0">For urgent matters, please call us at <strong>804-360-1129</strong>.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#contactForm').on('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = {
+                    firstName: $('#firstName').val(),
+                    lastName: $('#lastName').val(),
+                    email: $('#email').val(),
+                    phone: $('#phone').val(),
+                    subject: $('#subject').val(),
+                    message: $('#message').val(),
+                    newsletter: $('#newsletter').is(':checked')
+                };
+                
+                // Disable submit button
+                const submitBtn = $(this).find('button[type="submit"]');
+                const originalText = submitBtn.html();
+                submitBtn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin me-2"></i>Sending...');
+                
+                // Submit form
+                $.ajax({
+                    url: '/contact',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(formData),
+                    success: function(response) {
+                        if (response.success) {
+                            $('#successModal').modal('show');
+                            $('#contactForm')[0].reset();
+                        } else {
+                            alert('Error: ' + response.message);
+                        }
+                    },
+                    error: function() {
+                        alert('Error sending message. Please try again or contact us directly.');
+                    },
+                    complete: function() {
+                        submitBtn.prop('disabled', false).html(originalText);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

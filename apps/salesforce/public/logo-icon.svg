@@ -1,0 +1,9 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Square icon version -->
+  <rect width="50" height="50" rx="10" fill="#2563EB"/>
+
+  <!-- Flow lines in white -->
+  <path d="M12 17 Q19 12 26 17 Q33 22 40 17" stroke="white" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M12 25 Q19 20 26 25 Q33 30 40 25" stroke="white" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M12 33 Q19 28 26 33 Q33 38 40 33" stroke="white" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7"/>
+</svg>

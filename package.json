@@ -1,0 +1,19 @@
+{
+  "name": "legal-platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "./start.sh",
+    "test": "node --test tests/*.test.mjs",
+    "doctor": "node scripts/workspace.mjs doctor",
+    "module": "node scripts/workspace.mjs",
+    "audit": "node scripts/audit.mjs",
+    "seed": "node scripts/seed-workspace.mjs",
+    "features:build": "python3 scripts/build-merged-features.py",
+    "test:floating-ai": "node scripts/test-floating-ai.cjs"
+  }
+}

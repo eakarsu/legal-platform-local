@@ -1,0 +1,30 @@
+Legal Platform source inventory — updated 2026-09-07
+
+Comparison with the latest legal-question / virtual-attorney findings:
+- 4 apps appeared in both lists.
+- 3 apps were missing from the previous apps.txt and have now been added.
+- 3 existing practice/document apps remain included.
+- Total: 10 source apps, merged into one native workspace.
+
+Project | Comparison | Native feature destination
+smallLawFirm | Retained from original apps.txt | Practice management and shared workspace features
+legalForms | Retained from original apps.txt | Legal documents and shared workspace features
+AIDivorceFamilyLawNavigator | Present in both lists | Family law and shared workspace features
+AIEstatePlanningDigitalLegacy | Present in both lists | Estate planning and shared workspace features
+AIImmigrationCaseManager | Present in both lists | Immigration and shared workspace features
+AISmallClaimsCourtGuide | Present in both lists | Small claims and shared workspace features
+smallLawFirm_salesforce | Retained from original apps.txt | Practice extensions and shared workspace features
+AITenantRightsAdvisor | Added from latest findings | Tenant rights; shared Research, Mediation, Evidence and Deadlines
+AIContractNegotiationAssistant | Added from latest findings | Contracts; shared Documents, Research, Compliance and Contacts
+AIContractLifecycleManager | Added from latest findings | Same Contracts group; Obligations, Renewals, Amendments and Milestones
+
+The native sidebar contains 139 canonical feature pages, including 26 new pages.
+All 137 editable feature tables contain at least 15 fictional records.
+
+Detailed comparison: docs/APPS_COMPARISON.md
+Original inventory: reports/apps-before-extension.txt
+Feature definitions and exact source aliases: config/legal-extension.json
+
+These are legal information, drafting and workflow applications. Live attorney
+escalation, external legal research retrieval and other providers are not connected.
+Source routes and metadata are mapped; full original business-rule parity is not claimed.

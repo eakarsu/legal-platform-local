@@ -1,0 +1,323 @@
+<%- include('../base-pm', {
+    title: 'Dashboard',
+    description: 'Legal Practice Management Dashboard'
+}) %>
+
+<%- include('../partials/pm-nav') %>
+
+<div class="container-fluid py-4">
+    <!-- Welcome Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="bg-gradient-primary text-white rounded-3 p-4">
+                <h1 class="h3 mb-2">Welcome back, <%= user.first_name %>!</h1>
+                <p class="mb-0 opacity-75">Manage your law practice from your central dashboard.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI FEATURES - PROMINENT SECTION -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm" style="background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);">
+                <div class="card-body py-3">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap">
+                        <div class="text-white mb-2 mb-md-0">
+                            <h4 class="mb-1" style="font-size: 1.1rem;"><i class="fas fa-robot me-2"></i>AI-Powered Features</h4>
+                            <small>Leverage AI to draft documents, analyze contracts, and more</small>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="/ai-drafting" class="btn btn-light btn-sm"><i class="fas fa-edit me-1"></i>AI Drafting</a>
+                            <a href="/document-summary" class="btn btn-light btn-sm"><i class="fas fa-compress-alt me-1"></i>AI Summaries</a>
+                            <a href="/contract-analysis" class="btn btn-light btn-sm"><i class="fas fa-file-contract me-1"></i>Contract Analysis</a>
+                            <a href="/citation-finder" class="btn btn-light btn-sm"><i class="fas fa-gavel me-1"></i>Citations</a>
+                            <a href="/ai-conflicts/dashboard" class="btn btn-warning btn-sm"><i class="fas fa-exclamation-triangle me-1"></i>AI Conflicts</a>
+                            <a href="/billing/ai-suggestions" class="btn btn-success btn-sm"><i class="fas fa-dollar-sign me-1"></i>AI Billing</a>
+                            <a href="/voice-notes" class="btn btn-danger btn-sm"><i class="fas fa-microphone me-1"></i>Voice Notes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Stats Cards -->
+    <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+            <a href="/my-documents" class="text-decoration-none">
+                <div class="card text-center border-0 shadow-sm h-100 stat-card-link">
+                    <div class="card-body">
+                        <div class="feature-icon-large mx-auto mb-3">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="text-primary"><%= documentCount || 0 %></h3>
+                        <p class="text-muted mb-0">Documents</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 mb-3">
+            <a href="/clients" class="text-decoration-none">
+                <div class="card text-center border-0 shadow-sm h-100 stat-card-link">
+                    <div class="card-body">
+                        <div class="feature-icon-large mx-auto mb-3" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-success"><%= typeof clientCount !== 'undefined' ? clientCount : 0 %></h3>
+                        <p class="text-muted mb-0">Clients</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 mb-3">
+            <a href="/cases" class="text-decoration-none">
+                <div class="card text-center border-0 shadow-sm h-100 stat-card-link">
+                    <div class="card-body">
+                        <div class="feature-icon-large mx-auto mb-3" style="background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-warning"><%= typeof caseCount !== 'undefined' ? caseCount : 0 %></h3>
+                        <p class="text-muted mb-0">Active Cases</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 mb-3">
+            <a href="/leads" class="text-decoration-none">
+                <div class="card text-center border-0 shadow-sm h-100 stat-card-link">
+                    <div class="card-body">
+                        <div class="feature-icon-large mx-auto mb-3" style="background: linear-gradient(135deg, #6f42c1 0%, #e83e8c 100%);">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3 class="text-purple"><%= typeof leadCount !== 'undefined' ? leadCount : 0 %></h3>
+                        <p class="text-muted mb-0">New Leads</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Quick Actions -->
+        <div class="col-md-4 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0"><i class="fas fa-bolt me-2"></i>Quick Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a href="/clients/new" class="btn btn-outline-primary">
+                            <i class="fas fa-user-plus me-2"></i>Add Client
+                        </a>
+                        <a href="/cases/new" class="btn btn-outline-primary">
+                            <i class="fas fa-briefcase me-2"></i>New Case
+                        </a>
+                        <a href="/conflicts/new" class="btn btn-outline-warning">
+                            <i class="fas fa-exclamation-triangle me-2"></i>Conflict Check
+                        </a>
+                        <a href="/ai-drafting/new" class="btn btn-outline-info">
+                            <i class="fas fa-robot me-2"></i>AI Draft Document
+                        </a>
+                        <a href="/" class="btn btn-primary">
+                            <i class="fas fa-file-alt me-2"></i>Generate Form
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Features -->
+        <div class="col-md-8 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0"><i class="fas fa-star me-2"></i>Practice Management Tools</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <a href="/leads" class="card h-100 text-decoration-none border-0 bg-light">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-user-plus fa-2x text-info mb-2"></i>
+                                    <h6 class="mb-0">Leads</h6>
+                                    <small class="text-muted">Intake & Lead Management</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <a href="/conflicts" class="card h-100 text-decoration-none border-0 bg-light">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-exclamation-triangle fa-2x text-warning mb-2"></i>
+                                    <h6 class="mb-0">Conflicts</h6>
+                                    <small class="text-muted">Conflict Checking</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <a href="/trust" class="card h-100 text-decoration-none border-0 bg-light">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-university fa-2x text-success mb-2"></i>
+                                    <h6 class="mb-0">Trust</h6>
+                                    <small class="text-muted">IOLTA Accounting</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <a href="/ai-drafting" class="card h-100 text-decoration-none border-0 bg-light">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-robot fa-2x text-primary mb-2"></i>
+                                    <h6 class="mb-0">AI Drafting</h6>
+                                    <small class="text-muted">AI Document Generation</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <a href="/ocr" class="card h-100 text-decoration-none border-0 bg-light">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-file-image fa-2x text-secondary mb-2"></i>
+                                    <h6 class="mb-0">OCR</h6>
+                                    <small class="text-muted">Document Scanning</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <a href="/calendar-sync" class="card h-100 text-decoration-none border-0 bg-light">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-sync fa-2x text-danger mb-2"></i>
+                                    <h6 class="mb-0">Calendar Sync</h6>
+                                    <small class="text-muted">Google/Outlook</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+        <!-- Recent Documents -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0"><i class="fas fa-history me-2"></i>Recent Documents</h5>
+                    <a href="/my-documents" class="btn btn-sm btn-outline-primary">View All</a>
+                </div>
+                <div class="card-body">
+                    <% if (typeof recentDocuments !== 'undefined' && recentDocuments.length > 0) { %>
+                        <% recentDocuments.slice(0, 5).forEach(doc => { %>
+                            <div class="d-flex justify-content-between align-items-center border-bottom py-2">
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-0"><%= doc.title %></h6>
+                                    <small class="text-muted"><%= new Date(doc.created_at).toLocaleDateString() %></small>
+                                </div>
+                                <div class="ms-3">
+                                    <a href="/document/<%= doc.id %>" class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        <% }); %>
+                    <% } else { %>
+                        <div class="text-center py-4">
+                            <i class="fas fa-file-alt fa-2x text-muted mb-2"></i>
+                            <p class="text-muted mb-0">No documents yet</p>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+
+        <!-- Client Portal & Security -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0"><i class="fas fa-shield-alt me-2"></i>Portal & Security</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <a href="/portal/login" target="_blank" class="card h-100 text-decoration-none border-primary">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-external-link-alt fa-2x text-primary mb-2"></i>
+                                    <h6 class="mb-0">Client Portal</h6>
+                                    <small class="text-muted">Client Access</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="/2fa/setup" class="card h-100 text-decoration-none border-success">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-lock fa-2x text-success mb-2"></i>
+                                    <h6 class="mb-0">Two-Factor Auth</h6>
+                                    <small class="text-muted">
+                                        <% if (user.two_factor_enabled) { %>
+                                        <span class="text-success">Enabled</span>
+                                        <% } else { %>
+                                        <span class="text-warning">Not Enabled</span>
+                                        <% } %>
+                                    </small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="/payments/links" class="card h-100 text-decoration-none border-info">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-credit-card fa-2x text-info mb-2"></i>
+                                    <h6 class="mb-0">Payment Links</h6>
+                                    <small class="text-muted">Online Payments</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="/leads/forms" class="card h-100 text-decoration-none border-warning">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-file-alt fa-2x text-warning mb-2"></i>
+                                    <h6 class="mb-0">Intake Forms</h6>
+                                    <small class="text-muted">Lead Capture</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.feature-icon-large {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.text-purple {
+    color: #6f42c1;
+}
+.card.border-primary { border-color: #667eea !important; }
+.card.border-success { border-color: #28a745 !important; }
+.card.border-info { border-color: #17a2b8 !important; }
+.card.border-warning { border-color: #ffc107 !important; }
+.stat-card-link {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.stat-card-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+</style>
+
+<%- include('../partials/footer') %>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Saved all test account credentials:
+  - john.smith@smithlaw.com (Admin)
+  - sarah.johnson@smithlaw.com (Attorney)
+  - michael.brown@smithlaw.com (Attorney)
+  - emily.davis@smithlaw.com (Paralegal)
+  - jessica.wilson@smithlaw.com (Secretary)

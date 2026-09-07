@@ -1,0 +1,7 @@
+{
+  "name": "@legal-platform/ai-client",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.cjs",
+  "types": "index.d.cts"
+}

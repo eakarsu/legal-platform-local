@@ -1,0 +1,3518 @@
+[
+  {
+    "module": "practice-management",
+    "path": "/login",
+    "source": "apps/practice-management/src/app/(auth)/login/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/register",
+    "source": "apps/practice-management/src/app/(auth)/register/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/ai",
+    "source": "apps/practice-management/src/app/(dashboard)/ai/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/billing/[id]/edit",
+    "source": "apps/practice-management/src/app/(dashboard)/billing/[id]/edit/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/billing/[id]",
+    "source": "apps/practice-management/src/app/(dashboard)/billing/[id]/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/billing/new",
+    "source": "apps/practice-management/src/app/(dashboard)/billing/new/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/billing",
+    "source": "apps/practice-management/src/app/(dashboard)/billing/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/calendar",
+    "source": "apps/practice-management/src/app/(dashboard)/calendar/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/clients/[id]/edit",
+    "source": "apps/practice-management/src/app/(dashboard)/clients/[id]/edit/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/clients/[id]",
+    "source": "apps/practice-management/src/app/(dashboard)/clients/[id]/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/clients/new",
+    "source": "apps/practice-management/src/app/(dashboard)/clients/new/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/clients",
+    "source": "apps/practice-management/src/app/(dashboard)/clients/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/dashboard",
+    "source": "apps/practice-management/src/app/(dashboard)/dashboard/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/deadlines",
+    "source": "apps/practice-management/src/app/(dashboard)/deadlines/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/documents/[id]",
+    "source": "apps/practice-management/src/app/(dashboard)/documents/[id]/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/documents",
+    "source": "apps/practice-management/src/app/(dashboard)/documents/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/expenses",
+    "source": "apps/practice-management/src/app/(dashboard)/expenses/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/filing-service-tracker",
+    "source": "apps/practice-management/src/app/(dashboard)/filing-service-tracker/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/filings",
+    "source": "apps/practice-management/src/app/(dashboard)/filings/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/billing-intelligence",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/billing-intelligence/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/cle-tracker",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/cle-tracker/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/client-satisfaction-survey",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/client-satisfaction-survey/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/conflict-checker",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/conflict-checker/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/contract-drafting",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/contract-drafting/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/deadline-predictor",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/deadline-predictor/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/docusign-adapter",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/docusign-adapter/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/legal-research",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/legal-research/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/malpractice-insurance",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/malpractice-insurance/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/mobile-time-capture",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/mobile-time-capture/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/gap/smtp-outbound",
+    "source": "apps/practice-management/src/app/(dashboard)/gap/smtp-outbound/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/matters/[id]/edit",
+    "source": "apps/practice-management/src/app/(dashboard)/matters/[id]/edit/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/matters/[id]",
+    "source": "apps/practice-management/src/app/(dashboard)/matters/[id]/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/matters/new",
+    "source": "apps/practice-management/src/app/(dashboard)/matters/new/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/matters",
+    "source": "apps/practice-management/src/app/(dashboard)/matters/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/messages",
+    "source": "apps/practice-management/src/app/(dashboard)/messages/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/notifications",
+    "source": "apps/practice-management/src/app/(dashboard)/notifications/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/tasks",
+    "source": "apps/practice-management/src/app/(dashboard)/tasks/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/time",
+    "source": "apps/practice-management/src/app/(dashboard)/time/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/codex/custom-viz",
+    "source": "apps/practice-management/src/app/codex/custom-viz/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/codex/operations",
+    "source": "apps/practice-management/src/app/codex/operations/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "practice-management",
+    "path": "/",
+    "source": "apps/practice-management/src/app/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/billing/ai-suggestions",
+    "source": "apps/legal-documents/routes/ai-billing.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/calendar/ai-assistant",
+    "source": "apps/legal-documents/routes/ai-calendar.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/ai-catalog.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/:id",
+    "source": "apps/legal-documents/routes/ai-catalog.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/communications/ai-drafts",
+    "source": "apps/legal-documents/routes/ai-communications.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/ai-conflicts/dashboard",
+    "source": "apps/legal-documents/routes/ai-conflicts.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/ai-drafting",
+    "source": "apps/legal-documents/routes/ai-drafting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/ai-drafting/new",
+    "source": "apps/legal-documents/routes/ai-drafting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/ai-drafting/templates",
+    "source": "apps/legal-documents/routes/ai-drafting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/ai-drafting/sessions",
+    "source": "apps/legal-documents/routes/ai-drafting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/ai-drafting/sessions/:id",
+    "source": "apps/legal-documents/routes/ai-drafting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/:id",
+    "source": "apps/legal-documents/routes/ai-intake-builder.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/intake/ai/:token",
+    "source": "apps/legal-documents/routes/ai-intake.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/cases",
+    "source": "apps/legal-documents/routes/ai-pacer.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/docket/:docketId",
+    "source": "apps/legal-documents/routes/ai-pacer.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/cases/:caseId/predictions",
+    "source": "apps/legal-documents/routes/ai-predictions.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/:sessionId/transcript",
+    "source": "apps/legal-documents/routes/ai-transcription.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/register",
+    "source": "apps/legal-documents/routes/auth.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/login",
+    "source": "apps/legal-documents/routes/auth.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/forgot-password",
+    "source": "apps/legal-documents/routes/auth.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/reset-password",
+    "source": "apps/legal-documents/routes/auth.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/auth/google",
+    "source": "apps/legal-documents/routes/auth.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/auth/microsoft/test",
+    "source": "apps/legal-documents/routes/auth.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/auth/microsoft",
+    "source": "apps/legal-documents/routes/auth.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/billing",
+    "source": "apps/legal-documents/routes/billing.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/billing/time",
+    "source": "apps/legal-documents/routes/billing.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/billing/invoices",
+    "source": "apps/legal-documents/routes/billing.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/billing/invoices/:id",
+    "source": "apps/legal-documents/routes/billing.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/billing/expenses",
+    "source": "apps/legal-documents/routes/billing.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/calendar-sync",
+    "source": "apps/legal-documents/routes/calendar-sync.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/calendar-sync/google",
+    "source": "apps/legal-documents/routes/calendar-sync.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/calendar-sync/outlook",
+    "source": "apps/legal-documents/routes/calendar-sync.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/calendar-sync/settings",
+    "source": "apps/legal-documents/routes/calendar-sync.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/calendar-sync/history",
+    "source": "apps/legal-documents/routes/calendar-sync.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/settings/calendar-sync",
+    "source": "apps/legal-documents/routes/calendar-sync.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/calendar",
+    "source": "apps/legal-documents/routes/calendar.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/deadlines",
+    "source": "apps/legal-documents/routes/calendar.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/calendar/tasks",
+    "source": "apps/legal-documents/routes/calendar.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/tasks",
+    "source": "apps/legal-documents/routes/calendar.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/cases",
+    "source": "apps/legal-documents/routes/cases.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/cases/new",
+    "source": "apps/legal-documents/routes/cases.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/cases/:id/edit",
+    "source": "apps/legal-documents/routes/cases.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/cases/:id",
+    "source": "apps/legal-documents/routes/cases.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/citation-finder",
+    "source": "apps/legal-documents/routes/citation-finder.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/citation-finder/search",
+    "source": "apps/legal-documents/routes/citation-finder.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/citation-finder/results/:id",
+    "source": "apps/legal-documents/routes/citation-finder.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/login",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/logout",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/dashboard",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/cases",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/cases/:id",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/documents",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/documents/:id/download",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/invoices",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/invoices/:id",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/calendar",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/messages",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/profile",
+    "source": "apps/legal-documents/routes/client-portal.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/clients",
+    "source": "apps/legal-documents/routes/clients.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/clients/new",
+    "source": "apps/legal-documents/routes/clients.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/clients/analytics",
+    "source": "apps/legal-documents/routes/clients.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/clients/:id/edit",
+    "source": "apps/legal-documents/routes/clients.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/clients/:id",
+    "source": "apps/legal-documents/routes/clients.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/team",
+    "source": "apps/legal-documents/routes/collaboration.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/settings",
+    "source": "apps/legal-documents/routes/collaboration.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/activity",
+    "source": "apps/legal-documents/routes/collaboration.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/messages",
+    "source": "apps/legal-documents/routes/communications.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/notifications",
+    "source": "apps/legal-documents/routes/communications.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/conflicts",
+    "source": "apps/legal-documents/routes/conflicts.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/conflicts/new",
+    "source": "apps/legal-documents/routes/conflicts.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/conflicts/parties",
+    "source": "apps/legal-documents/routes/conflicts.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/conflicts/history",
+    "source": "apps/legal-documents/routes/conflicts.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/conflicts/waivers",
+    "source": "apps/legal-documents/routes/conflicts.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/conflicts/waivers/:id",
+    "source": "apps/legal-documents/routes/conflicts.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/conflicts/:id",
+    "source": "apps/legal-documents/routes/conflicts.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/contract-analysis",
+    "source": "apps/legal-documents/routes/contract-analysis.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/contract-analysis/new",
+    "source": "apps/legal-documents/routes/contract-analysis.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/contract-analysis/:id",
+    "source": "apps/legal-documents/routes/contract-analysis.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/document-summary",
+    "source": "apps/legal-documents/routes/document-summary.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/document-summary/new",
+    "source": "apps/legal-documents/routes/document-summary.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/document-summary/:id",
+    "source": "apps/legal-documents/routes/document-summary.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/status/:esignatureId",
+    "source": "apps/legal-documents/routes/esignature.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/list",
+    "source": "apps/legal-documents/routes/esignature.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/test-config",
+    "source": "apps/legal-documents/routes/esignature.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/test-auth",
+    "source": "apps/legal-documents/routes/esignature.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/config",
+    "source": "apps/legal-documents/routes/esignature.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/usage",
+    "source": "apps/legal-documents/routes/esignature.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/test",
+    "source": "apps/legal-documents/routes/esignature.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_ai_routes_exist_but_logic_depth.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_ai_routes_exist_but_logic_depth.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_ai_routes_intermingled_with_domain_routes.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_ai_routes_intermingled_with_domain_routes.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_audit_grade_matter_history_export.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_audit_grade_matter_history_export.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_deposition_discovery_summarizer.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_deposition_discovery_summarizer.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_e_discovery_review_workflow.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_e_discovery_review_workflow.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_e_discovery_vector_search.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_e_discovery_vector_search.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_fee_prediction_model_with_confidence.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_fee_prediction_model_with_confidence.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_matter_outcome_forecasting_with_explainability.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_matter_outcome_forecasting_with_explainability.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_multi_tenant_law_firm_isolation.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_multi_tenant_law_firm_isolation.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_pacer_state_court_filing_integration.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_pacer_state_court_filing_integration.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_real_time_courtroom_transcription_agent.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_real_time_courtroom_transcription_agent.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_structured_intake_forms_with_conditional.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_structured_intake_forms_with_conditional.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/gap_no_webhooks_for_billing_e_signature.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/history",
+    "source": "apps/legal-documents/routes/gap_no_webhooks_for_billing_e_signature.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/intake/:slug",
+    "source": "apps/legal-documents/routes/leads.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/intake/:slug/thank-you",
+    "source": "apps/legal-documents/routes/leads.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/leads/forms/:id/preview",
+    "source": "apps/legal-documents/routes/leads.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/leads",
+    "source": "apps/legal-documents/routes/leads.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/leads/forms",
+    "source": "apps/legal-documents/routes/leads.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/leads/analytics",
+    "source": "apps/legal-documents/routes/leads.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/leads/forms/new",
+    "source": "apps/legal-documents/routes/leads.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/leads/forms/:id/edit",
+    "source": "apps/legal-documents/routes/leads.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/leads/forms/:id",
+    "source": "apps/legal-documents/routes/leads.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/leads/:id",
+    "source": "apps/legal-documents/routes/leads.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/suggestions",
+    "source": "apps/legal-documents/routes/nlp.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/research",
+    "source": "apps/legal-documents/routes/nlp.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/ocr",
+    "source": "apps/legal-documents/routes/ocr.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/ocr/:id",
+    "source": "apps/legal-documents/routes/ocr.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/pay/:token",
+    "source": "apps/legal-documents/routes/payments.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/pay/:token/success",
+    "source": "apps/legal-documents/routes/payments.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/payments",
+    "source": "apps/legal-documents/routes/payments.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/payments/links",
+    "source": "apps/legal-documents/routes/payments.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/payments/links/new",
+    "source": "apps/legal-documents/routes/payments.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/payments/transactions",
+    "source": "apps/legal-documents/routes/payments.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/payments/settings",
+    "source": "apps/legal-documents/routes/payments.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/ai/chat",
+    "source": "apps/legal-documents/routes/portal-ai.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/portal/api/ai/chat/history",
+    "source": "apps/legal-documents/routes/portal-ai.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/reports",
+    "source": "apps/legal-documents/routes/reports.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/reports/revenue",
+    "source": "apps/legal-documents/routes/reports.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/reports/productivity",
+    "source": "apps/legal-documents/routes/reports.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/reports/cases",
+    "source": "apps/legal-documents/routes/reports.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/reports/clients",
+    "source": "apps/legal-documents/routes/reports.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/reports/revenue/export-csv",
+    "source": "apps/legal-documents/routes/reports.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/reports/productivity/export-csv",
+    "source": "apps/legal-documents/routes/reports.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/reports/cases/export-csv",
+    "source": "apps/legal-documents/routes/reports.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/reports/clients/export-csv",
+    "source": "apps/legal-documents/routes/reports.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/routes/retainerTrustReconciliation.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/payment-methods",
+    "source": "apps/legal-documents/routes/stripe.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/subscription",
+    "source": "apps/legal-documents/routes/stripe.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/recommendations/:formType",
+    "source": "apps/legal-documents/routes/templates.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/preferences",
+    "source": "apps/legal-documents/routes/templates.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/trust",
+    "source": "apps/legal-documents/routes/trust-accounting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/trust/accounts",
+    "source": "apps/legal-documents/routes/trust-accounting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/trust/ledgers",
+    "source": "apps/legal-documents/routes/trust-accounting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/trust/transactions",
+    "source": "apps/legal-documents/routes/trust-accounting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/trust/reconciliation",
+    "source": "apps/legal-documents/routes/trust-accounting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/trust/:accountId/ledger/:ledgerId",
+    "source": "apps/legal-documents/routes/trust-accounting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/trust/:id",
+    "source": "apps/legal-documents/routes/trust-accounting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/trust/:id/reconcile",
+    "source": "apps/legal-documents/routes/trust-accounting.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/2fa/setup",
+    "source": "apps/legal-documents/routes/two-factor.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/voice-notes",
+    "source": "apps/legal-documents/routes/voice-notes.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/dashboard",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/home",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/services",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/about",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/faq",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/contact",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/pricing",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/privacy",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/privacy-policy",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/terms",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/terms-of-service",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/disclaimer",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/cookies",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/cookie-policy",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/refund-policy",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/client-management",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/case-management",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/billing",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/trust-accounting",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/conflict-checking",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/ai-drafting",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/calendar",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/lead-management",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/client-portal",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/ai-efficiency",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/security",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/features/grow-practice",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/register",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/sitemap.xml",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/robots.txt",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/form/:formType",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "legal-documents",
+    "path": "/download/:filename",
+    "source": "apps/legal-documents/server.js",
+    "type": "Express GET declaration (mounting not evaluated)"
+  },
+  {
+    "module": "family-law",
+    "path": "/documents",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/assets",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/custody",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/alimony",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/document-gen",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/mediation",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/filing",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/financial",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/parenting",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/property",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/rights",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/settlement",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/child-support",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/timeline",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/glossary",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/codex/custom-viz",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/codex/operations",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/ai-center",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/uploads",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/state-law",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/conversations",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/predictive-ai",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/parenting-exchange-incidents",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/cf/state-aware-legal-guidance",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/cf/child-support-alimony-calculation-optimization",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/cf/financial-asset-valuation",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/cf/co-parenting-logistics-optimization",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/cf/custody-outcome-prediction",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/gap/missing-calculate-child-support-calculate-alimony-recommend",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/gap/limited-integration-with-court-records-filing-systems",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/gap/no-e-signature-integration",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/gap/limited-legal-research-integration-lexisnexis-westlaw",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/gap/no-co-parenting-app-or-family-communication-tools",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/gap/no-webhooks",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/gap/no-payment-billing-module",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "family-law",
+    "path": "/gap/no-reporting-beyond-stubs",
+    "source": "apps/family-law/client/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/wills",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/digital-assets",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/beneficiaries",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/notifications",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/documents",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/power-of-attorney",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/trusts",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/healthcare-directives",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/insurance-policies",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/properties",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/legacy-messages",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/estate-timeline",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/executor-tasks",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/digital-accounts",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/insights/timeline",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/codex/custom-viz",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/codex/operations",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/batch03",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/login",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/dashboard",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/ai-advisor",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/ai-reports",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/extensions",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/custom-views",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "estate-planning",
+    "path": "/executor-access-packet",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/insights/timeline",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/codex/custom-viz",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/codex/operations",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/cases",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/clients",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/documents",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/visas",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/deadlines",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/billing",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/notes",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/forms",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/compliance",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/status-tracking",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/ai",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/advanced-ai",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/reports",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/audit-log",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/custom-views",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/uscis-receipt-notice-tracker",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/cf-agentic-case-manager-auto-generating-doc",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/cf-interview-preparation-ai-with-practice-q",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/cf-immigration-pathway-optimizer-analyzing-",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/cf-rfe-auto-detector-monitoring-uscis-track",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/cf-multilingual-document-support-with-auto-",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/cf-peer-case-analytics-surfacing-anonymized",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/gap-no-visa-category-recommendation-engine",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/gap-no-interview-preparation-ai",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/gap-no-multilingual-translation-routing",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/gap-no-rfe-auto-response-drafter",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/gap-no-client-portal-status-tracking-documen",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/gap-limited-uscis-integration-only-stubs-in",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/gap-no-document-vault-with-field-level",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/gap-no-e-signature-integration",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/gap-limited-notifications-module-0-explicit-",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "immigration",
+    "path": "/gap-no-webhook-surface-for-case-event",
+    "source": "apps/immigration/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/insights/timeline",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/codex/custom-viz",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/codex/operations",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/login",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/register",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/new",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/jurisdiction",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/demand-letter",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/complaint",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/hearing-prep",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/deadlines",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/evidence",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/evidence-organizer",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/settlement-calculator",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/court-procedure-checklist",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/evidence-organizer",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/settlement-calculator",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/court-procedure-checklist",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/witness-statement-guide",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cases/:id/appeal-assessment",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/witness-statement-guide",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/appeal-assessment",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/custom-views",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/judgment-collection-tracker",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cf-case-evaluation-settlement-guidance",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cf-jurisdictionspecific-playbook",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cf-evidence-presentation-optimizer",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cf-opponent-research",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cf-pro-se-litigant-coaching",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/cf-postjudgment-collection-guidance",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-evidenceorganizer",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-witnessstatementguide",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-settlementcalculator-casevalue-estimator",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-courtprocedurechecklist-perjurisdiction",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-appealassessment",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-case-tracking-beyond-crud-no-hearing-remi",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-fee-schedule-lookup-filing-fees-by-court",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-statute-of-limitations-checker",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-legal-citation-library",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-efiling-integration-tyler-efiletexas",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-notificationscalendar-reminders",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-payment-processing-for-court-fees",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "small-claims",
+    "path": "/gap-no-audit-log-rbac",
+    "source": "apps/small-claims/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "salesforce",
+    "path": "/forgot-password",
+    "source": "apps/salesforce/src/app/(auth)/forgot-password/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/login",
+    "source": "apps/salesforce/src/app/(auth)/login/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/register",
+    "source": "apps/salesforce/src/app/(auth)/register/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/reset-password",
+    "source": "apps/salesforce/src/app/(auth)/reset-password/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/verify-email",
+    "source": "apps/salesforce/src/app/(auth)/verify-email/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/billing-intelligence",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/billing-intelligence/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/case-analysis",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/case-analysis/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/client-intake",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/client-intake/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/conflict-checker",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/conflict-checker/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/contract-review",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/contract-review/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/deadline-predictor",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/deadline-predictor/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/document-drafting",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/document-drafting/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/legal-research",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/legal-research/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/multi-jurisdiction-compliance",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/multi-jurisdiction-compliance/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/opponent-analysis",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/opponent-analysis/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/ai/time-capture",
+    "source": "apps/salesforce/src/app/(dashboard)/ai/time-capture/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/calendar",
+    "source": "apps/salesforce/src/app/(dashboard)/calendar/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/clients/[id]/edit",
+    "source": "apps/salesforce/src/app/(dashboard)/clients/[id]/edit/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/clients/[id]",
+    "source": "apps/salesforce/src/app/(dashboard)/clients/[id]/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/clients/new",
+    "source": "apps/salesforce/src/app/(dashboard)/clients/new/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/clients",
+    "source": "apps/salesforce/src/app/(dashboard)/clients/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/contacts",
+    "source": "apps/salesforce/src/app/(dashboard)/contacts/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/dashboard",
+    "source": "apps/salesforce/src/app/(dashboard)/dashboard/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/deadlines",
+    "source": "apps/salesforce/src/app/(dashboard)/deadlines/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/documents/[id]",
+    "source": "apps/salesforce/src/app/(dashboard)/documents/[id]/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/documents",
+    "source": "apps/salesforce/src/app/(dashboard)/documents/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/gap/calendar-timesheet",
+    "source": "apps/salesforce/src/app/(dashboard)/gap/calendar-timesheet/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/gap/cle-tracker",
+    "source": "apps/salesforce/src/app/(dashboard)/gap/cle-tracker/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/gap/client-survey",
+    "source": "apps/salesforce/src/app/(dashboard)/gap/client-survey/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/gap/esign-workflow",
+    "source": "apps/salesforce/src/app/(dashboard)/gap/esign-workflow/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/gap/imap-email-archive",
+    "source": "apps/salesforce/src/app/(dashboard)/gap/imap-email-archive/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/gap/malpractice-insurance",
+    "source": "apps/salesforce/src/app/(dashboard)/gap/malpractice-insurance/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/gap/mobile-time-app",
+    "source": "apps/salesforce/src/app/(dashboard)/gap/mobile-time-app/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/gap/multilang-intake",
+    "source": "apps/salesforce/src/app/(dashboard)/gap/multilang-intake/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/gap/vision-doc-classify",
+    "source": "apps/salesforce/src/app/(dashboard)/gap/vision-doc-classify/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/invoices/[id]",
+    "source": "apps/salesforce/src/app/(dashboard)/invoices/[id]/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/invoices",
+    "source": "apps/salesforce/src/app/(dashboard)/invoices/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/matters/[id]/edit",
+    "source": "apps/salesforce/src/app/(dashboard)/matters/[id]/edit/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/matters/[id]",
+    "source": "apps/salesforce/src/app/(dashboard)/matters/[id]/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/matters/new",
+    "source": "apps/salesforce/src/app/(dashboard)/matters/new/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/matters",
+    "source": "apps/salesforce/src/app/(dashboard)/matters/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/reports",
+    "source": "apps/salesforce/src/app/(dashboard)/reports/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/settings/billing-rates",
+    "source": "apps/salesforce/src/app/(dashboard)/settings/billing-rates/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/settings/integrations",
+    "source": "apps/salesforce/src/app/(dashboard)/settings/integrations/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/settings",
+    "source": "apps/salesforce/src/app/(dashboard)/settings/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/settings/users",
+    "source": "apps/salesforce/src/app/(dashboard)/settings/users/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/time-billing",
+    "source": "apps/salesforce/src/app/(dashboard)/time-billing/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/trust",
+    "source": "apps/salesforce/src/app/(dashboard)/trust/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/trust-retainer-reconciliation",
+    "source": "apps/salesforce/src/app/(dashboard)/trust-retainer-reconciliation/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/about",
+    "source": "apps/salesforce/src/app/(marketing)/about/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/api",
+    "source": "apps/salesforce/src/app/(marketing)/api/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/blog",
+    "source": "apps/salesforce/src/app/(marketing)/blog/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/careers",
+    "source": "apps/salesforce/src/app/(marketing)/careers/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/contact",
+    "source": "apps/salesforce/src/app/(marketing)/contact/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/features",
+    "source": "apps/salesforce/src/app/(marketing)/features/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/help-center",
+    "source": "apps/salesforce/src/app/(marketing)/help-center/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/integrations",
+    "source": "apps/salesforce/src/app/(marketing)/integrations/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/partners",
+    "source": "apps/salesforce/src/app/(marketing)/partners/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/practice-areas/[slug]",
+    "source": "apps/salesforce/src/app/(marketing)/practice-areas/[slug]/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/practice-areas",
+    "source": "apps/salesforce/src/app/(marketing)/practice-areas/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/press",
+    "source": "apps/salesforce/src/app/(marketing)/press/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/pricing",
+    "source": "apps/salesforce/src/app/(marketing)/pricing/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/privacy",
+    "source": "apps/salesforce/src/app/(marketing)/privacy/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/security",
+    "source": "apps/salesforce/src/app/(marketing)/security/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/status",
+    "source": "apps/salesforce/src/app/(marketing)/status/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/terms",
+    "source": "apps/salesforce/src/app/(marketing)/terms/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/codex/custom-viz",
+    "source": "apps/salesforce/src/app/codex/custom-viz/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/codex/operations",
+    "source": "apps/salesforce/src/app/codex/operations/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "salesforce",
+    "path": "/",
+    "source": "apps/salesforce/src/app/page.tsx",
+    "type": "Next page"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/insights/timeline",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/codex/custom-viz",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/codex/operations",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/login",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/register",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/tenancies/new",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/tenancies/:id",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/tenancies/:id/lease-analyzer",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/tenancies/:id/notice",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/tenancies/:id/eviction-defense",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/tenancies/:id/rent-check",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/tenancies/:id/mediation",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/tenancies/:id/issues",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/case-outcome",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/local-law-lookup",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/negotiation-simulator",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/document-assembly",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/legal-resource-directory",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/legal-expert-chat",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/cf-local-law-adaptation-customizing-advice-by-state-city",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/cf-case-outcome-prediction-estimating-eviction-defense-success-probability",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/cf-resource-directory-linking-to-legal-aid-tenant-unions",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/cf-negotiation-simulation-with-ai-role-play-for-mediation-practice",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/cf-document-assembly-auto-filling-forms-with-tenant-data",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/cf-deadline-tracker-with-notifications-for-notice-response-windows",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-ai-driven-case-outcome-prediction",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-local-law-variation-adaptation-engine",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-conversational-tenant-rights-chatbot-beyond-core-ai-endpoints",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-local-legal-resource-database-legal-aid-tenant",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-integration-with-local-statutes-rent-control-habitability",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-form-completion-helpers-interactive-interview",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-chat-with-legal-expert-escalation",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-notifications-or-reminders-for-deadlines-e-g",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-audit-logging",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-integrations-module",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/gap-no-multi-language-support-routes",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "tenant-rights",
+    "path": "/custom-views",
+    "source": "apps/tenant-rights/frontend/src/App.jsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/codex/custom-viz",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/codex/operations",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/contracts",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/contracts/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/clauses",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/clauses/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/parties",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/parties/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/templates",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/templates/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/negotiations",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/negotiations/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/risks",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/risks/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/compliance",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/compliance/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/redlines",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/redlines/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/approvals",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/approvals/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/deadlines",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/deadlines/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/chat",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/analytics",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/analytics/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/profile",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/risk-clause-highlighter",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/risk-clause-highlighter/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/standard-terms-comparer",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/standard-terms-comparer/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/plain-language-translator",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/plain-language-translator/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/precedent-finder",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/precedent-finder/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/nda-generator",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/nda-generator/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/terms-of-service-builder",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/terms-of-service-builder/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/lease-analyzer",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/lease-analyzer/:id",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/compliance-audit-agents",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/custom",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/highlight-risks",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/standard-terms-compare",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/rank-risk-clauses",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/suggest-redline-counter",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/ai-tools/chat-about-contract",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/custom-views",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/fallback-clause-matrix",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/cf/agentic-negotiation-modeling",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/cf/regulatory-change-alerting",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/cf/benchmarking-against-market",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/cf/negotiation-playbook-generation",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/cf/precedent-analysis-at-scale",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/gap/all-specialized-analyzers-leaseanalyzer-plainlanguagetransla",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/gap/no-git-style-version-control-or-track-changes-ui-integration",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/gap/no-e-signature-workflow-integration-docusign-hellosign",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/gap/no-integration-with-legal-research-apis-westlaw-lexisnexis",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-negotiation",
+    "path": "/gap/no-deal-room-data-room-management-for-due-diligence",
+    "source": "apps/contract-negotiation/frontend/src/App.tsx",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/contracts",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/clauses",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/templates",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/parties",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/obligations",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/approvals",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/amendments",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/renewals",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/risks",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/compliance",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/milestones",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/documents",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/audit",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/settings",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/insights/timeline",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/codex/custom-viz",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/codex/operations",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/dashboard",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/ai-chat",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/ai-custom",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/ai-advanced",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/ai-ediscovery",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/custom-views",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/obligation-evidence-room",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/platform-ops",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/cf/agentic-contract-negotiation",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/cf/predictive-renewal",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/cf/regulatory-change-impact",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/cf/portfolio-analytics",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/cf/variant-generation-for-negotiation",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/gap/amendments-lacks-analyze-amendment-impact",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/gap/renewals-lacks-predict-renewal-success-or-predict-renewal-te",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/gap/approvals-lacks-predict-approval-likelihood",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/gap/parties-lacks-counterparty-risk-scoring",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/gap/limited-third-party-integrations-no-docusign-slack-hubspot-o",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/gap/no-automated-renewal-reminder-or-auto-escalation-workflow",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/gap/no-analytics-dashboard-contract-spend-risk-heatmap-cycle-tim",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/gap/no-variant-playbook-management-alternative-template-sequence",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/gap/no-webhooks",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  },
+  {
+    "module": "contract-lifecycle",
+    "path": "/login",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "type": "React route declaration"
+  }
+]

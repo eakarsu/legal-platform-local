@@ -1,0 +1,481 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  email     String    @unique
+  password  String
+  name      String
+  role      String    @default("user")
+  tenantId  String    @default("default") @map("tenant_id")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  contracts Contract[]
+  negotiations Negotiation[]
+  approvals Approval[]
+}
+
+model Contract {
+  id              Int       @id @default(autoincrement())
+  title           String
+  description     String?
+  content         String
+  status          String    @default("draft")
+  contractType    String
+  value           Float?
+  currency        String    @default("USD")
+  startDate       DateTime?
+  endDate         DateTime?
+  riskLevel       String?
+  riskScore       Int?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  userId          Int?
+  user            User?     @relation(fields: [userId], references: [id])
+  partyId         Int?
+  party           Party?    @relation(fields: [partyId], references: [id])
+  templateId      Int?
+  clauses         ContractClause[]
+  negotiations    Negotiation[]
+  riskAnalyses    RiskAnalysis[]
+  complianceChecks ComplianceCheck[]
+  redlines        Redline[]
+  approvals       Approval[]
+  deadlines       Deadline[]
+}
+
+model Clause {
+  id          Int       @id @default(autoincrement())
+  title       String
+  content     String
+  category    String
+  riskLevel   String?
+  isStandard  Boolean   @default(false)
+  language    String    @default("English")
+  jurisdiction String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  contracts   ContractClause[]
+}
+
+model ContractClause {
+  id         Int      @id @default(autoincrement())
+  contractId Int
+  clauseId   Int
+  position   Int      @default(0)
+  customContent String?
+  contract   Contract @relation(fields: [contractId], references: [id], onDelete: Cascade)
+  clause     Clause   @relation(fields: [clauseId], references: [id], onDelete: Cascade)
+}
+
+model Party {
+  id           Int       @id @default(autoincrement())
+  name         String
+  type         String
+  email        String?
+  phone        String?
+  address      String?
+  industry     String?
+  riskRating   String?
+  notes        String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  contracts    Contract[]
+  negotiations Negotiation[]
+}
+
+model Template {
+  id          Int       @id @default(autoincrement())
+  name        String
+  description String?
+  content     String
+  category    String
+  industry    String?
+  jurisdiction String?
+  isActive    Boolean   @default(true)
+  version     String    @default("1.0")
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Negotiation {
+  id           Int       @id @default(autoincrement())
+  contractId   Int
+  partyId      Int?
+  status       String    @default("pending")
+  round        Int       @default(1)
+  proposedChanges String?
+  counterProposal String?
+  notes        String?
+  priority     String    @default("medium")
+  dueDate      DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  contract     Contract  @relation(fields: [contractId], references: [id], onDelete: Cascade)
+  party        Party?    @relation(fields: [partyId], references: [id])
+  userId       Int?
+  user         User?     @relation(fields: [userId], references: [id])
+}
+
+model RiskAnalysis {
+  id           Int       @id @default(autoincrement())
+  contractId   Int
+  overallScore Int
+  category     String
+  findings     String
+  recommendations String?
+  financialRisk Int?
+  legalRisk    Int?
+  operationalRisk Int?
+  reputationalRisk Int?
+  aiAnalysis   String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  contract     Contract  @relation(fields: [contractId], references: [id], onDelete: Cascade)
+}
+
+model ComplianceCheck {
+  id           Int       @id @default(autoincrement())
+  contractId   Int
+  regulation   String
+  status       String    @default("pending")
+  findings     String?
+  requirements String?
+  aiAnalysis   String?
+  checkedAt    DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  contract     Contract  @relation(fields: [contractId], references: [id], onDelete: Cascade)
+}
+
+model Redline {
+  id           Int       @id @default(autoincrement())
+  contractId   Int
+  originalText String
+  proposedText String
+  section      String?
+  status       String    @default("pending")
+  author       String?
+  reason       String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  contract     Contract  @relation(fields: [contractId], references: [id], onDelete: Cascade)
+}
+
+model Approval {
+  id           Int       @id @default(autoincrement())
+  contractId   Int
+  userId       Int?
+  approverName String
+  approverRole String
+  status       String    @default("pending")
+  comments     String?
+  approvedAt   DateTime?
+  dueDate      DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  contract     Contract  @relation(fields: [contractId], references: [id], onDelete: Cascade)
+  user         User?     @relation(fields: [userId], references: [id])
+}
+
+model Deadline {
+  id           Int       @id @default(autoincrement())
+  contractId   Int
+  title        String
+  description  String?
+  dueDate      DateTime
+  reminderDate DateTime?
+  status       String    @default("pending")
+  priority     String    @default("medium")
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  contract     Contract  @relation(fields: [contractId], references: [id], onDelete: Cascade)
+}
+
+model ChatHistory {
+  id        Int       @id @default(autoincrement())
+  sessionId String
+  role      String
+  content   String
+  context   String?
+  createdAt DateTime  @default(now())
+}
+
+model Analytics {
+  id            Int       @id @default(autoincrement())
+  metricName    String
+  metricValue   Float
+  category      String
+  period        String
+  details       String?
+  recordedAt    DateTime  @default(now())
+}
+
+// New AI Tools Models
+
+model RiskClauseHighlight {
+  id            Int       @id @default(autoincrement())
+  contractId    Int?
+  clauseId      Int?
+  title         String
+  content       String
+  riskLevel     String    @default("medium")
+  riskScore     Int       @default(50)
+  highlightedText String?
+  explanation   String?
+  suggestions   String?
+  aiAnalysis    String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model StandardTermComparison {
+  id              Int       @id @default(autoincrement())
+  contractId      Int?
+  title           String
+  contractTerms   String
+  standardTerms   String
+  deviations      String?
+  riskAssessment  String?
+  recommendations String?
+  complianceScore Int       @default(50)
+  aiAnalysis      String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model PlainLanguageTranslation {
+  id              Int       @id @default(autoincrement())
+  title           String
+  originalText    String
+  translatedText  String?
+  complexityScore Int       @default(50)
+  keyTerms        String?
+  summary         String?
+  aiAnalysis      String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model PrecedentSearch {
+  id              Int       @id @default(autoincrement())
+  query           String
+  clauseType      String?
+  jurisdiction    String?
+  precedents      String?
+  relevanceScore  Int       @default(50)
+  citations       String?
+  aiAnalysis      String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model NDADocument {
+  id              Int       @id @default(autoincrement())
+  title           String
+  disclosingParty String
+  receivingParty  String
+  purpose         String?
+  duration        String?
+  jurisdiction    String?
+  content         String?
+  confidentialInfo String?
+  exclusions      String?
+  obligations     String?
+  status          String    @default("draft")
+  aiAnalysis      String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model TermsOfService {
+  id              Int       @id @default(autoincrement())
+  title           String
+  companyName     String
+  serviceType     String?
+  website         String?
+  content         String?
+  sections        String?
+  userRights      String?
+  limitations     String?
+  disputeResolution String?
+  status          String    @default("draft")
+  aiAnalysis      String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model LeaseAnalysis {
+  id              Int       @id @default(autoincrement())
+  title           String
+  propertyAddress String?
+  propertyType    String?
+  landlord        String?
+  tenant          String?
+  leaseContent    String?
+  monthlyRent     Float?
+  securityDeposit Float?
+  leaseTerm       String?
+  keyTerms        String?
+  risks           String?
+  recommendations String?
+  score           Int       @default(50)
+  aiAnalysis      String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+// AIResult — generic JSON-stored AI output cache (audit pattern: ai_results JSONB)
+model AIResult {
+  id          Int      @id @default(autoincrement())
+  feature     String
+  contractId  Int?
+  userId      Int?
+  input       Json?
+  output      Json?
+  model       String?
+  usage       Json?
+  createdAt   DateTime @default(now())
+
+  @@index([feature])
+  @@index([contractId])
+  @@map("ai_results")
+}
+
+// Audit log for compliance and traceability
+model AuditLog {
+  id         Int      @id @default(autoincrement())
+  userId     Int?
+  action     String
+  entityType String
+  entityId   Int?
+  details    Json?
+  ipAddress  String?
+  createdAt  DateTime @default(now())
+
+  @@index([entityType, entityId])
+  @@index([userId])
+  @@map("audit_logs")
+}
+
+model GovernedMatter {
+  id             Int      @id @default(autoincrement())
+  tenantId       String   @map("tenant_id")
+  matterKey      String   @map("matter_key")
+  name           String
+  privilegeLabel String   @map("privilege_label")
+  status         String   @default("active")
+  createdById    Int      @map("created_by_id")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  @@unique([tenantId, matterKey])
+  @@index([tenantId, id])
+  @@map("governed_matters")
+}
+
+model GovernedPlaybook {
+  id             Int      @id @default(autoincrement())
+  tenantId       String   @map("tenant_id")
+  matterId       Int      @map("matter_id")
+  name           String
+  version        String
+  jurisdiction   String
+  contentHash    String   @map("content_hash")
+  approvedById   Int      @map("approved_by_id")
+  approvedAt     DateTime @default(now()) @map("approved_at")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  @@unique([tenantId, matterId, name, version])
+  @@index([tenantId, matterId])
+  @@map("governed_playbooks")
+}
+
+model GovernedPlaybookRule {
+  id            Int      @id @default(autoincrement())
+  tenantId      String   @map("tenant_id")
+  playbookId    Int      @map("playbook_id")
+  ruleKey       String   @map("rule_key")
+  clauseType    String   @map("clause_type")
+  sourceClause  String   @map("source_clause")
+  preferredText String   @map("preferred_text")
+  fallbackText  String?  @map("fallback_text")
+  riskLevel     String   @map("risk_level")
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  @@unique([playbookId, ruleKey])
+  @@index([tenantId, playbookId])
+  @@map("governed_playbook_rules")
+}
+
+model GovernedContractVersion {
+  id               Int      @id @default(autoincrement())
+  tenantId         String   @map("tenant_id")
+  matterId         Int      @map("matter_id")
+  versionNumber    Int      @map("version_number")
+  contentHash      String   @map("content_hash")
+  sourceDocumentId String   @map("source_document_id")
+  createdById      Int      @map("created_by_id")
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  @@unique([tenantId, matterId, versionNumber])
+  @@index([tenantId, matterId])
+  @@map("governed_contract_versions")
+}
+
+model GovernedRedline {
+  id                Int      @id @default(autoincrement())
+  tenantId          String   @map("tenant_id")
+  matterId          Int      @map("matter_id")
+  contractVersionId Int      @map("contract_version_id")
+  playbookRuleId    Int      @map("playbook_rule_id")
+  sourceText        String   @map("source_text")
+  proposedText      String   @map("proposed_text")
+  rationale         String
+  tradeoffs         String
+  citation          Json
+  policyResult      String   @map("policy_result")
+  status            String   @default("pending")
+  createdById       Int      @map("created_by_id")
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  @@index([tenantId, matterId])
+  @@map("governed_redlines")
+}
+
+model GovernedRedlineApproval {
+  id         Int      @id @default(autoincrement())
+  tenantId   String   @map("tenant_id")
+  redlineId  Int      @map("redline_id")
+  gate       String
+  decision   String
+  rationale  String
+  approverId Int      @map("approver_id")
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@unique([tenantId, redlineId, gate])
+  @@index([tenantId, redlineId])
+  @@map("governed_redline_approvals")
+}
+
+model GovernedNegotiationEvent {
+  id             Int      @id @default(autoincrement())
+  tenantId       String   @map("tenant_id")
+  matterId       Int      @map("matter_id")
+  eventType      String   @map("event_type")
+  actorUserId    Int      @map("actor_user_id")
+  payload        Json
+  previousHash   String?  @map("previous_hash")
+  eventHash      String   @unique @map("event_hash")
+  occurredAt     DateTime @default(now()) @map("occurred_at")
+
+  @@index([tenantId, matterId, id])
+  @@map("governed_negotiation_events")
+}

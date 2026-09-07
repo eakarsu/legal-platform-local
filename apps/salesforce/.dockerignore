@@ -1,0 +1,62 @@
+# Dependencies
+node_modules
+npm-debug.log*
+
+# Next.js build output
+.next
+out
+
+# Testing
+coverage
+.nyc_output
+
+# Misc
+.DS_Store
+*.pem
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*
+.docker
+
+# Documentation
+README.md
+docs
+*.md
+!LICENSE.md
+
+# Development files
+.eslintcache
+.prettierignore
+.editorconfig
+
+# Logs
+logs
+*.log
+
+# Test files
+__tests__
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Nginx config (not needed in container)
+nginx
+
+# Uploads (mounted as volume)
+uploads/*
+!uploads/.gitkeep

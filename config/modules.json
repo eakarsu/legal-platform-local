@@ -1,0 +1,216 @@
+[
+  {
+    "id": "practice-management",
+    "name": "Practice management",
+    "sourceProject": "smallLawFirm",
+    "description": "The default home for clients, matters, tasks, calendar and billing.",
+    "kind": "core",
+    "port": 43110,
+    "entry": "/dashboard",
+    "secret": "NEXTAUTH_SECRET",
+    "services": [
+      {
+        "dir": ".",
+        "kind": "next",
+        "port": 43110,
+        "bundler": "webpack"
+      }
+    ]
+  },
+  {
+    "id": "legal-documents",
+    "name": "Legal documents",
+    "sourceProject": "legalForms",
+    "description": "General document drafting, templates, summaries and citation tools.",
+    "kind": "core",
+    "port": 43120,
+    "entry": "/ai-drafting",
+    "secret": "SESSION_SECRET",
+    "services": [
+      {
+        "dir": ".",
+        "kind": "node",
+        "entry": "server.js",
+        "port": 43120
+      }
+    ]
+  },
+  {
+    "id": "family-law",
+    "name": "Family law",
+    "sourceProject": "AIDivorceFamilyLawNavigator",
+    "description": "Custody, support, division of assets and parenting plans.",
+    "kind": "specialty",
+    "port": 43130,
+    "entry": "/",
+    "secret": "JWT_SECRET",
+    "services": [
+      {
+        "dir": "server",
+        "kind": "node",
+        "entry": "index.js",
+        "port": 43131
+      },
+      {
+        "dir": "client",
+        "kind": "vite",
+        "port": 43130
+      }
+    ]
+  },
+  {
+    "id": "estate-planning",
+    "name": "Estate planning",
+    "sourceProject": "AIEstatePlanningDigitalLegacy",
+    "description": "Wills, trusts, beneficiaries, healthcare directives and digital legacy.",
+    "kind": "specialty",
+    "port": 43140,
+    "entry": "/dashboard",
+    "secret": "JWT_SECRET",
+    "services": [
+      {
+        "dir": "backend",
+        "kind": "node",
+        "entry": "server.js",
+        "port": 43141
+      },
+      {
+        "dir": "frontend",
+        "kind": "cra",
+        "port": 43140
+      }
+    ]
+  },
+  {
+    "id": "immigration",
+    "name": "Immigration",
+    "sourceProject": "AIImmigrationCaseManager",
+    "description": "Visa cases, forms, compliance and receipt notice tracking.",
+    "kind": "specialty",
+    "port": 43150,
+    "entry": "/",
+    "secret": "JWT_SECRET",
+    "services": [
+      {
+        "dir": "backend",
+        "kind": "node",
+        "entry": "src/server.js",
+        "port": 43151
+      },
+      {
+        "dir": "frontend",
+        "kind": "cra",
+        "port": 43150
+      }
+    ]
+  },
+  {
+    "id": "small-claims",
+    "name": "Small claims",
+    "sourceProject": "AISmallClaimsCourtGuide",
+    "description": "Demand letters, evidence, hearing preparation and judgment collection.",
+    "kind": "specialty",
+    "port": 43160,
+    "entry": "/",
+    "secret": "JWT_SECRET",
+    "services": [
+      {
+        "dir": "backend",
+        "kind": "node",
+        "entry": "server.js",
+        "port": 43161
+      },
+      {
+        "dir": "frontend",
+        "kind": "vite",
+        "port": 43160
+      }
+    ]
+  },
+  {
+    "id": "salesforce",
+    "name": "Practice extensions",
+    "sourceProject": "smallLawFirm_salesforce",
+    "description": "The retained alternative practice suite, including trust reconciliation and additional workflows.",
+    "kind": "extension",
+    "port": 43170,
+    "entry": "/dashboard",
+    "secret": "NEXTAUTH_SECRET",
+    "services": [
+      {
+        "dir": ".",
+        "kind": "next",
+        "port": 43170
+      }
+    ]
+  },
+  {
+    "id": "tenant-rights",
+    "name": "Tenant rights",
+    "sourceProject": "AITenantRightsAdvisor",
+    "description": "Tenant rights source reference; unique workflows merged into the shared workspace.",
+    "kind": "specialty",
+    "port": 43180,
+    "entry": "/",
+    "secret": "JWT_SECRET",
+    "services": [
+      {
+        "dir": "backend",
+        "kind": "node",
+        "entry": "server.js",
+        "port": 43181
+      },
+      {
+        "dir": "frontend",
+        "kind": "vite",
+        "port": 43180
+      }
+    ]
+  },
+  {
+    "id": "contract-negotiation",
+    "name": "Contract negotiation",
+    "sourceProject": "AIContractNegotiationAssistant",
+    "description": "Contract negotiation source reference; unique workflows merged into the shared workspace.",
+    "kind": "specialty",
+    "port": 43190,
+    "entry": "/",
+    "secret": "JWT_SECRET",
+    "services": [
+      {
+        "dir": "backend",
+        "kind": "node",
+        "entry": "src/index.js",
+        "port": 43191
+      },
+      {
+        "dir": "frontend",
+        "kind": "vite",
+        "port": 43190
+      }
+    ]
+  },
+  {
+    "id": "contract-lifecycle",
+    "name": "Contract lifecycle",
+    "sourceProject": "AIContractLifecycleManager",
+    "description": "Contract lifecycle source reference; unique workflows merged into the shared workspace.",
+    "kind": "specialty",
+    "port": 43200,
+    "entry": "/",
+    "secret": "JWT_SECRET",
+    "services": [
+      {
+        "dir": "backend",
+        "kind": "node",
+        "entry": "server.js",
+        "port": 43201
+      },
+      {
+        "dir": "frontend",
+        "kind": "cra",
+        "port": 43200
+      }
+    ]
+  }
+]

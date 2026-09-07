@@ -1,0 +1,37 @@
+ Files Created:
+
+  | File                        | Purpose                                        |
+  |-----------------------------|------------------------------------------------|
+  | Dockerfile                  | Multi-stage build for production               |
+  | docker-entrypoint.sh        | Startup script (waits for DB, runs migrations) |
+  | nginx/getfirmflow.conf      | Nginx reverse proxy config with SSL            |
+  | .dockerignore               | Excludes unnecessary files from build          |
+  | src/app/api/health/route.ts | Health check endpoint                          |
+  | DEPLOYMENT.md               | Deployment guide                               |
+
+  Quick Start:
+
+  # Build the image
+  docker build -t getfirmflow:latest .
+
+  # Run the container
+  docker run -d \
+    --name getfirmflow \
+    -p 3000:3000 \
+    -e DATABASE_URL="postgresql://user:pass@host:5432/getfirmflow" \
+    -e NEXTAUTH_SECRET="your-secret" \
+    -e NEXTAUTH_URL="https://getfirmflow.com" \
+    -e OPENAI_API_KEY="your-key" \
+    getfirmflow:latest
+
+  Nginx Setup:
+
+  # Copy config
+  sudo cp nginx/getfirmflow.conf /etc/nginx/sites-available/
+  sudo ln -s /etc/nginx/sites-available/getfirmflow.conf /etc/nginx/sites-enabled/
+
+  # Get SSL cert
+  sudo certbot certonly --nginx -d getfirmflow.com -d www.getfirmflow.com
+
+  # Reload nginx
+  sudo nginx -t && sudo systemctl reload nginx

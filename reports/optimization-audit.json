@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-09-07T13:37:16.784Z",
+  "modules": [
+    {
+      "id": "family-law",
+      "sourceProject": "AIDivorceFamilyLawNavigator",
+      "sourceCommit": "9325a6f68931fad4420e67fb433b4dc0bf146d5b",
+      "unchanged": 81,
+      "modified": 8,
+      "missing": 0
+    },
+    {
+      "id": "estate-planning",
+      "sourceProject": "AIEstatePlanningDigitalLegacy",
+      "sourceCommit": "e52fb95677833db94af04733423841a81e43830c",
+      "unchanged": 50,
+      "modified": 4,
+      "missing": 0
+    },
+    {
+      "id": "immigration",
+      "sourceProject": "AIImmigrationCaseManager",
+      "sourceCommit": "62526d56992da1e504c7d1eee4c1a2840272a5ab",
+      "unchanged": 82,
+      "modified": 13,
+      "missing": 0
+    },
+    {
+      "id": "practice-management",
+      "sourceProject": "smallLawFirm",
+      "sourceCommit": "404b6a22154ca22edfd607e29d31f6c20d0d11d0",
+      "unchanged": 154,
+      "modified": 11,
+      "missing": 0
+    },
+    {
+      "id": "salesforce",
+      "sourceProject": "smallLawFirm_salesforce",
+      "sourceCommit": "c614e89392536c371898d9a913df1d0deb100660",
+      "unchanged": 227,
+      "modified": 9,
+      "missing": 0
+    },
+    {
+      "id": "small-claims",
+      "sourceProject": "AISmallClaimsCourtGuide",
+      "sourceCommit": "17bfb4e3a8af8b7fef3ee56e144f579605eb0ee3",
+      "unchanged": 66,
+      "modified": 15,
+      "missing": 0
+    },
+    {
+      "id": "legal-documents",
+      "sourceProject": "legalForms",
+      "sourceCommit": "5b8c0fef81676d1fb42bdd8b380cd71af38725e9",
+      "unchanged": 615,
+      "modified": 33,
+      "missing": 0
+    },
+    {
+      "id": "tenant-rights",
+      "sourceProject": "AITenantRightsAdvisor",
+      "sourceCommit": "56e5617b0913c24dbe279432737036b6f867b0b9",
+      "unchanged": 95,
+      "modified": 0,
+      "missing": 0
+    },
+    {
+      "id": "contract-negotiation",
+      "sourceProject": "AIContractNegotiationAssistant",
+      "sourceCommit": "e85895cbfe5d2e0fdfc737b5449981d4668e25e3",
+      "unchanged": 164,
+      "modified": 0,
+      "missing": 0
+    },
+    {
+      "id": "contract-lifecycle",
+      "sourceProject": "AIContractLifecycleManager",
+      "sourceCommit": "b0e7f61ce578c66536a631e5f8b6eacc75126bb4",
+      "unchanged": 106,
+      "modified": 0,
+      "missing": 0
+    }
+  ],
+  "featureCount": 139,
+  "mergedSourceEntries": 581,
+  "featuresCombiningSources": 110,
+  "sharedAICalls": 111,
+  "sharedAIFiles": 88,
+  "routeDeclarations": 586,
+  "unresolvedCatalogDestinations": [],
+  "exactDuplicateGroups": [
+    [
+      "apps/practice-management/src/app/(dashboard)/gap/malpractice-insurance/page.tsx",
+      "apps/salesforce/src/app/(dashboard)/gap/malpractice-insurance/page.tsx"
+    ],
+    [
+      "apps/practice-management/src/components/GapFeaturePage.tsx",
+      "apps/salesforce/src/components/GapFeaturePage.tsx"
+    ],
+    [
+      "apps/practice-management/src/components/ui/label.tsx",
+      "apps/salesforce/src/components/ui/label.tsx"
+    ],
+    [
+      "apps/small-claims/backend/middleware/auth.js",
+      "apps/tenant-rights/backend/middleware/auth.js"
+    ],
+    [
+      "apps/small-claims/frontend/src/api.js",
+      "apps/tenant-rights/frontend/src/api.js"
+    ]
+  ]
+}

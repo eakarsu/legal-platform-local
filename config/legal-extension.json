@@ -1,0 +1,354 @@
+{
+  "features": [
+    {
+      "group": "Tenant rights",
+      "id": "tenancies",
+      "title": "Tenancies & leases",
+      "fields": "property_address landlord_name tenant_name lease_start_date lease_end_date monthly_rent_amount deposit_amount jurisdiction lease_text",
+      "ai": false,
+      "mode": "records"
+    },
+    {
+      "group": "Tenant rights",
+      "id": "tenant-notices",
+      "title": "Tenant notices",
+      "fields": "tenancy_id notice_type recipient notice_date response_date delivery_method facts source_text",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Tenant rights",
+      "id": "eviction-defense",
+      "title": "Eviction defense preparation",
+      "fields": "tenancy_id court jurisdiction notice_date hearing_date defense_facts evidence_details source_text",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Tenant rights",
+      "id": "rent-review",
+      "title": "Rent increase review",
+      "fields": "tenancy_id current_rent_amount proposed_rent_amount notice_date effective_date jurisdiction source_text",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Tenant rights",
+      "id": "repair-issues",
+      "title": "Repairs & habitability issues",
+      "fields": "tenancy_id issue_type reported_date response_date severity issue_details evidence_details resolution_details",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Tenant rights",
+      "id": "legal-resources",
+      "title": "Legal aid & tenant resources",
+      "fields": "organization service_type jurisdiction email phone website eligibility_details verified_date",
+      "ai": false,
+      "mode": "records"
+    },
+    {
+      "group": "Tenant rights",
+      "id": "tenant-advisor",
+      "title": "Tenant rights questions",
+      "fields": "tenancy_id question jurisdiction facts source_text",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Tenant rights",
+      "id": "legal-referrals",
+      "title": "Legal expert referral requests",
+      "fields": "organization contact_name question consent_details requested_date",
+      "ai": false,
+      "mode": "integration"
+    },
+    {
+      "group": "Contracts",
+      "id": "contracts",
+      "title": "Contracts",
+      "fields": "contract_type party_a party_b value currency start_date end_date jurisdiction contract_text",
+      "ai": false,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "clauses",
+      "title": "Clause library",
+      "fields": "contract_id clause_type content plain_language fallback_text section_number",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "obligations",
+      "title": "Contract obligations",
+      "fields": "contract_id obligated_party obligation_type due_date frequency priority content evidence_details",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "contract-approvals",
+      "title": "Contract approval reviews",
+      "fields": "contract_id approver_name approver_email approval_type decision decision_date comments",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "amendments",
+      "title": "Contract amendments",
+      "fields": "contract_id amendment_type effective_date requested_by amendment_text impact_details",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "renewals",
+      "title": "Contract renewals",
+      "fields": "contract_id renewal_type notice_date new_start_date new_end_date new_value terms_changed market_details",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "contract-milestones",
+      "title": "Contract milestones",
+      "fields": "contract_id milestone_type due_date completed_date payment_amount responsible_party evidence_details",
+      "ai": false,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "negotiations",
+      "title": "Negotiation rounds & simulations",
+      "fields": "contract_id counterparty round_number our_position their_position discussion_text desired_outcome",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "redlines",
+      "title": "Redlines & version comparison",
+      "fields": "contract_id version_a version_b original_text proposed_text rationale",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "contract-benchmarks",
+      "title": "Standard terms & market comparison",
+      "fields": "contract_id clause_text standard_terms market_source_text comparison_focus",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "plain-language",
+      "title": "Plain-language explanations",
+      "fields": "contract_id source_text audience questions",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "negotiation-playbooks",
+      "title": "Negotiation playbooks & fallback matrix",
+      "fields": "contract_id clause_type preferred_terms fallback_terms walkaway_terms approval_owner",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "contract-advisor",
+      "title": "Contract questions",
+      "fields": "contract_id question context source_text",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "lease-analysis",
+      "title": "Lease analysis",
+      "fields": "contract_id tenancy_id lease_text jurisdiction analysis_focus",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "deal-rooms",
+      "title": "Deal room & diligence records",
+      "fields": "contract_id room_name participants diligence_checklist document_references access_plan",
+      "ai": false,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "regulatory-impact",
+      "title": "Regulatory change assessments",
+      "fields": "contract_id jurisdiction regulation change_date source_text affected_terms action_details",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "contract-pricing",
+      "title": "Contract pricing scenarios",
+      "fields": "contract_id current_amount proposed_amount currency market_source_text pricing_goals",
+      "ai": true,
+      "mode": "records"
+    },
+    {
+      "group": "Contracts",
+      "id": "negotiation-sentiment",
+      "title": "Negotiation communication analysis",
+      "fields": "contract_id communication_text relationship_context review_focus",
+      "ai": true,
+      "mode": "records"
+    }
+  ],
+  "aliases": {
+    "tenant-rights": {
+      "tenancies/new": "tenancies",
+      "tenancies/:id": "tenancies",
+      "tenancies/:id/lease-analyzer": "lease-analysis",
+      "tenancies/:id/notice": "tenant-notices",
+      "tenancies/:id/eviction-defense": "eviction-defense",
+      "tenancies/:id/rent-check": "rent-review",
+      "tenancies/:id/mediation": "tenancies",
+      "tenancies/:id/issues": "repair-issues",
+      "local-law-lookup": "research",
+      "negotiation-simulator": "negotiations",
+      "document-assembly": "drafting",
+      "legal-resource-directory": "legal-resources",
+      "legal-expert-chat": "legal-referrals",
+      "cf-local-law-adaptation-customizing-advice-by-state-city": "research",
+      "cf-case-outcome-prediction-estimating-eviction-defense-success-probability": "eviction-defense",
+      "cf-resource-directory-linking-to-legal-aid-tenant-unions": "legal-resources",
+      "cf-negotiation-simulation-with-ai-role-play-for-mediation-practice": "mediation",
+      "cf-document-assembly-auto-filling-forms-with-tenant-data": "drafting",
+      "gap-no-local-law-variation-adaptation-engine": "research",
+      "gap-no-conversational-tenant-rights-chatbot-beyond-core-ai-endpoints": "tenant-advisor",
+      "gap-no-local-legal-resource-database-legal-aid-tenant": "legal-resources",
+      "gap-no-integration-with-local-statutes-rent-control-habitability": "research",
+      "gap-no-form-completion-helpers-interactive-interview": "intake-forms",
+      "gap-no-chat-with-legal-expert-escalation": "legal-referrals",
+      "gap-no-integrations-module": "connections",
+      "gap-no-multi-language-support-routes": "translation"
+    },
+    "contract-negotiation": {
+      "contracts": "contracts",
+      "contracts/:id": "contracts",
+      "clauses": "clauses",
+      "clauses/:id": "clauses",
+      "parties": "contacts",
+      "parties/:id": "contacts",
+      "negotiations": "negotiations",
+      "negotiations/:id": "negotiations",
+      "risks": "contract-review",
+      "risks/:id": "contract-review",
+      "compliance": "compliance",
+      "compliance/:id": "compliance",
+      "redlines": "redlines",
+      "redlines/:id": "redlines",
+      "approvals": "contract-approvals",
+      "approvals/:id": "contract-approvals",
+      "chat": "contract-advisor",
+      "ai-tools/risk-clause-highlighter": "contract-review",
+      "ai-tools/risk-clause-highlighter/:id": "contract-review",
+      "ai-tools/standard-terms-comparer": "contract-benchmarks",
+      "ai-tools/standard-terms-comparer/:id": "contract-benchmarks",
+      "ai-tools/plain-language-translator": "plain-language",
+      "ai-tools/plain-language-translator/:id": "plain-language",
+      "ai-tools/precedent-finder": "research",
+      "ai-tools/precedent-finder/:id": "research",
+      "ai-tools/nda-generator": "drafting",
+      "ai-tools/nda-generator/:id": "drafting",
+      "ai-tools/terms-of-service-builder": "drafting",
+      "ai-tools/terms-of-service-builder/:id": "drafting",
+      "ai-tools/lease-analyzer": "lease-analysis",
+      "ai-tools/lease-analyzer/:id": "lease-analysis",
+      "ai-tools/compliance-audit-agents": "compliance",
+      "ai-tools/highlight-risks": "contract-review",
+      "ai-tools/standard-terms-compare": "contract-benchmarks",
+      "ai-tools/rank-risk-clauses": "contract-review",
+      "ai-tools/suggest-redline-counter": "redlines",
+      "ai-tools/chat-about-contract": "contract-advisor",
+      "fallback-clause-matrix": "negotiation-playbooks",
+      "cf/agentic-negotiation-modeling": "negotiations",
+      "cf/regulatory-change-alerting": "regulatory-impact",
+      "cf/benchmarking-against-market": "contract-benchmarks",
+      "cf/negotiation-playbook-generation": "negotiation-playbooks",
+      "cf/precedent-analysis-at-scale": "research",
+      "gap/all-specialized-analyzers-leaseanalyzer-plainlanguagetransla": "lease-analysis",
+      "gap/no-git-style-version-control-or-track-changes-ui-integration": "redlines",
+      "gap/no-integration-with-legal-research-apis-westlaw-lexisnexis": "research",
+      "gap/no-deal-room-data-room-management-for-due-diligence": "deal-rooms",
+      "draft-from-scratch": "drafting",
+      "redteam-simulator": "negotiations",
+      "historical-analytics": "reports",
+      "clause-conflict-detector": "contract-review",
+      "regulatory-monitor": "regulatory-impact",
+      "sentiment-analysis": "negotiation-sentiment",
+      "pricing-recommender": "contract-pricing",
+      "auto-redline-engine": "redlines"
+    },
+    "contract-lifecycle": {
+      "contracts": "contracts",
+      "clauses": "clauses",
+      "parties": "contacts",
+      "obligations": "obligations",
+      "approvals": "contract-approvals",
+      "amendments": "amendments",
+      "renewals": "renewals",
+      "risks": "contract-review",
+      "compliance": "compliance",
+      "milestones": "contract-milestones",
+      "ai-chat": "contract-advisor",
+      "ai-ediscovery": "discovery",
+      "obligation-evidence-room": "evidence",
+      "platform-ops": "connections",
+      "cf/agentic-contract-negotiation": "negotiations",
+      "cf/predictive-renewal": "renewals",
+      "cf/regulatory-change-impact": "regulatory-impact",
+      "cf/portfolio-analytics": "reports",
+      "cf/variant-generation-for-negotiation": "negotiation-playbooks",
+      "gap/amendments-lacks-analyze-amendment-impact": "amendments",
+      "gap/renewals-lacks-predict-renewal-success-or-predict-renewal-te": "renewals",
+      "gap/approvals-lacks-predict-approval-likelihood": "contract-approvals",
+      "gap/parties-lacks-counterparty-risk-scoring": "opponent-analysis",
+      "gap/limited-third-party-integrations-no-docusign-slack-hubspot-o": "connections",
+      "gap/no-automated-renewal-reminder-or-auto-escalation-workflow": "renewals",
+      "gap/no-analytics-dashboard-contract-spend-risk-heatmap-cycle-tim": "reports",
+      "gap/no-variant-playbook-management-alternative-template-sequence": "negotiation-playbooks",
+      "auto-redline": "redlines",
+      "clause-library/search": "clauses",
+      "amendment-impact": "amendments",
+      "negotiation-simulator": "negotiations",
+      "renewal-generator": "renewals",
+      "compliance-drift": "regulatory-impact",
+      "party-intelligence": "opponent-analysis",
+      "obligation-extractor": "obligations",
+      "renewal-advisor": "renewals",
+      "contract-health": "contract-review",
+      "predict-renewal-success": "renewals",
+      "predict-approval-likelihood": "contract-approvals",
+      "analyze-relevance": "discovery",
+      "check-privilege": "discovery",
+      "extract-timeline": "calendar"
+    }
+  },
+  "ignored": {
+    "contract-negotiation": {
+      "profile": "Personal profile belongs to shared Settings; separate source login/account data is not migrated.",
+      "ai-tools/custom": "Container; all eight tools are mapped individually from AICustomTools.tsx."
+    },
+    "contract-lifecycle": {
+      "ai-custom": "Container; seven tools mapped individually.",
+      "ai-advanced": "Container; five tools mapped individually.",
+      "settings": "Source settings container; shared Settings configures the native workspace."
+    }
+  }
+}

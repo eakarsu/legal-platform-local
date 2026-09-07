@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title !== 'undefined' ? title : 'Legal Forms Generator - Professional AI-Powered Legal Documents' %></title>
+    <meta name="description" content="<%= typeof description !== 'undefined' ? description : 'Generate professional legal documents quickly and accurately using AI-powered templates. Business formation, real estate, family law, and more.' %>">
+    <meta name="keywords" content="<%= typeof keywords !== 'undefined' ? keywords : 'legal forms, legal documents, AI legal assistant, business formation, real estate contracts, family law' %>">
+    <meta name="author" content="LegalPracticeAI">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="<%= typeof canonical !== 'undefined' ? canonical : 'https://legalpracticeai.com' + (typeof req !== 'undefined' ? req.path : '') %>">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= typeof canonical !== 'undefined' ? canonical : 'https://legalpracticeai.com' + (typeof req !== 'undefined' ? req.path : '') %>">
+    <meta property="og:title" content="<%= typeof title !== 'undefined' ? title : 'Legal Forms Generator - Professional AI-Powered Legal Documents' %>">
+    <meta property="og:description" content="<%= typeof description !== 'undefined' ? description : 'Generate professional legal documents quickly and accurately using AI-powered templates. Business formation, real estate, family law, and more.' %>">
+    <meta property="og:image" content="https://legalpracticeai.com/images/og-image.jpg">
+    <meta property="og:site_name" content="LegalPracticeAI">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<%= typeof canonical !== 'undefined' ? canonical : 'https://legalpracticeai.com' + (typeof req !== 'undefined' ? req.path : '') %>">
+    <meta property="twitter:title" content="<%= typeof title !== 'undefined' ? title : 'Legal Forms Generator - Professional AI-Powered Legal Documents' %>">
+    <meta property="twitter:description" content="<%= typeof description !== 'undefined' ? description : 'Generate professional legal documents quickly and accurately using AI-powered templates. Business formation, real estate, family law, and more.' %>">
+    <meta property="twitter:image" content="https://legalpracticeai.com/images/twitter-image.jpg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="/css/enhanced-features.css" rel="stylesheet">
+    <!-- Mobile CSS -->
+    <link href="/css/mobile.css" rel="stylesheet">
+
+    <!-- PWA Theme Color for Mobile -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="LegalPracticeAI">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LegalPracticeAI",
+      "url": "https://legalpracticeai.com",
+      "logo": "https://legalpracticeai.com/images/logo.png",
+      "description": "Professional AI-powered legal document generation platform",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+804-360-1129",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://twitter.com/legalpracticeai",
+        "https://linkedin.com/company/legalpracticeai"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1247"
+      }
+    }
+    </script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <% if (typeof structuredData !== 'undefined') { %>
+    <script type="application/ld+json">
+    <%- JSON.stringify(structuredData) %>
+    </script>
+    <% } %>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <div class="brand-icon me-2">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <span class="brand-text">LegalPractice<span class="text-primary">AI</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form-types">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <%- body %>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="brand-icon me-2 text-white">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <span class="brand-text text-white">LegalPractice<span class="text-primary">AI</span></span>
+                    </div>
+                    <p class="text-muted">Professional legal document generation powered by advanced AI technology. Trusted by legal professionals worldwide.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-muted me-3"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/form/business_formation" class="text-muted">Business Formation</a></li>
+                        <li><a href="/form/real_estate" class="text-muted">Real Estate</a></li>
+                        <li><a href="/form/family_law" class="text-muted">Family Law</a></li>
+                        <li><a href="/form/estate_planning" class="text-muted">Estate Planning</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-white mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/privacy" class="text-muted">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-muted">Terms of Service</a></li>
+                        <li><a href="/disclaimer" class="text-muted">Disclaimer</a></li>
+                        <li><a href="/cookies" class="text-muted">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="text-white mb-3">Important Legal Disclaimer</h6>
+                    <p class="text-muted small">
+                        This tool generates legal document templates for informational purposes only. 
+                        All generated documents should be reviewed by a qualified attorney before use. 
+                        Laws vary by jurisdiction, and professional legal advice is recommended for all legal matters.
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted small mb-0">&copy; 2024 LegalPracticeAI. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted small mb-0">Powered by OpenRouter AI</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <%- include('partials/mobile-nav') %>
+
+    <!-- PWA Install Banner -->
+    <div id="pwa-install-banner" class="pwa-install-banner" style="display: none;">
+        <div class="pwa-install-content">
+            <div class="pwa-install-icon">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="pwa-install-text">
+                <strong>Install LegalPracticeAI</strong>
+                <span>Add to home screen for the best experience</span>
+            </div>
+            <button class="btn btn-sm btn-primary" onclick="installPWA()">Install</button>
+            <button class="btn btn-sm btn-link" onclick="this.parentElement.parentElement.style.display='none'">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <style>
+    .pwa-install-banner {
+        position: fixed;
+        bottom: 80px;
+        left: 16px;
+        right: 16px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        z-index: 1040;
+        padding: 12px 16px;
+    }
+    .pwa-install-content {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .pwa-install-icon {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.25rem;
+        flex-shrink: 0;
+    }
+    .pwa-install-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.875rem;
+    }
+    .pwa-install-text span {
+        color: #6c757d;
+        font-size: 0.75rem;
+    }
+    @media (min-width: 992px) {
+        .pwa-install-banner {
+            display: none !important;
+        }
+    }
+    </style>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Mobile JavaScript -->
+    <script src="/js/mobile.js"></script>
+
+    <!-- Custom Scripts -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <% if (typeof scripts !== 'undefined') { %>
+        <%- scripts %>
+    <% } %>
+</body>
+</html>

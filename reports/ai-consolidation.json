@@ -1,0 +1,531 @@
+[
+  {
+    "path": "apps/legal-documents/server.js",
+    "fetchCalls": 0,
+    "axiosCalls": 8,
+    "sharedModule": "../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/salesforce/src/app/api/firm-website-gen/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/salesforce/src/app/api/gap-vision-doc-classify/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/salesforce/src/app/api/gap-multilang-intake/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/salesforce/src/app/api/gap-calendar-timesheet/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/salesforce/src/app/api/ai/conversational-case-companion/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/salesforce/src/app/api/ai/intake-chatbot-flow/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/salesforce/src/app/api/ai/matter-outcome-predict/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/salesforce/src/app/api/ai/agentic-case-prep/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/family-law/server/config/openrouter.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/family-law/server/routes/assetValuation.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/family-law/server/routes/aiNew.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/family-law/server/routes/stateGuidance.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/family-law/server/routes/coparenting.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/family-law/server/routes/settlementOptimize.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/family-law/server/routes/custodyOutcome.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/lib/aiTemplateEngine.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_real_time_courtroom_transcription_agent.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/contract-analysis.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-calendar.js",
+    "fetchCalls": 0,
+    "axiosCalls": 2,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-communications.js",
+    "fetchCalls": 0,
+    "axiosCalls": 2,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-matter-outcome.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_webhooks_for_billing_e_signature.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-transcription.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_e_discovery_review_workflow.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_multi_tenant_law_firm_isolation.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_deposition_discovery_summarizer.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-ediscovery.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-intake-builder.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_pacer_state_court_filing_integration.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-billing.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-drafting.js",
+    "fetchCalls": 0,
+    "axiosCalls": 4,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/voice-notes.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_ai_routes_exist_but_logic_depth.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-conflicts.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_matter_outcome_forecasting_with_explainability.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_ai_routes_intermingled_with_domain_routes.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-predictions.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_fee_prediction_model_with_confidence.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/citation-finder.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/nlp.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/portal-ai.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_e_discovery_vector_search.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_structured_intake_forms_with_conditional.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/ai-intake.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/document-summary.js",
+    "fetchCalls": 0,
+    "axiosCalls": 1,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/legal-documents/routes/gap_no_audit_grade_matter_history_export.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/estate-planning/backend/routes/batch03Gaps.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/estate-planning/backend/services/openrouter.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/gap-conflict-checker/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/gap-billing-intelligence/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/gap-legal-research/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/ai/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/gap-contract-drafting/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/gap-deadline-predictor/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/ai/legal-research-rag/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/ai/document-assembly/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/ai/billing-optimize/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/ai/contract-assistant/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/practice-management/src/app/api/ai/deadline-flag/route.ts",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/ai.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-statute-of-limitations-checker.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/cases.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-efiling-integration-tyler-efiletexas.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-settlementcalculator-casevalue-estimator.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-witnessstatementguide.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-courtprocedurechecklist-perjurisdiction.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-evidenceorganizer.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-appealassessment.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-fee-schedule-lookup-filing-fees-by-court.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-payment-processing-for-court-fees.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-notificationscalendar-reminders.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-legal-citation-library.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-case-tracking-beyond-crud-no-hearing-remi.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/small-claims/backend/routes/gap-no-audit-log-rbac.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/routes/gap-limited-notifications-module-0-explicit-.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/routes/gap-no-visa-category-recommendation-engine.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/routes/gap-no-e-signature-integration.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/routes/gap-no-document-vault-with-field-level.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/routes/gap-limited-uscis-integration-only-stubs-in.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/routes/gap-no-interview-preparation-ai.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/routes/gap-no-rfe-auto-response-drafter.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/routes/gap-no-client-portal-status-tracking-documen.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/routes/gap-no-webhook-surface-for-case-event.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/routes/gap-no-multilingual-translation-routing.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/src/routes/ai.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/immigration/backend/src/services/openrouter.js",
+    "fetchCalls": 1,
+    "axiosCalls": 0,
+    "sharedModule": "../../../../../packages/ai-client/index.cjs"
+  },
+  {
+    "path": "apps/salesforce/src/lib/ai.ts",
+    "fetchCalls": 0,
+    "axiosCalls": 0,
+    "sdkCalls": 12,
+    "sharedModule": "../../../../packages/ai-client/index.cjs"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "featuresVisited": 139,
+  "editableTables": 137,
+  "minimumRows": 15,
+  "crud": true,
+  "persistence": true,
+  "sharedClientSelector": true,
+  "sharedContractRenewal": true,
+  "tenancySelector": true,
+  "draftHistory": true,
+  "attachments": true,
+  "mobileNavigation": true,
+  "pageErrors": [],
+  "verifiedAt": "2026-09-07T13:36:48.921Z"
+}

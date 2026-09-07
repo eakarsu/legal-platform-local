@@ -1,0 +1,3456 @@
+[
+  {
+    "module": "family-law",
+    "source": "apps/family-law/client/src/App.jsx",
+    "name": "features",
+    "entries": [
+      {
+        "path": "documents",
+        "endpoint": "documents",
+        "title": "Document Analyzer",
+        "icon": "FileSearch",
+        "fields": [
+          "title",
+          "document_type",
+          "description",
+          "content",
+          "parties",
+          "status"
+        ]
+      },
+      {
+        "path": "assets",
+        "endpoint": "assets",
+        "title": "Asset Division Calculator",
+        "icon": "PieChart",
+        "fields": [
+          "name",
+          "asset_type",
+          "estimated_value",
+          "ownership",
+          "acquisition_date",
+          "description",
+          "notes"
+        ]
+      },
+      {
+        "path": "custody",
+        "endpoint": "custody",
+        "title": "Child Custody Advisor",
+        "icon": "Users",
+        "fields": [
+          "child_name",
+          "child_age",
+          "current_arrangement",
+          "desired_arrangement",
+          "special_needs",
+          "parent_situation",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "alimony",
+        "endpoint": "alimony",
+        "title": "Alimony Estimator",
+        "icon": "DollarSign",
+        "fields": [
+          "title",
+          "requesting_income",
+          "paying_income",
+          "marriage_duration",
+          "standard_of_living",
+          "health_conditions",
+          "employment_status",
+          "state",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "document-gen",
+        "endpoint": "document-gen",
+        "title": "Document Generator",
+        "icon": "FileText",
+        "fields": [
+          "title",
+          "document_type",
+          "party1_name",
+          "party2_name",
+          "jurisdiction",
+          "key_terms",
+          "special_provisions",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "mediation",
+        "endpoint": "mediation",
+        "title": "Mediation Assistant",
+        "icon": "MessageCircle",
+        "fields": [
+          "topic",
+          "dispute_type",
+          "party1_position",
+          "party2_position",
+          "previous_attempts",
+          "key_concerns",
+          "desired_outcome",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "filing",
+        "endpoint": "filing",
+        "title": "Court Filing Guide",
+        "icon": "Gavel",
+        "fields": [
+          "title",
+          "filing_type",
+          "jurisdiction",
+          "case_type",
+          "description",
+          "urgency",
+          "filing_date",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "financial",
+        "endpoint": "financial",
+        "title": "Financial Disclosure",
+        "icon": "BarChart3",
+        "fields": [
+          "title",
+          "disclosure_type",
+          "annual_income",
+          "monthly_expenses",
+          "total_assets",
+          "total_debts",
+          "employment_type",
+          "description",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "parenting",
+        "endpoint": "parenting",
+        "title": "Parenting Plan Creator",
+        "icon": "Heart",
+        "fields": [
+          "title",
+          "children_details",
+          "schedule_type",
+          "holiday_plan",
+          "communication_method",
+          "special_considerations",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "property",
+        "endpoint": "property",
+        "title": "Property Valuation",
+        "icon": "Home",
+        "fields": [
+          "property_name",
+          "property_type",
+          "address",
+          "estimated_value",
+          "mortgage_balance",
+          "ownership_type",
+          "acquisition_date",
+          "description",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "rights",
+        "endpoint": "rights",
+        "title": "Legal Rights Advisor",
+        "icon": "Scale",
+        "fields": [
+          "title",
+          "category",
+          "state",
+          "description",
+          "situation",
+          "notes"
+        ]
+      },
+      {
+        "path": "settlement",
+        "endpoint": "settlement",
+        "title": "Settlement Builder",
+        "icon": "Handshake",
+        "fields": [
+          "title",
+          "agreement_type",
+          "party1_name",
+          "party2_name",
+          "key_terms",
+          "asset_division",
+          "support_terms",
+          "custody_terms",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "child-support",
+        "endpoint": "child-support",
+        "title": "Child Support Calculator",
+        "icon": "Calculator",
+        "fields": [
+          "title",
+          "custodial_income",
+          "non_custodial_income",
+          "num_children",
+          "children_ages",
+          "custody_arrangement",
+          "healthcare_costs",
+          "childcare_costs",
+          "state",
+          "special_needs",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "timeline",
+        "endpoint": "timeline",
+        "title": "Divorce Timeline",
+        "icon": "Calendar",
+        "fields": [
+          "title",
+          "divorce_type",
+          "state",
+          "filing_date",
+          "is_contested",
+          "has_children",
+          "has_property",
+          "current_phase",
+          "notes",
+          "status"
+        ]
+      },
+      {
+        "path": "glossary",
+        "endpoint": "glossary",
+        "title": "Legal Glossary",
+        "icon": "BookOpen",
+        "fields": [
+          "term",
+          "category",
+          "definition",
+          "context"
+        ]
+      }
+    ]
+  },
+  {
+    "module": "estate-planning",
+    "source": "apps/estate-planning/frontend/src/App.js",
+    "name": "features",
+    "entries": [
+      {
+        "key": "wills",
+        "path": "/wills",
+        "label": "Will Drafting",
+        "icon": "📜",
+        "color": "var(--accent)",
+        "api": "/wills",
+        "ai": true,
+        "columns": [
+          "title",
+          "testator_name",
+          "status",
+          "executor_name"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "testator_name",
+            "label": "Testator Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "executor_name",
+            "label": "Executor Name",
+            "type": "text"
+          },
+          {
+            "name": "witness_1",
+            "label": "Witness 1",
+            "type": "text"
+          },
+          {
+            "name": "witness_2",
+            "label": "Witness 2",
+            "type": "text"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "draft",
+              "active",
+              "review",
+              "archived"
+            ]
+          },
+          {
+            "name": "content",
+            "label": "Content",
+            "type": "textarea"
+          }
+        ],
+        "aiAction": "will-draft",
+        "aiLabel": "AI Draft Will",
+        "aiFields": [
+          "title",
+          "testator_name",
+          "executor_name",
+          "content"
+        ]
+      },
+      {
+        "key": "digital-assets",
+        "path": "/digital-assets",
+        "label": "Digital Assets",
+        "icon": "💎",
+        "color": "var(--purple)",
+        "api": "/digital-assets",
+        "ai": true,
+        "columns": [
+          "asset_name",
+          "asset_type",
+          "platform",
+          "value_estimate",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "asset_name",
+            "label": "Asset Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "asset_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "cryptocurrency",
+              "digital_collectible",
+              "subscription",
+              "email_account",
+              "cloud_storage",
+              "code_repository",
+              "domain",
+              "social_media",
+              "cloud_service",
+              "investment",
+              "payment"
+            ],
+            "required": true
+          },
+          {
+            "name": "platform",
+            "label": "Platform",
+            "type": "text"
+          },
+          {
+            "name": "value_estimate",
+            "label": "Estimated Value ($)",
+            "type": "number"
+          },
+          {
+            "name": "access_info",
+            "label": "Access Information",
+            "type": "text"
+          },
+          {
+            "name": "beneficiary",
+            "label": "Beneficiary",
+            "type": "text"
+          },
+          {
+            "name": "notes",
+            "label": "Notes",
+            "type": "textarea"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "active",
+              "inactive",
+              "archived"
+            ]
+          }
+        ],
+        "aiAction": "analyze-assets",
+        "aiLabel": "AI Analyze Portfolio",
+        "aiGlobal": true
+      },
+      {
+        "key": "beneficiaries",
+        "path": "/beneficiaries",
+        "label": "Beneficiaries",
+        "icon": "👥",
+        "color": "var(--success)",
+        "api": "/beneficiaries",
+        "columns": [
+          "full_name",
+          "relationship",
+          "email",
+          "share_percentage",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "full_name",
+            "label": "Full Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "relationship",
+            "label": "Relationship",
+            "type": "text"
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email"
+          },
+          {
+            "name": "phone",
+            "label": "Phone",
+            "type": "text"
+          },
+          {
+            "name": "address",
+            "label": "Address",
+            "type": "textarea"
+          },
+          {
+            "name": "share_percentage",
+            "label": "Share %",
+            "type": "number"
+          },
+          {
+            "name": "notes",
+            "label": "Notes",
+            "type": "textarea"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "active",
+              "inactive"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "notifications",
+        "path": "/notifications",
+        "label": "Notifications",
+        "icon": "🔔",
+        "color": "var(--warning)",
+        "api": "/notifications",
+        "columns": [
+          "subject",
+          "notification_type",
+          "trigger_event",
+          "status",
+          "scheduled_date"
+        ],
+        "fields": [
+          {
+            "name": "notification_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "email",
+              "sms"
+            ],
+            "required": true
+          },
+          {
+            "name": "subject",
+            "label": "Subject",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "message",
+            "label": "Message",
+            "type": "textarea"
+          },
+          {
+            "name": "trigger_event",
+            "label": "Trigger Event",
+            "type": "select",
+            "options": [
+              "plan_update",
+              "annual_review",
+              "document_expiry",
+              "beneficiary_change",
+              "signing_reminder",
+              "valuation_update",
+              "document_ready",
+              "policy_renewal",
+              "contact_verify",
+              "asset_alert",
+              "directive_review",
+              "executor_notify",
+              "message_scheduled",
+              "tax_document",
+              "milestone"
+            ]
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "pending",
+              "sent",
+              "failed"
+            ]
+          },
+          {
+            "name": "scheduled_date",
+            "label": "Scheduled Date",
+            "type": "date"
+          }
+        ]
+      },
+      {
+        "key": "documents",
+        "path": "/documents",
+        "label": "Document Vault",
+        "icon": "🔒",
+        "color": "var(--cyan)",
+        "api": "/documents",
+        "columns": [
+          "title",
+          "document_type",
+          "file_size",
+          "is_encrypted",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "document_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "will",
+              "trust",
+              "poa",
+              "directive",
+              "insurance",
+              "deed",
+              "identity",
+              "tax",
+              "business",
+              "title",
+              "beneficiary",
+              "legal",
+              "financial"
+            ],
+            "required": true
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "textarea"
+          },
+          {
+            "name": "file_path",
+            "label": "File Path",
+            "type": "text"
+          },
+          {
+            "name": "file_size",
+            "label": "File Size",
+            "type": "text"
+          },
+          {
+            "name": "is_encrypted",
+            "label": "Encrypted",
+            "type": "select",
+            "options": [
+              "true",
+              "false"
+            ]
+          },
+          {
+            "name": "tags",
+            "label": "Tags (comma-separated)",
+            "type": "text"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "active",
+              "archived"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "power-of-attorney",
+        "path": "/power-of-attorney",
+        "label": "Power of Attorney",
+        "icon": "⚖️",
+        "color": "var(--orange)",
+        "api": "/power-of-attorney",
+        "ai": true,
+        "columns": [
+          "title",
+          "poa_type",
+          "agent_name",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "poa_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "general",
+              "financial",
+              "healthcare",
+              "limited",
+              "springing",
+              "durable",
+              "special",
+              "business",
+              "childcare",
+              "military"
+            ],
+            "required": true
+          },
+          {
+            "name": "principal_name",
+            "label": "Principal",
+            "type": "text"
+          },
+          {
+            "name": "agent_name",
+            "label": "Agent",
+            "type": "text"
+          },
+          {
+            "name": "powers_granted",
+            "label": "Powers Granted",
+            "type": "textarea"
+          },
+          {
+            "name": "effective_date",
+            "label": "Effective Date",
+            "type": "date"
+          },
+          {
+            "name": "expiration_date",
+            "label": "Expiration Date",
+            "type": "date"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "draft",
+              "active",
+              "archived"
+            ]
+          }
+        ],
+        "aiAction": "generate-poa",
+        "aiLabel": "AI Generate POA",
+        "aiFields": [
+          "poa_type",
+          "principal_name",
+          "agent_name",
+          "powers_granted",
+          "effective_date"
+        ]
+      },
+      {
+        "key": "trusts",
+        "path": "/trusts",
+        "label": "Trust Planning",
+        "icon": "🏦",
+        "color": "var(--pink)",
+        "api": "/trusts",
+        "ai": true,
+        "columns": [
+          "trust_name",
+          "trust_type",
+          "trustee_name",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "trust_name",
+            "label": "Trust Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "trust_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "revocable_living",
+              "irrevocable",
+              "charitable",
+              "special_needs",
+              "pet",
+              "spendthrift",
+              "irrevocable_life",
+              "qtip",
+              "generation_skip",
+              "land",
+              "business",
+              "medicaid",
+              "blind",
+              "totten",
+              "dynasty"
+            ],
+            "required": true
+          },
+          {
+            "name": "grantor_name",
+            "label": "Grantor",
+            "type": "text"
+          },
+          {
+            "name": "trustee_name",
+            "label": "Trustee",
+            "type": "text"
+          },
+          {
+            "name": "beneficiary_names",
+            "label": "Beneficiaries",
+            "type": "text"
+          },
+          {
+            "name": "assets_description",
+            "label": "Assets Description",
+            "type": "textarea"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "draft",
+              "active",
+              "review",
+              "archived"
+            ]
+          }
+        ],
+        "aiAction": "trust-plan",
+        "aiLabel": "AI Trust Plan",
+        "aiFields": [
+          "trust_name",
+          "trust_type",
+          "grantor_name",
+          "trustee_name",
+          "beneficiary_names",
+          "assets_description"
+        ]
+      },
+      {
+        "key": "healthcare-directives",
+        "path": "/healthcare-directives",
+        "label": "Healthcare Directives",
+        "icon": "🏥",
+        "color": "var(--danger)",
+        "api": "/healthcare-directives",
+        "ai": true,
+        "columns": [
+          "title",
+          "directive_type",
+          "healthcare_agent",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "directive_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "advance_directive",
+              "dnr",
+              "living_will",
+              "mental_health",
+              "organ_donation",
+              "pain_management",
+              "nutrition",
+              "ventilator",
+              "dialysis",
+              "hospice",
+              "religious",
+              "pediatric",
+              "travel",
+              "dementia",
+              "emergency"
+            ],
+            "required": true
+          },
+          {
+            "name": "principal_name",
+            "label": "Principal",
+            "type": "text"
+          },
+          {
+            "name": "healthcare_agent",
+            "label": "Healthcare Agent",
+            "type": "text"
+          },
+          {
+            "name": "wishes",
+            "label": "Wishes",
+            "type": "textarea"
+          },
+          {
+            "name": "conditions",
+            "label": "Conditions",
+            "type": "textarea"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "draft",
+              "active",
+              "archived"
+            ]
+          }
+        ],
+        "aiAction": "healthcare-directive",
+        "aiLabel": "AI Draft Directive",
+        "aiFields": [
+          "directive_type",
+          "principal_name",
+          "healthcare_agent",
+          "wishes",
+          "conditions"
+        ]
+      },
+      {
+        "key": "insurance-policies",
+        "path": "/insurance-policies",
+        "label": "Insurance Policies",
+        "icon": "🛡️",
+        "color": "var(--success)",
+        "api": "/insurance-policies",
+        "columns": [
+          "policy_name",
+          "policy_type",
+          "provider",
+          "coverage_amount",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "policy_name",
+            "label": "Policy Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "policy_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "term_life",
+              "whole_life",
+              "homeowners",
+              "auto",
+              "health",
+              "disability",
+              "umbrella",
+              "long_term_care",
+              "business",
+              "dental",
+              "vision",
+              "flood",
+              "rider",
+              "professional",
+              "travel"
+            ],
+            "required": true
+          },
+          {
+            "name": "provider",
+            "label": "Provider",
+            "type": "text"
+          },
+          {
+            "name": "policy_number",
+            "label": "Policy Number",
+            "type": "text"
+          },
+          {
+            "name": "coverage_amount",
+            "label": "Coverage ($)",
+            "type": "number"
+          },
+          {
+            "name": "premium_amount",
+            "label": "Monthly Premium ($)",
+            "type": "number"
+          },
+          {
+            "name": "beneficiary",
+            "label": "Beneficiary",
+            "type": "text"
+          },
+          {
+            "name": "start_date",
+            "label": "Start Date",
+            "type": "date"
+          },
+          {
+            "name": "end_date",
+            "label": "End Date",
+            "type": "date"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "active",
+              "expired",
+              "cancelled"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "properties",
+        "path": "/properties",
+        "label": "Properties & Real Estate",
+        "icon": "🏠",
+        "color": "var(--orange)",
+        "api": "/properties",
+        "columns": [
+          "property_name",
+          "property_type",
+          "estimated_value",
+          "ownership_type",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "property_name",
+            "label": "Property Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "property_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "residential",
+              "vacation",
+              "investment",
+              "commercial",
+              "land",
+              "agricultural",
+              "industrial",
+              "international"
+            ],
+            "required": true
+          },
+          {
+            "name": "address",
+            "label": "Address",
+            "type": "textarea"
+          },
+          {
+            "name": "estimated_value",
+            "label": "Estimated Value ($)",
+            "type": "number"
+          },
+          {
+            "name": "mortgage_balance",
+            "label": "Mortgage Balance ($)",
+            "type": "number"
+          },
+          {
+            "name": "ownership_type",
+            "label": "Ownership Type",
+            "type": "text"
+          },
+          {
+            "name": "beneficiary",
+            "label": "Beneficiary",
+            "type": "text"
+          },
+          {
+            "name": "notes",
+            "label": "Notes",
+            "type": "textarea"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "active",
+              "sold",
+              "pending"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "legacy-messages",
+        "path": "/legacy-messages",
+        "label": "Legacy Messages",
+        "icon": "💌",
+        "color": "var(--pink)",
+        "api": "/legacy-messages",
+        "ai": true,
+        "columns": [
+          "title",
+          "recipient_name",
+          "delivery_trigger",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "recipient_name",
+            "label": "Recipient Name",
+            "type": "text"
+          },
+          {
+            "name": "recipient_email",
+            "label": "Recipient Email",
+            "type": "email"
+          },
+          {
+            "name": "message_content",
+            "label": "Message",
+            "type": "textarea"
+          },
+          {
+            "name": "delivery_trigger",
+            "label": "Delivery Trigger",
+            "type": "select",
+            "options": [
+              "upon_death",
+              "specific_date",
+              "life_event",
+              "annual",
+              "emergency"
+            ]
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "draft",
+              "active",
+              "scheduled",
+              "sent"
+            ]
+          }
+        ],
+        "aiAction": "enhance-message",
+        "aiLabel": "AI Enhance Message",
+        "aiFields": [
+          "recipient_name",
+          "message_content",
+          "delivery_trigger"
+        ]
+      },
+      {
+        "key": "estate-timeline",
+        "path": "/estate-timeline",
+        "label": "Estate Timeline",
+        "icon": "📅",
+        "color": "var(--cyan)",
+        "api": "/estate-timeline",
+        "columns": [
+          "title",
+          "milestone_type",
+          "due_date",
+          "priority",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "textarea"
+          },
+          {
+            "name": "milestone_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "document",
+              "inventory",
+              "legal",
+              "review",
+              "update",
+              "valuation",
+              "personal",
+              "business",
+              "financial",
+              "audit",
+              "meeting",
+              "technical"
+            ]
+          },
+          {
+            "name": "due_date",
+            "label": "Due Date",
+            "type": "date"
+          },
+          {
+            "name": "priority",
+            "label": "Priority",
+            "type": "select",
+            "options": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "pending",
+              "in_progress",
+              "completed"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "executor-tasks",
+        "path": "/executor-tasks",
+        "label": "Executor Dashboard",
+        "icon": "📋",
+        "color": "var(--accent)",
+        "api": "/executor-tasks",
+        "columns": [
+          "title",
+          "assigned_to",
+          "category",
+          "priority",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "textarea"
+          },
+          {
+            "name": "assigned_to",
+            "label": "Assigned To",
+            "type": "text"
+          },
+          {
+            "name": "category",
+            "label": "Category",
+            "type": "select",
+            "options": [
+              "administrative",
+              "government",
+              "financial",
+              "property",
+              "inventory",
+              "legal",
+              "distribution",
+              "tax",
+              "digital"
+            ]
+          },
+          {
+            "name": "priority",
+            "label": "Priority",
+            "type": "select",
+            "options": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          {
+            "name": "due_date",
+            "label": "Due Date",
+            "type": "date"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "pending",
+              "in_progress",
+              "completed"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "digital-accounts",
+        "path": "/digital-accounts",
+        "label": "Digital Account Guardian",
+        "icon": "🔐",
+        "color": "var(--purple)",
+        "api": "/digital-accounts",
+        "columns": [
+          "account_name",
+          "account_type",
+          "platform",
+          "action_on_death",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "account_name",
+            "label": "Account Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "account_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "email",
+              "social_media",
+              "professional",
+              "shopping",
+              "technology",
+              "cloud_storage",
+              "website",
+              "communication",
+              "financial",
+              "gaming"
+            ],
+            "required": true
+          },
+          {
+            "name": "platform",
+            "label": "Platform",
+            "type": "text"
+          },
+          {
+            "name": "username",
+            "label": "Username",
+            "type": "text"
+          },
+          {
+            "name": "email_associated",
+            "label": "Associated Email",
+            "type": "email"
+          },
+          {
+            "name": "action_on_death",
+            "label": "Action on Death",
+            "type": "select",
+            "options": [
+              "memorialize",
+              "delete",
+              "transfer",
+              "close",
+              "deactivate",
+              "maintain"
+            ]
+          },
+          {
+            "name": "designated_contact",
+            "label": "Designated Contact",
+            "type": "text"
+          },
+          {
+            "name": "notes",
+            "label": "Notes",
+            "type": "textarea"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "active",
+              "inactive"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "module": "estate-planning",
+    "source": "apps/estate-planning/frontend/src/pages/Batch03Features.js",
+    "name": "FEATURES",
+    "entries": [
+      {
+        "kind": "cfs",
+        "slug": "cf-agentic-estate-planner",
+        "label": "Agentic estate planner",
+        "desc": "\"I have $2M in assets, married with 3 kids\" → generates comprehensive estate plan with tax-minimized structure",
+        "endpoint": "/cf-agentic-estate-planner"
+      },
+      {
+        "kind": "cfs",
+        "slug": "cf-digital-legacy-management",
+        "label": "Digital legacy management",
+        "desc": "Store important messages, photos, credentials (passwords) in vault",
+        "endpoint": "/cf-digital-legacy-management"
+      },
+      {
+        "kind": "cfs",
+        "slug": "cf-ai-drafted-documents",
+        "label": "AI-drafted documents",
+        "desc": "Generate state-specific wills, trusts, POAs (may require lawyer review)",
+        "endpoint": "/cf-ai-drafted-documents"
+      },
+      {
+        "kind": "cfs",
+        "slug": "cf-family-meeting-coordinator",
+        "label": "Family meeting coordinator",
+        "desc": "Schedule and prepare materials for family meetings",
+        "endpoint": "/cf-family-meeting-coordinator"
+      },
+      {
+        "kind": "cfs",
+        "slug": "cf-life-expectancy-planning",
+        "label": "Life expectancy planning",
+        "desc": "Long-term care cost estimation, insurance recommendations",
+        "endpoint": "/cf-life-expectancy-planning"
+      },
+      {
+        "kind": "cfs",
+        "slug": "cf-beneficiary-experience",
+        "label": "Beneficiary experience",
+        "desc": "Portal for beneficiaries post-death, guidance on claiming assets",
+        "endpoint": "/cf-beneficiary-experience"
+      },
+      {
+        "kind": "cfs",
+        "slug": "cf-international-planning",
+        "label": "International planning",
+        "desc": "Tax-optimized planning for multi-national families",
+        "endpoint": "/cf-international-planning"
+      },
+      {
+        "kind": "gap-ai",
+        "slug": "gap-ai-no-tax-minimisation-planner-state-aware",
+        "label": "No tax-minimisation planner (state-aware)",
+        "desc": "No tax-minimisation planner (state-aware)",
+        "endpoint": "/gap-no-tax-minimisation-planner-state-aware"
+      },
+      {
+        "kind": "gap-ai",
+        "slug": "gap-ai-no-beneficiary-suitability-assessor",
+        "label": "No beneficiary-suitability assessor",
+        "desc": "No beneficiary-suitability assessor",
+        "endpoint": "/gap-no-beneficiary-suitability-assessor"
+      },
+      {
+        "kind": "gap-ai",
+        "slug": "gap-ai-no-account-consolidation-recommender",
+        "label": "No account-consolidation recommender",
+        "desc": "No account-consolidation recommender",
+        "endpoint": "/gap-no-account-consolidation-recommender"
+      },
+      {
+        "kind": "gap-non",
+        "slug": "gap-non-no-webhooks-no-advisor-system-push",
+        "label": "No webhooks (no advisor system push)",
+        "desc": "No webhooks (no advisor system push)",
+        "endpoint": "/gap-no-webhooks-no-advisor-system-push"
+      },
+      {
+        "kind": "gap-non",
+        "slug": "gap-non-limited-integration-no-brokerage-bank-account-aggregation",
+        "label": "Limited integration (no brokerage/bank-account aggregation)",
+        "desc": "Limited integration (no brokerage/bank-account aggregation)",
+        "endpoint": "/gap-limited-integration-no-brokerage-bank-account-aggregation"
+      },
+      {
+        "kind": "gap-non",
+        "slug": "gap-non-no-payment-processing-for-filing-fees",
+        "label": "No payment processing for filing fees",
+        "desc": "No payment processing for filing fees",
+        "endpoint": "/gap-no-payment-processing-for-filing-fees"
+      },
+      {
+        "kind": "gap-non",
+        "slug": "gap-non-no-multi-state-compliance-lookups",
+        "label": "No multi-state compliance lookups",
+        "desc": "No multi-state compliance lookups",
+        "endpoint": "/gap-no-multi-state-compliance-lookups"
+      },
+      {
+        "kind": "gap-non",
+        "slug": "gap-non-no-video-message-scheduling-for-legacy-letters",
+        "label": "No video-message scheduling for legacy letters",
+        "desc": "No video-message scheduling for legacy letters",
+        "endpoint": "/gap-no-video-message-scheduling-for-legacy-letters"
+      }
+    ]
+  },
+  {
+    "module": "estate-planning",
+    "source": "apps/estate-planning/frontend/src/pages/Extensions.js",
+    "name": "tabs",
+    "entries": [
+      {
+        "id": "vault",
+        "label": "Document Vault"
+      },
+      {
+        "id": "legal",
+        "label": "Multi-State Legal"
+      },
+      {
+        "id": "ltc",
+        "label": "Long-Term Care"
+      },
+      {
+        "id": "consol",
+        "label": "Consolidation"
+      },
+      {
+        "id": "family",
+        "label": "Family Meeting"
+      },
+      {
+        "id": "portal",
+        "label": "Beneficiary Portal"
+      },
+      {
+        "id": "intl",
+        "label": "International"
+      }
+    ]
+  },
+  {
+    "module": "immigration",
+    "source": "apps/immigration/frontend/src/pages/AIFeatures.js",
+    "name": "aiFeatures",
+    "entries": [
+      {
+        "id": "case-assessment",
+        "icon": "fa-solid fa-gavel",
+        "title": "AI Case Assessment",
+        "desc": "Get AI-powered analysis of case strength and recommendations"
+      },
+      {
+        "id": "document-analysis",
+        "icon": "fa-solid fa-file-magnifying-glass",
+        "title": "AI Document Analysis",
+        "desc": "Analyze documents for completeness and compliance"
+      },
+      {
+        "id": "legal-research",
+        "icon": "fa-solid fa-book-open",
+        "title": "AI Legal Research",
+        "desc": "Research immigration laws, regulations, and precedents"
+      },
+      {
+        "id": "form-assist",
+        "icon": "fa-solid fa-file-pen",
+        "title": "AI Form Assistant",
+        "desc": "Get help filling out immigration forms correctly"
+      },
+      {
+        "id": "translate",
+        "icon": "fa-solid fa-language",
+        "title": "AI Translation",
+        "desc": "Translate documents for immigration purposes"
+      },
+      {
+        "id": "compliance-check",
+        "icon": "fa-solid fa-clipboard-check",
+        "title": "AI Compliance Check",
+        "desc": "Verify case compliance with immigration regulations"
+      },
+      {
+        "id": "status-prediction",
+        "icon": "fa-solid fa-crystal-ball",
+        "title": "AI Status Prediction",
+        "desc": "Predict processing times and case outcomes"
+      },
+      {
+        "id": "document-ocr",
+        "icon": "fa-solid fa-camera",
+        "title": "Document OCR & Extraction",
+        "desc": "Upload passport/I-94/visa images and AI extracts structured data automatically"
+      },
+      {
+        "id": "deadline-predict",
+        "icon": "fa-solid fa-calendar-check",
+        "title": "Deadline Predictor",
+        "desc": "AI predicts USCIS processing timeline and auto-creates deadline entries for a case"
+      }
+    ]
+  },
+  {
+    "module": "immigration",
+    "source": "apps/immigration/frontend/src/pages/AdvancedAITools.js",
+    "name": "TOOLS",
+    "entries": [
+      {
+        "id": "visa-category-recommendation",
+        "title": "Visa Category Recommendation",
+        "icon": "fa-solid fa-passport",
+        "endpoint": "/ai/visa-category-recommendation",
+        "desc": "Ranked visa categories with feasibility, evidence to gather, timeline, and cost ranges (not legal advice).",
+        "fields": [
+          {
+            "name": "client_id",
+            "label": "Client (optional)",
+            "type": "client"
+          },
+          {
+            "name": "profile",
+            "label": "Inline Profile (used if no client selected)",
+            "type": "textarea",
+            "placeholder": "e.g., 32yo software engineer, current H-1B, US masters, 8 years experience..."
+          },
+          {
+            "name": "goals",
+            "label": "Goals / Constraints",
+            "type": "textarea",
+            "placeholder": "Permanent residency in 3 years, willing to relocate, family of 4..."
+          }
+        ]
+      },
+      {
+        "id": "interview-preparation",
+        "title": "Interview Preparation",
+        "icon": "fa-solid fa-comments",
+        "endpoint": "/ai/interview-preparation",
+        "desc": "Expected topics, practice Q&A, document checklist, behavioral coaching, and mock interview plan.",
+        "fields": [
+          {
+            "name": "case_id",
+            "label": "Case",
+            "type": "case",
+            "required": true
+          },
+          {
+            "name": "interview_type",
+            "label": "Interview Type",
+            "type": "select",
+            "required": true,
+            "options": [
+              "Adjustment of Status (Green Card)",
+              "Naturalization (N-400)",
+              "Asylum",
+              "Consular (DS-160)",
+              "Marriage-based",
+              "EB-1 / EB-2 / EB-3",
+              "Other"
+            ]
+          },
+          {
+            "name": "focus_areas",
+            "label": "Focus Areas (comma-separated)",
+            "type": "text",
+            "placeholder": "Marriage history, financial documentation, employment timeline"
+          }
+        ]
+      },
+      {
+        "id": "agentic-case-manager",
+        "title": "Agentic Case Manager",
+        "icon": "fa-solid fa-list-check",
+        "endpoint": "/ai/agentic-case-manager",
+        "desc": "Workflow steps, reminders, document drafting plan, and decision points for the next horizon.",
+        "fields": [
+          {
+            "name": "case_id",
+            "label": "Case",
+            "type": "case"
+          },
+          {
+            "name": "horizon_days",
+            "label": "Horizon (days)",
+            "type": "number",
+            "placeholder": "60"
+          }
+        ]
+      },
+      {
+        "id": "pathway-optimizer",
+        "title": "Pathway Optimizer",
+        "icon": "fa-solid fa-route",
+        "endpoint": "/ai/pathway-optimizer",
+        "desc": "Multi-step optimal immigration pathway with branching, fallbacks, and 30/60/90-day actions.",
+        "fields": [
+          {
+            "name": "client_id",
+            "label": "Client (optional)",
+            "type": "client"
+          },
+          {
+            "name": "profile",
+            "label": "Inline Profile (used if no client selected)",
+            "type": "textarea",
+            "placeholder": "e.g., 32yo software engineer, current H-1B, US masters, 8 years experience..."
+          },
+          {
+            "name": "target_outcome",
+            "label": "Target Outcome",
+            "type": "text",
+            "placeholder": "permanent residency / citizenship / family reunification"
+          },
+          {
+            "name": "time_horizon_years",
+            "label": "Time Horizon (years)",
+            "type": "number",
+            "placeholder": "5"
+          },
+          {
+            "name": "risk_tolerance",
+            "label": "Risk Tolerance",
+            "type": "select",
+            "options": [
+              "conservative",
+              "moderate",
+              "aggressive"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "auto-detect-language",
+        "title": "Auto-Detect Language",
+        "icon": "fa-solid fa-language",
+        "endpoint": "/ai/auto-detect-language",
+        "desc": "Detect dominant language(s) of pasted text and produce a translation recommendation for the case file.",
+        "fields": [
+          {
+            "name": "text",
+            "label": "Text",
+            "type": "textarea",
+            "required": true,
+            "placeholder": "Paste foreign-language document text here..."
+          },
+          {
+            "name": "target_language",
+            "label": "Target Language (optional)",
+            "type": "text",
+            "placeholder": "English"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "module": "practice-management",
+    "source": "apps/practice-management/src/app/(dashboard)/ai/page.tsx",
+    "name": "aiFeatures",
+    "entries": [
+      {
+        "id": "document_draft",
+        "name": "Document Drafting",
+        "description": "Generate legal documents from templates"
+      },
+      {
+        "id": "contract_review",
+        "name": "Contract Review",
+        "description": "Analyze contracts for issues and risks"
+      },
+      {
+        "id": "legal_research",
+        "name": "Legal Research",
+        "description": "Research case law and legal precedents"
+      },
+      {
+        "id": "deposition_summary",
+        "name": "Deposition Summary",
+        "description": "Summarize deposition transcripts"
+      },
+      {
+        "id": "conflict_check",
+        "name": "Conflict Checker",
+        "description": "Automated conflict of interest detection"
+      },
+      {
+        "id": "time_entry",
+        "name": "Time Entry Assistant",
+        "description": "Capture billable time from activities"
+      },
+      {
+        "id": "email_draft",
+        "name": "Email Drafter",
+        "description": "Draft professional correspondence"
+      },
+      {
+        "id": "document_summary",
+        "name": "Document Summarizer",
+        "description": "Summarize lengthy legal documents"
+      },
+      {
+        "id": "case_outcome",
+        "name": "Case Outcome Predictor",
+        "description": "Predict likely case outcomes based on facts"
+      },
+      {
+        "id": "patent_analysis",
+        "name": "Patent Analyzer",
+        "description": "Analyze patent applications and prior art"
+      },
+      {
+        "id": "trademark_check",
+        "name": "Trademark Checker",
+        "description": "Check trademark availability and risks"
+      },
+      {
+        "id": "billing_optimizer",
+        "name": "Billing Optimizer",
+        "description": "Optimize billing practices and rates"
+      },
+      {
+        "id": "court_date_tracker",
+        "name": "Court Date Tracker",
+        "description": "Track and manage court deadlines"
+      },
+      {
+        "id": "immigration_form",
+        "name": "Immigration Form Helper",
+        "description": "Assist with immigration form preparation"
+      },
+      {
+        "id": "client_intake",
+        "name": "Client Intake Processor",
+        "description": "Process and analyze client intake forms"
+      }
+    ]
+  },
+  {
+    "module": "legal-documents",
+    "source": "apps/legal-documents/routes/ai-catalog.js",
+    "name": "capabilities",
+    "entries": [
+      {
+        "id": "drafting",
+        "method": "POST",
+        "path": "/api/ai/drafting/draft"
+      },
+      {
+        "id": "billing",
+        "method": "POST",
+        "path": "/api/ai/billing/suggest"
+      },
+      {
+        "id": "conflicts",
+        "method": "POST",
+        "path": "/api/ai/conflicts/check"
+      },
+      {
+        "id": "predictions",
+        "method": "POST",
+        "path": "/api/ai/predictions/outcome"
+      },
+      {
+        "id": "calendar",
+        "method": "POST",
+        "path": "/api/ai/calendar/suggest"
+      },
+      {
+        "id": "communications",
+        "method": "POST",
+        "path": "/api/ai/communications/compose"
+      },
+      {
+        "id": "intake",
+        "method": "POST",
+        "path": "/api/ai/intake/parse"
+      },
+      {
+        "id": "ediscovery",
+        "method": "POST",
+        "path": "/api/ai/ediscovery/search"
+      },
+      {
+        "id": "pacer",
+        "method": "GET",
+        "path": "/api/ai/pacer/cases"
+      },
+      {
+        "id": "intake-builder",
+        "method": "POST",
+        "path": "/api/ai/intake-builder/build"
+      },
+      {
+        "id": "matter-outcome",
+        "method": "POST",
+        "path": "/api/ai/matter-outcome/predict"
+      },
+      {
+        "id": "transcription",
+        "method": "POST",
+        "path": "/api/ai/transcription/start"
+      }
+    ]
+  },
+  {
+    "module": "contract-lifecycle",
+    "source": "apps/contract-lifecycle/frontend/src/App.js",
+    "name": "pages",
+    "entries": [
+      {
+        "path": "/contracts",
+        "label": "Contracts",
+        "api": "contracts",
+        "columns": [
+          "title",
+          "contract_type",
+          "status",
+          "party_a",
+          "party_b",
+          "value",
+          "risk_level"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "required": true
+          },
+          {
+            "name": "contract_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "service_agreement",
+              "license_agreement",
+              "nda",
+              "employment",
+              "lease",
+              "supply_agreement",
+              "partnership",
+              "dpa",
+              "framework",
+              "insurance",
+              "joint_venture",
+              "integration",
+              "construction",
+              "consulting",
+              "distribution",
+              "merger"
+            ]
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "draft",
+              "under_review",
+              "negotiation",
+              "pending",
+              "active",
+              "executed",
+              "expired",
+              "terminated",
+              "archived"
+            ]
+          },
+          {
+            "name": "party_a",
+            "label": "Party A"
+          },
+          {
+            "name": "party_b",
+            "label": "Party B"
+          },
+          {
+            "name": "value",
+            "label": "Value",
+            "type": "number"
+          },
+          {
+            "name": "currency",
+            "label": "Currency"
+          },
+          {
+            "name": "start_date",
+            "label": "Start Date",
+            "type": "date"
+          },
+          {
+            "name": "end_date",
+            "label": "End Date",
+            "type": "date"
+          },
+          {
+            "name": "jurisdiction",
+            "label": "Jurisdiction"
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "textarea"
+          },
+          {
+            "name": "risk_level",
+            "label": "Risk Level",
+            "type": "select",
+            "options": [
+              "low",
+              "medium",
+              "high",
+              "critical"
+            ]
+          }
+        ],
+        "title": "Contracts"
+      },
+      {
+        "path": "/clauses",
+        "label": "Clauses",
+        "api": "clauses",
+        "columns": [
+          "title",
+          "clause_type",
+          "severity",
+          "is_negotiable",
+          "contract_id",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "required": true
+          },
+          {
+            "name": "clause_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "confidentiality",
+              "liability",
+              "ip_ownership",
+              "termination",
+              "force_majeure",
+              "payment",
+              "indemnification",
+              "data_protection",
+              "warranty",
+              "non_solicitation",
+              "governing_law",
+              "assignment",
+              "dispute_resolution",
+              "insurance",
+              "audit"
+            ]
+          },
+          {
+            "name": "content",
+            "label": "Content",
+            "type": "textarea"
+          },
+          {
+            "name": "plain_language",
+            "label": "Plain Language",
+            "type": "textarea"
+          },
+          {
+            "name": "severity",
+            "label": "Severity",
+            "type": "select",
+            "options": [
+              "standard",
+              "high",
+              "critical"
+            ]
+          },
+          {
+            "name": "is_negotiable",
+            "label": "Negotiable",
+            "type": "select",
+            "options": [
+              "true",
+              "false"
+            ]
+          },
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number"
+          },
+          {
+            "name": "section_number",
+            "label": "Section #"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "active",
+              "draft",
+              "archived"
+            ]
+          }
+        ],
+        "title": "Clauses"
+      },
+      {
+        "path": "/templates",
+        "label": "Templates",
+        "api": "templates",
+        "columns": [
+          "name",
+          "template_type",
+          "jurisdiction",
+          "industry",
+          "usage_count",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "name",
+            "label": "Name",
+            "required": true
+          },
+          {
+            "name": "template_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "service_agreement",
+              "nda",
+              "employment",
+              "license",
+              "dpa",
+              "partnership",
+              "contractor",
+              "lease",
+              "supply",
+              "joint_venture",
+              "consulting",
+              "tos",
+              "severance",
+              "distribution",
+              "merger"
+            ]
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "textarea"
+          },
+          {
+            "name": "content",
+            "label": "Content",
+            "type": "textarea"
+          },
+          {
+            "name": "jurisdiction",
+            "label": "Jurisdiction"
+          },
+          {
+            "name": "industry",
+            "label": "Industry"
+          },
+          {
+            "name": "usage_count",
+            "label": "Usage Count",
+            "type": "number"
+          },
+          {
+            "name": "is_public",
+            "label": "Public",
+            "type": "select",
+            "options": [
+              "true",
+              "false"
+            ]
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "active",
+              "draft",
+              "archived"
+            ]
+          }
+        ],
+        "title": "Templates"
+      },
+      {
+        "path": "/parties",
+        "label": "Parties",
+        "api": "parties",
+        "columns": [
+          "name",
+          "party_type",
+          "email",
+          "industry",
+          "jurisdiction",
+          "status",
+          "contracts_count"
+        ],
+        "fields": [
+          {
+            "name": "name",
+            "label": "Name",
+            "required": true
+          },
+          {
+            "name": "party_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "company",
+              "individual",
+              "government",
+              "nonprofit"
+            ]
+          },
+          {
+            "name": "email",
+            "label": "Email"
+          },
+          {
+            "name": "phone",
+            "label": "Phone"
+          },
+          {
+            "name": "address",
+            "label": "Address",
+            "type": "textarea"
+          },
+          {
+            "name": "jurisdiction",
+            "label": "Jurisdiction"
+          },
+          {
+            "name": "tax_id",
+            "label": "Tax ID"
+          },
+          {
+            "name": "industry",
+            "label": "Industry"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "active",
+              "inactive",
+              "blocked"
+            ]
+          }
+        ],
+        "title": "Parties"
+      },
+      {
+        "path": "/obligations",
+        "label": "Obligations",
+        "api": "obligations",
+        "columns": [
+          "title",
+          "contract_id",
+          "obligated_party",
+          "obligation_type",
+          "due_date",
+          "status",
+          "priority"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "required": true
+          },
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number"
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "textarea"
+          },
+          {
+            "name": "obligated_party",
+            "label": "Obligated Party"
+          },
+          {
+            "name": "obligation_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "performance",
+              "payment",
+              "reporting",
+              "compliance",
+              "insurance",
+              "purchase",
+              "restriction",
+              "deliverable"
+            ]
+          },
+          {
+            "name": "due_date",
+            "label": "Due Date",
+            "type": "date"
+          },
+          {
+            "name": "frequency",
+            "label": "Frequency",
+            "type": "select",
+            "options": [
+              "one-time",
+              "weekly",
+              "bi-weekly",
+              "monthly",
+              "quarterly",
+              "annual",
+              "ongoing"
+            ]
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "pending",
+              "active",
+              "completed",
+              "overdue",
+              "waived"
+            ]
+          },
+          {
+            "name": "priority",
+            "label": "Priority",
+            "type": "select",
+            "options": [
+              "low",
+              "medium",
+              "high",
+              "critical"
+            ]
+          }
+        ],
+        "title": "Obligations"
+      },
+      {
+        "path": "/approvals",
+        "label": "Approvals",
+        "api": "approvals",
+        "columns": [
+          "contract_id",
+          "approver_name",
+          "approval_type",
+          "status",
+          "priority"
+        ],
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number"
+          },
+          {
+            "name": "approver_name",
+            "label": "Approver",
+            "required": true
+          },
+          {
+            "name": "approver_email",
+            "label": "Email"
+          },
+          {
+            "name": "approval_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "legal_review",
+              "financial_review",
+              "executive_approval",
+              "department_approval",
+              "board_approval",
+              "compliance_review"
+            ]
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "pending",
+              "in_review",
+              "approved",
+              "rejected",
+              "deferred"
+            ]
+          },
+          {
+            "name": "comments",
+            "label": "Comments",
+            "type": "textarea"
+          },
+          {
+            "name": "priority",
+            "label": "Priority",
+            "type": "select",
+            "options": [
+              "normal",
+              "high",
+              "urgent"
+            ]
+          }
+        ],
+        "title": "Approvals"
+      },
+      {
+        "path": "/amendments",
+        "label": "Amendments",
+        "api": "amendments",
+        "columns": [
+          "title",
+          "contract_id",
+          "amendment_type",
+          "effective_date",
+          "status",
+          "requested_by"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "required": true
+          },
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number"
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "textarea"
+          },
+          {
+            "name": "amendment_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "modification",
+              "addition",
+              "deletion",
+              "extension",
+              "correction"
+            ]
+          },
+          {
+            "name": "effective_date",
+            "label": "Effective Date",
+            "type": "date"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "draft",
+              "pending",
+              "negotiation",
+              "approved",
+              "rejected",
+              "executed"
+            ]
+          },
+          {
+            "name": "requested_by",
+            "label": "Requested By"
+          },
+          {
+            "name": "approved_by",
+            "label": "Approved By"
+          }
+        ],
+        "title": "Amendments"
+      },
+      {
+        "path": "/renewals",
+        "label": "Renewals",
+        "api": "renewals",
+        "columns": [
+          "contract_id",
+          "renewal_type",
+          "new_start_date",
+          "new_end_date",
+          "new_value",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number"
+          },
+          {
+            "name": "renewal_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "auto",
+              "manual",
+              "negotiation"
+            ]
+          },
+          {
+            "name": "new_start_date",
+            "label": "New Start",
+            "type": "date"
+          },
+          {
+            "name": "new_end_date",
+            "label": "New End",
+            "type": "date"
+          },
+          {
+            "name": "new_value",
+            "label": "New Value",
+            "type": "number"
+          },
+          {
+            "name": "terms_changed",
+            "label": "Terms Changed",
+            "type": "select",
+            "options": [
+              "true",
+              "false"
+            ]
+          },
+          {
+            "name": "notice_date",
+            "label": "Notice Date",
+            "type": "date"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "pending",
+              "approved",
+              "negotiation",
+              "declined",
+              "expired"
+            ]
+          },
+          {
+            "name": "notes",
+            "label": "Notes",
+            "type": "textarea"
+          }
+        ],
+        "title": "Renewals"
+      },
+      {
+        "path": "/risks",
+        "label": "Risk Assessment",
+        "api": "risks",
+        "columns": [
+          "title",
+          "contract_id",
+          "overall_score",
+          "risk_level",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "required": true
+          },
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number"
+          },
+          {
+            "name": "overall_score",
+            "label": "Overall Score",
+            "type": "number"
+          },
+          {
+            "name": "risk_level",
+            "label": "Risk Level",
+            "type": "select",
+            "options": [
+              "low",
+              "medium",
+              "high",
+              "critical"
+            ]
+          },
+          {
+            "name": "financial_risk",
+            "label": "Financial Risk",
+            "type": "number"
+          },
+          {
+            "name": "legal_risk",
+            "label": "Legal Risk",
+            "type": "number"
+          },
+          {
+            "name": "operational_risk",
+            "label": "Operational Risk",
+            "type": "number"
+          },
+          {
+            "name": "compliance_risk",
+            "label": "Compliance Risk",
+            "type": "number"
+          },
+          {
+            "name": "assessor",
+            "label": "Assessor"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "pending",
+              "in_progress",
+              "completed",
+              "needs_review"
+            ]
+          }
+        ],
+        "title": "Risk Assessment"
+      },
+      {
+        "path": "/compliance",
+        "label": "Compliance",
+        "api": "compliance",
+        "columns": [
+          "title",
+          "contract_id",
+          "regulation",
+          "compliance_score",
+          "status",
+          "checked_by"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "required": true
+          },
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number"
+          },
+          {
+            "name": "regulation",
+            "label": "Regulation"
+          },
+          {
+            "name": "compliance_score",
+            "label": "Score",
+            "type": "number"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "pending",
+              "in_progress",
+              "passed",
+              "conditional",
+              "failed"
+            ]
+          },
+          {
+            "name": "checked_by",
+            "label": "Checked By"
+          },
+          {
+            "name": "next_review",
+            "label": "Next Review",
+            "type": "date"
+          }
+        ],
+        "title": "Compliance"
+      },
+      {
+        "path": "/milestones",
+        "label": "Milestones",
+        "api": "milestones",
+        "columns": [
+          "title",
+          "contract_id",
+          "milestone_type",
+          "due_date",
+          "status",
+          "payment_amount"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "required": true
+          },
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number"
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "textarea"
+          },
+          {
+            "name": "milestone_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "deliverable",
+              "payment",
+              "kickoff",
+              "audit",
+              "construction",
+              "inspection",
+              "launch",
+              "financial",
+              "milestone"
+            ]
+          },
+          {
+            "name": "due_date",
+            "label": "Due Date",
+            "type": "date"
+          },
+          {
+            "name": "completed_date",
+            "label": "Completed",
+            "type": "date"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "pending",
+              "in_progress",
+              "completed",
+              "overdue",
+              "cancelled"
+            ]
+          },
+          {
+            "name": "payment_amount",
+            "label": "Payment Amount",
+            "type": "number"
+          },
+          {
+            "name": "responsible_party",
+            "label": "Responsible Party"
+          }
+        ],
+        "title": "Milestones"
+      },
+      {
+        "path": "/documents",
+        "label": "Documents",
+        "api": "documents",
+        "columns": [
+          "title",
+          "contract_id",
+          "document_type",
+          "file_name",
+          "file_size",
+          "version",
+          "status"
+        ],
+        "fields": [
+          {
+            "name": "title",
+            "label": "Title",
+            "required": true
+          },
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number"
+          },
+          {
+            "name": "document_type",
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "contract",
+              "sow",
+              "nda",
+              "lease",
+              "appendix",
+              "term_sheet",
+              "compliance",
+              "insurance",
+              "business_plan",
+              "blueprint",
+              "schedule",
+              "proposal",
+              "license",
+              "amendment"
+            ]
+          },
+          {
+            "name": "file_name",
+            "label": "File Name"
+          },
+          {
+            "name": "file_size",
+            "label": "File Size"
+          },
+          {
+            "name": "version",
+            "label": "Version"
+          },
+          {
+            "name": "uploaded_by",
+            "label": "Uploaded By"
+          },
+          {
+            "name": "status",
+            "label": "Status",
+            "type": "select",
+            "options": [
+              "active",
+              "draft",
+              "archived",
+              "superseded"
+            ]
+          }
+        ],
+        "title": "Documents"
+      },
+      {
+        "path": "/audit",
+        "label": "Audit Log",
+        "api": "audit",
+        "columns": [
+          "contract_id",
+          "action",
+          "entity_type",
+          "performed_by",
+          "created_at"
+        ],
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number"
+          },
+          {
+            "name": "action",
+            "label": "Action",
+            "required": true
+          },
+          {
+            "name": "entity_type",
+            "label": "Entity Type"
+          },
+          {
+            "name": "entity_id",
+            "label": "Entity ID",
+            "type": "number"
+          },
+          {
+            "name": "performed_by",
+            "label": "Performed By"
+          },
+          {
+            "name": "ip_address",
+            "label": "IP Address"
+          }
+        ],
+        "title": "Audit Log"
+      },
+      {
+        "path": "/settings",
+        "label": "Settings",
+        "api": "settings",
+        "columns": [
+          "key",
+          "value",
+          "category"
+        ],
+        "fields": [
+          {
+            "name": "key",
+            "label": "Key",
+            "required": true
+          },
+          {
+            "name": "value",
+            "label": "Value",
+            "required": true
+          },
+          {
+            "name": "category",
+            "label": "Category",
+            "type": "select",
+            "options": [
+              "contracts",
+              "renewals",
+              "approvals",
+              "risk",
+              "compliance",
+              "documents",
+              "amendments",
+              "notifications",
+              "audit",
+              "ai",
+              "templates",
+              "milestones"
+            ]
+          },
+          {
+            "name": "description",
+            "label": "Description",
+            "type": "textarea"
+          }
+        ],
+        "title": "Settings"
+      }
+    ]
+  },
+  {
+    "module": "contract-lifecycle",
+    "source": "apps/contract-lifecycle/frontend/src/pages/AICustomToolsPage.js",
+    "name": "tools",
+    "entries": [
+      {
+        "id": "auto-redline",
+        "name": "Auto-Redline",
+        "color": "#ef4444",
+        "desc": "AI-detect changes between two contract versions",
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID (optional)",
+            "type": "number"
+          },
+          {
+            "name": "version_a",
+            "label": "Version A (Original)",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "version_b",
+            "label": "Version B (Revised)",
+            "type": "textarea",
+            "required": true
+          }
+        ],
+        "title": "Auto-Redline"
+      },
+      {
+        "id": "clause-library/search",
+        "name": "Clause Library Search",
+        "color": "#f59e0b",
+        "desc": "Search clauses with AI-suggested matches",
+        "fields": [
+          {
+            "name": "query",
+            "label": "Search Query",
+            "required": true
+          },
+          {
+            "name": "clause_type",
+            "label": "Clause Type",
+            "type": "select",
+            "options": [
+              "confidentiality",
+              "liability",
+              "ip_ownership",
+              "termination",
+              "force_majeure",
+              "payment",
+              "indemnification",
+              "data_protection",
+              "warranty",
+              "non_solicitation",
+              "governing_law",
+              "dispute_resolution"
+            ]
+          },
+          {
+            "name": "jurisdiction",
+            "label": "Jurisdiction"
+          },
+          {
+            "name": "industry",
+            "label": "Industry"
+          }
+        ],
+        "title": "Clause Library Search"
+      },
+      {
+        "id": "amendment-impact",
+        "name": "Amendment Impact",
+        "color": "#8b5cf6",
+        "desc": "Analyze impact of amendment on dependent items",
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number",
+            "required": true
+          },
+          {
+            "name": "amendment_id",
+            "label": "Amendment ID",
+            "type": "number"
+          },
+          {
+            "name": "amendment_text",
+            "label": "Amendment Text (if no ID)",
+            "type": "textarea"
+          }
+        ],
+        "title": "Amendment Impact"
+      },
+      {
+        "id": "negotiation-simulator",
+        "name": "Negotiation Simulator",
+        "color": "#ec4899",
+        "desc": "Simulate negotiation rounds against counterparty",
+        "fields": [
+          {
+            "name": "contract_type",
+            "label": "Contract Type"
+          },
+          {
+            "name": "our_position",
+            "label": "Our Position",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "counterparty_profile",
+            "label": "Counterparty Profile",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "scenario",
+            "label": "Scenario",
+            "type": "textarea"
+          }
+        ],
+        "title": "Negotiation Simulator"
+      },
+      {
+        "id": "renewal-generator",
+        "name": "Renewal Generator",
+        "color": "#10b981",
+        "desc": "Auto-draft renewal terms from contract history",
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number",
+            "required": true
+          },
+          {
+            "name": "market_changes",
+            "label": "Market Changes",
+            "type": "textarea"
+          },
+          {
+            "name": "our_priorities",
+            "label": "Our Priorities (comma-separated)"
+          }
+        ],
+        "title": "Renewal Generator"
+      },
+      {
+        "id": "compliance-drift",
+        "name": "Compliance Drift Detector",
+        "color": "#06b6d4",
+        "desc": "Detect drift against current regulations",
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number",
+            "required": true
+          },
+          {
+            "name": "regulations",
+            "label": "Regulations (comma-separated)"
+          },
+          {
+            "name": "regulation_changes",
+            "label": "Recent Changes Context",
+            "type": "textarea"
+          }
+        ],
+        "title": "Compliance Drift Detector"
+      },
+      {
+        "id": "party-intelligence",
+        "name": "Party Intelligence",
+        "color": "#6366f1",
+        "desc": "Aggregated counterparty dossier",
+        "fields": [
+          {
+            "name": "party_id",
+            "label": "Party ID",
+            "type": "number"
+          },
+          {
+            "name": "party_name",
+            "label": "Party Name (if no ID)"
+          }
+        ],
+        "title": "Party Intelligence"
+      }
+    ]
+  },
+  {
+    "module": "contract-lifecycle",
+    "source": "apps/contract-lifecycle/frontend/src/pages/AIAdvancedPage.js",
+    "name": "tools",
+    "entries": [
+      {
+        "id": "obligation-extractor",
+        "name": "Obligation Extractor",
+        "color": "#10b981",
+        "desc": "Extract every obligation, deadline, and penalty from contract text",
+        "fields": [
+          {
+            "name": "contract_text",
+            "label": "Contract Text",
+            "type": "textarea",
+            "required": true
+          }
+        ],
+        "title": "Obligation Extractor"
+      },
+      {
+        "id": "renewal-advisor",
+        "name": "Renewal Advisor",
+        "color": "#3b82f6",
+        "desc": "Recommend renewal terms based on contract history",
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "title": "Renewal Advisor"
+      },
+      {
+        "id": "contract-health",
+        "name": "Contract Health",
+        "color": "#f59e0b",
+        "desc": "Score lifecycle health from obligations, milestones, approvals",
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "title": "Contract Health"
+      },
+      {
+        "id": "predict-renewal-success",
+        "name": "Predict Renewal Success",
+        "color": "#8b5cf6",
+        "desc": "Predict renewal probability and recommended pre-renewal actions",
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "title": "Predict Renewal Success"
+      },
+      {
+        "id": "predict-approval-likelihood",
+        "name": "Predict Approval Likelihood",
+        "color": "#ef4444",
+        "desc": "Predict approval outcome and identify bottleneck steps",
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "title": "Predict Approval Likelihood"
+      }
+    ]
+  },
+  {
+    "module": "contract-lifecycle",
+    "source": "apps/contract-lifecycle/frontend/src/pages/EDiscoveryPage.js",
+    "name": "tools",
+    "entries": [
+      {
+        "id": "analyze-relevance",
+        "name": "Document Relevance",
+        "color": "#6366f1",
+        "desc": "Score how relevant a document is to a legal case",
+        "fields": [
+          {
+            "name": "document_text",
+            "label": "Document Text",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "case_description",
+            "label": "Case Description",
+            "type": "textarea",
+            "required": true
+          }
+        ],
+        "title": "Document Relevance"
+      },
+      {
+        "id": "check-privilege",
+        "name": "Privilege Check",
+        "color": "#ef4444",
+        "desc": "Detect attorney-client privilege protection",
+        "fields": [
+          {
+            "name": "document_text",
+            "label": "Document Text",
+            "type": "textarea",
+            "required": true
+          }
+        ],
+        "title": "Privilege Check"
+      },
+      {
+        "id": "extract-timeline",
+        "name": "Timeline Extractor",
+        "color": "#10b981",
+        "desc": "Extract chronological events from a document",
+        "fields": [
+          {
+            "name": "document_text",
+            "label": "Document Text",
+            "type": "textarea",
+            "required": true
+          }
+        ],
+        "title": "Timeline Extractor"
+      }
+    ]
+  },
+  {
+    "module": "contract-negotiation",
+    "source": "apps/contract-negotiation/frontend/src/pages/AICustomTools.tsx",
+    "name": "tools",
+    "entries": [
+      {
+        "id": "draft-from-scratch",
+        "name": "AI Draft from Scratch",
+        "description": "Generate a complete contract from requirements",
+        "fields": [
+          {
+            "name": "contract_type",
+            "label": "Contract Type",
+            "required": true
+          },
+          {
+            "name": "requirements",
+            "label": "Requirements",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "parties",
+            "label": "Parties"
+          },
+          {
+            "name": "jurisdiction",
+            "label": "Jurisdiction"
+          },
+          {
+            "name": "value",
+            "label": "Estimated Value"
+          },
+          {
+            "name": "duration",
+            "label": "Duration"
+          }
+        ],
+        "title": "AI Draft from Scratch"
+      },
+      {
+        "id": "redteam-simulator",
+        "name": "Red-Team Negotiation Simulator",
+        "description": "AI plays the opposing party to test your strategy",
+        "fields": [
+          {
+            "name": "our_position",
+            "label": "Our Position",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "counterparty_persona",
+            "label": "Counterparty Persona",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "contract_type",
+            "label": "Contract Type"
+          },
+          {
+            "name": "rounds",
+            "label": "Number of Rounds",
+            "type": "number"
+          }
+        ],
+        "title": "Red-Team Negotiation Simulator"
+      },
+      {
+        "id": "historical-analytics",
+        "name": "Historical Contract Analytics",
+        "description": "Cluster + visualize past contract outcomes",
+        "fields": [
+          {
+            "name": "contract_type",
+            "label": "Contract Type Filter"
+          },
+          {
+            "name": "party_id",
+            "label": "Party ID Filter",
+            "type": "number"
+          },
+          {
+            "name": "period_days",
+            "label": "Period (Days)",
+            "type": "number"
+          }
+        ],
+        "title": "Historical Contract Analytics"
+      },
+      {
+        "id": "clause-conflict-detector",
+        "name": "Clause Conflict Detector",
+        "description": "Find contradictions and overlaps between clauses",
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "title": "Clause Conflict Detector"
+      },
+      {
+        "id": "regulatory-monitor",
+        "name": "Regulatory Update Monitor",
+        "description": "Flag outdated compliance clauses",
+        "fields": [
+          {
+            "name": "contract_id",
+            "label": "Contract ID",
+            "type": "number",
+            "required": true
+          },
+          {
+            "name": "regulations",
+            "label": "Regulations to check"
+          }
+        ],
+        "title": "Regulatory Update Monitor"
+      },
+      {
+        "id": "sentiment-analysis",
+        "name": "Term Sentiment Analysis",
+        "description": "Quantify favorability of contract terms",
+        "fields": [
+          {
+            "name": "text",
+            "label": "Contract Text",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "our_role",
+            "label": "Our Role",
+            "type": "select",
+            "options": [
+              "buyer",
+              "seller",
+              "employer",
+              "employee",
+              "licensor",
+              "licensee",
+              "lessor",
+              "lessee"
+            ]
+          }
+        ],
+        "title": "Term Sentiment Analysis"
+      },
+      {
+        "id": "pricing-recommender",
+        "name": "Precedent Pricing Recommender",
+        "description": "Recommend price based on similar contracts",
+        "fields": [
+          {
+            "name": "contract_type",
+            "label": "Contract Type",
+            "required": true
+          },
+          {
+            "name": "scope",
+            "label": "Scope",
+            "type": "textarea"
+          },
+          {
+            "name": "industry",
+            "label": "Industry"
+          },
+          {
+            "name": "region",
+            "label": "Region"
+          },
+          {
+            "name": "party_id",
+            "label": "Party ID",
+            "type": "number"
+          }
+        ],
+        "title": "Precedent Pricing Recommender"
+      },
+      {
+        "id": "auto-redline-engine",
+        "name": "Auto-Redline Engine",
+        "description": "Smart counter-redlines from policy",
+        "fields": [
+          {
+            "name": "proposed_text",
+            "label": "Proposed Text",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "policy",
+            "label": "Our Policy / Standards",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "name": "contract_type",
+            "label": "Contract Type"
+          }
+        ],
+        "title": "Auto-Redline Engine"
+      }
+    ]
+  }
+]

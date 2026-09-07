@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "provider": "live",
+  "model": "anthropic/claude-haiku-4.5",
+  "selectedRecordContext": true,
+  "pageContext": "/features/clients",
+  "words": 9,
+  "verifiedAt": "2026-09-07T23:13:33.726Z"
+}

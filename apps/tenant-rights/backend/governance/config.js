@@ -1,0 +1,30 @@
+module.exports={
+  caseType:'reviewed_tenant_rights_matter',initialState:'matter_registered',
+  states:['matter_registered','sources_verified','rules_versioned','deadline_calculated','evidence_review','draft_prepared','qualified_review','client_approved','delivery_queued','delivered','delivery_failed','corrected','legal_hold','closed'],
+  createRoles:['matter_owner','legal_supervisor'],assessmentRoles:['matter_owner','source_reviewer','qualified_reviewer'],auditRoles:['legal_supervisor','privacy_reviewer','auditor'],connectorRoles:['integration_operator','legal_supervisor'],
+  evidenceKinds:['matter_intake','registry_source','statute_version','effective_date_record','jurisdiction_record','conflict_analysis','privilege_record','redaction_report','deadline_calculation','adverse_case_fixture','document_digest','draft_digest','qualified_review','client_approval','signed_delivery','delivery_failure','correction_record','legal_hold_record'],
+  requiredSignals:['registryVersion','ruleVersion','documentVersion','jurisdictionVersion','policyVersion','rightsStatus','consentStatus','effectiveDateStatus','sourceConflictStatus','privilegeStatus','redactionStatus','deadlineStatus','adverseCaseStatus'],
+  professionalBoundary:'Outputs are informational drafts, not legal advice, representation, filing, or outcome prediction. A qualified authorized human reviews sources, deadlines, privilege, redaction, and delivery.',
+  connectors:[{name:'trusted_registry',purpose:'versioned statutes, rules, and case-source receipts'},{name:'filing_esignature',purpose:'signed delivery status only; filing requires approval'},{name:'case_matter',purpose:'authoritative ownership and deadline versions'},{name:'document_vault',purpose:'encrypted privileged document pointers'},{name:'identity',purpose:'verified client and reviewer receipts'},{name:'notification',purpose:'approved deadline and delivery receipts'}],
+  transitions:[
+    {from:'matter_registered',action:'verify_sources',to:'sources_verified',roles:['source_reviewer'],requiresEvidence:true},
+    {from:'sources_verified',action:'lock_rules',to:'rules_versioned',roles:['source_reviewer','qualified_reviewer'],requiresEvidence:true,dualControl:true},
+    {from:'rules_versioned',action:'calculate_deadline',to:'deadline_calculated',roles:['matter_owner'],requiresEvidence:true},
+    {from:'deadline_calculated',action:'review_evidence',to:'evidence_review',roles:['qualified_reviewer','privacy_reviewer'],requiresEvidence:true,dualControl:true},
+    {from:'evidence_review',action:'record_draft',to:'draft_prepared',roles:['matter_owner'],requiresEvidence:true},
+    {from:'draft_prepared',action:'submit_qualified_review',to:'qualified_review',roles:['qualified_reviewer'],requiresEvidence:true,dualControl:true},
+    {from:'qualified_review',action:'record_client_approval',to:'client_approved',roles:['matter_owner','legal_supervisor'],requiresEvidence:true,dualControl:true},
+    {from:'client_approved',action:'queue_delivery',to:'delivery_queued',roles:['legal_supervisor'],requiresEvidence:true,dualControl:true},
+    {from:'delivery_queued',action:'record_delivery',to:'delivered',roles:['integration_operator'],requiresEvidence:true},
+    {from:'delivery_queued',action:'record_delivery_failure',to:'delivery_failed',roles:['integration_operator'],requiresEvidence:true},
+    {from:'delivery_failed',action:'record_correction',to:'corrected',roles:['matter_owner','qualified_reviewer'],requiresEvidence:true,dualControl:true},
+    {from:'delivered',action:'place_legal_hold',to:'legal_hold',roles:['legal_supervisor','privacy_reviewer'],requiresEvidence:true,dualControl:true},
+    {from:'corrected',action:'place_legal_hold',to:'legal_hold',roles:['legal_supervisor','privacy_reviewer'],requiresEvidence:true,dualControl:true},
+    {from:'delivered',action:'close_matter',to:'closed',roles:['legal_supervisor'],requiresEvidence:true},
+    {from:'legal_hold',action:'close_matter',to:'closed',roles:['legal_supervisor','auditor'],requiresEvidence:true}
+  ],
+  acceptedFixture:{registryVersion:'reg1',ruleVersion:'r1',documentVersion:'d1',jurisdictionVersion:'j1',policyVersion:'p1',rightsStatus:'verified',consentStatus:'verified',effectiveDateStatus:'current',sourceConflictStatus:'resolved',privilegeStatus:'protected',redactionStatus:'passed',deadlineStatus:'verified',adverseCaseStatus:'reviewed'},
+  rejectedFixture:{registryVersion:'reg1',ruleVersion:'r1',documentVersion:'d1',jurisdictionVersion:'j1',policyVersion:'p1',rightsStatus:'verified',consentStatus:'verified',effectiveDateStatus:'current',sourceConflictStatus:'unresolved',privilegeStatus:'protected',redactionStatus:'passed',deadlineStatus:'verified',adverseCaseStatus:'reviewed'},
+  readyDisposition:'qualified_legal_review_required',holdDisposition:'jurisdiction_source_privilege_or_deadline_hold',decisionField:'filingCommand',
+  assess:x=>{const ready=x.rightsStatus==='verified'&&x.consentStatus==='verified'&&x.effectiveDateStatus==='current'&&x.sourceConflictStatus==='resolved'&&x.privilegeStatus==='protected'&&x.redactionStatus==='passed'&&x.deadlineStatus==='verified'&&x.adverseCaseStatus==='reviewed';return{disposition:ready?'qualified_legal_review_required':'jurisdiction_source_privilege_or_deadline_hold',filingCommand:null,legalAdvice:null,outcomePrediction:null,versions:{registry:x.registryVersion,rules:x.ruleVersion,documents:x.documentVersion,jurisdiction:x.jurisdictionVersion}};}
+};

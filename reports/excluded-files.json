@@ -1,0 +1,42 @@
+[
+  {
+    "project": "salesforce",
+    "file": ".env.example",
+    "reason": "local configuration or generated/private artifact"
+  },
+  {
+    "project": "legal-documents",
+    "file": ".aider.chat.history.md",
+    "reason": "credential-shaped content requires review"
+  },
+  {
+    "project": "legal-documents",
+    "file": ".aider.input.history",
+    "reason": "credential-shaped content requires review"
+  },
+  {
+    "project": "legal-documents",
+    "file": ".env.example",
+    "reason": "local configuration or generated/private artifact"
+  },
+  {
+    "project": "practice-management",
+    "file": "tsconfig.tsbuildinfo",
+    "reason": "generated TypeScript cache"
+  },
+  {
+    "project": "salesforce",
+    "file": "tsconfig.tsbuildinfo",
+    "reason": "generated TypeScript cache"
+  },
+  {
+    "project": "tenant-rights",
+    "file": ".env.example",
+    "reason": "Local configuration, credentials or generated/private artifact"
+  },
+  {
+    "project": "tenant-rights",
+    "file": "backend/.env.example",
+    "reason": "Local configuration, credentials or generated/private artifact"
+  }
+]

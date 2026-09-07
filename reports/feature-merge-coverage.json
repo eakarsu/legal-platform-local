@@ -1,0 +1,1519 @@
+{
+  "features": 139,
+  "mappedSources": 581,
+  "ignoredRoutes": [
+    {
+      "module": "practice-management",
+      "path": "/login",
+      "source": "apps/practice-management/src/app/(auth)/login/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "practice-management",
+      "path": "/register",
+      "source": "apps/practice-management/src/app/(auth)/register/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "practice-management",
+      "path": "/ai",
+      "source": "apps/practice-management/src/app/(dashboard)/ai/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "practice-management",
+      "path": "/dashboard",
+      "source": "apps/practice-management/src/app/(dashboard)/dashboard/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "practice-management",
+      "path": "/",
+      "source": "apps/practice-management/src/app/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/ai-catalog.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/:id",
+      "source": "apps/legal-documents/routes/ai-catalog.js",
+      "kind": "route",
+      "reason": "Record-specific action or callback, not a standalone feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/:id",
+      "source": "apps/legal-documents/routes/ai-intake-builder.js",
+      "kind": "route",
+      "reason": "Record-specific action or callback, not a standalone feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/docket/:docketId",
+      "source": "apps/legal-documents/routes/ai-pacer.js",
+      "kind": "route",
+      "reason": "Record-specific action or callback, not a standalone feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/register",
+      "source": "apps/legal-documents/routes/auth.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/login",
+      "source": "apps/legal-documents/routes/auth.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/forgot-password",
+      "source": "apps/legal-documents/routes/auth.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/reset-password",
+      "source": "apps/legal-documents/routes/auth.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/auth/google",
+      "source": "apps/legal-documents/routes/auth.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/auth/microsoft/test",
+      "source": "apps/legal-documents/routes/auth.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/auth/microsoft",
+      "source": "apps/legal-documents/routes/auth.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/portal/login",
+      "source": "apps/legal-documents/routes/client-portal.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/portal/logout",
+      "source": "apps/legal-documents/routes/client-portal.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/settings",
+      "source": "apps/legal-documents/routes/collaboration.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/list",
+      "source": "apps/legal-documents/routes/esignature.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/test-config",
+      "source": "apps/legal-documents/routes/esignature.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/test-auth",
+      "source": "apps/legal-documents/routes/esignature.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/config",
+      "source": "apps/legal-documents/routes/esignature.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/usage",
+      "source": "apps/legal-documents/routes/esignature.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/test",
+      "source": "apps/legal-documents/routes/esignature.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_ai_routes_exist_but_logic_depth.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_ai_routes_exist_but_logic_depth.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_ai_routes_intermingled_with_domain_routes.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_ai_routes_intermingled_with_domain_routes.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_audit_grade_matter_history_export.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_audit_grade_matter_history_export.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_deposition_discovery_summarizer.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_deposition_discovery_summarizer.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_e_discovery_review_workflow.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_e_discovery_review_workflow.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_e_discovery_vector_search.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_e_discovery_vector_search.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_fee_prediction_model_with_confidence.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_fee_prediction_model_with_confidence.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_matter_outcome_forecasting_with_explainability.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_matter_outcome_forecasting_with_explainability.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_multi_tenant_law_firm_isolation.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_multi_tenant_law_firm_isolation.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_pacer_state_court_filing_integration.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_pacer_state_court_filing_integration.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_real_time_courtroom_transcription_agent.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_real_time_courtroom_transcription_agent.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_structured_intake_forms_with_conditional.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_structured_intake_forms_with_conditional.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/gap_no_webhooks_for_billing_e_signature.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/history",
+      "source": "apps/legal-documents/routes/gap_no_webhooks_for_billing_e_signature.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/suggestions",
+      "source": "apps/legal-documents/routes/nlp.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/pay/:token",
+      "source": "apps/legal-documents/routes/payments.js",
+      "kind": "route",
+      "reason": "Record-specific action or callback, not a standalone feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/pay/:token/success",
+      "source": "apps/legal-documents/routes/payments.js",
+      "kind": "route",
+      "reason": "Record-specific action or callback, not a standalone feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/routes/retainerTrustReconciliation.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/recommendations/:formType",
+      "source": "apps/legal-documents/routes/templates.js",
+      "kind": "route",
+      "reason": "Record-specific action or callback, not a standalone feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/preferences",
+      "source": "apps/legal-documents/routes/templates.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/dashboard",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/home",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/services",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/about",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/faq",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/contact",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/pricing",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/privacy",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/privacy-policy",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/terms",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/terms-of-service",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/disclaimer",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/cookies",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/cookie-policy",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/refund-policy",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/client-management",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/case-management",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/billing",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/trust-accounting",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/conflict-checking",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/ai-drafting",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/calendar",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/lead-management",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/client-portal",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/ai-efficiency",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/security",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/features/grow-practice",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/register",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/sitemap.xml",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/robots.txt",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "legal-documents",
+      "path": "/download/:filename",
+      "source": "apps/legal-documents/server.js",
+      "kind": "route",
+      "reason": "Record-specific action or callback, not a standalone feature."
+    },
+    {
+      "module": "family-law",
+      "path": "/",
+      "source": "apps/family-law/client/src/App.jsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "family-law",
+      "path": "/ai-center",
+      "source": "apps/family-law/client/src/App.jsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "estate-planning",
+      "path": "/batch03",
+      "source": "apps/estate-planning/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "estate-planning",
+      "path": "/login",
+      "source": "apps/estate-planning/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "estate-planning",
+      "path": "/dashboard",
+      "source": "apps/estate-planning/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "estate-planning",
+      "path": "/extensions",
+      "source": "apps/estate-planning/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "immigration",
+      "path": "/",
+      "source": "apps/immigration/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "immigration",
+      "path": "/ai",
+      "source": "apps/immigration/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "immigration",
+      "path": "/advanced-ai",
+      "source": "apps/immigration/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "small-claims",
+      "path": "/login",
+      "source": "apps/small-claims/frontend/src/App.jsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "small-claims",
+      "path": "/register",
+      "source": "apps/small-claims/frontend/src/App.jsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "small-claims",
+      "path": "/",
+      "source": "apps/small-claims/frontend/src/App.jsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/forgot-password",
+      "source": "apps/salesforce/src/app/(auth)/forgot-password/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/login",
+      "source": "apps/salesforce/src/app/(auth)/login/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/register",
+      "source": "apps/salesforce/src/app/(auth)/register/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/reset-password",
+      "source": "apps/salesforce/src/app/(auth)/reset-password/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/verify-email",
+      "source": "apps/salesforce/src/app/(auth)/verify-email/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/dashboard",
+      "source": "apps/salesforce/src/app/(dashboard)/dashboard/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/settings",
+      "source": "apps/salesforce/src/app/(dashboard)/settings/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/about",
+      "source": "apps/salesforce/src/app/(marketing)/about/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/api",
+      "source": "apps/salesforce/src/app/(marketing)/api/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/blog",
+      "source": "apps/salesforce/src/app/(marketing)/blog/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/careers",
+      "source": "apps/salesforce/src/app/(marketing)/careers/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/contact",
+      "source": "apps/salesforce/src/app/(marketing)/contact/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/features",
+      "source": "apps/salesforce/src/app/(marketing)/features/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/help-center",
+      "source": "apps/salesforce/src/app/(marketing)/help-center/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/integrations",
+      "source": "apps/salesforce/src/app/(marketing)/integrations/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/partners",
+      "source": "apps/salesforce/src/app/(marketing)/partners/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/practice-areas/[slug]",
+      "source": "apps/salesforce/src/app/(marketing)/practice-areas/[slug]/page.tsx",
+      "kind": "route",
+      "reason": "Record-specific action or callback, not a standalone feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/practice-areas",
+      "source": "apps/salesforce/src/app/(marketing)/practice-areas/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/press",
+      "source": "apps/salesforce/src/app/(marketing)/press/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/pricing",
+      "source": "apps/salesforce/src/app/(marketing)/pricing/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/privacy",
+      "source": "apps/salesforce/src/app/(marketing)/privacy/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/status",
+      "source": "apps/salesforce/src/app/(marketing)/status/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/terms",
+      "source": "apps/salesforce/src/app/(marketing)/terms/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "salesforce",
+      "path": "/",
+      "source": "apps/salesforce/src/app/page.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "tenant-rights",
+      "path": "/login",
+      "source": "apps/tenant-rights/frontend/src/App.jsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "tenant-rights",
+      "path": "/register",
+      "source": "apps/tenant-rights/frontend/src/App.jsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "tenant-rights",
+      "path": "/",
+      "source": "apps/tenant-rights/frontend/src/App.jsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "contract-negotiation",
+      "path": "/",
+      "source": "apps/contract-negotiation/frontend/src/App.tsx",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "contract-negotiation",
+      "path": "/profile",
+      "source": "apps/contract-negotiation/frontend/src/App.tsx",
+      "kind": "route",
+      "reason": "Personal profile belongs to shared Settings; separate source login/account data is not migrated."
+    },
+    {
+      "module": "contract-negotiation",
+      "path": "/ai-tools/custom",
+      "source": "apps/contract-negotiation/frontend/src/App.tsx",
+      "kind": "route",
+      "reason": "Container; all eight tools are mapped individually from AICustomTools.tsx."
+    },
+    {
+      "module": "contract-lifecycle",
+      "path": "/settings",
+      "source": "apps/contract-lifecycle/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Source settings container; shared Settings configures the native workspace."
+    },
+    {
+      "module": "contract-lifecycle",
+      "path": "/dashboard",
+      "source": "apps/contract-lifecycle/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    },
+    {
+      "module": "contract-lifecycle",
+      "path": "/ai-custom",
+      "source": "apps/contract-lifecycle/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container; seven tools mapped individually."
+    },
+    {
+      "module": "contract-lifecycle",
+      "path": "/ai-advanced",
+      "source": "apps/contract-lifecycle/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container; five tools mapped individually."
+    },
+    {
+      "module": "contract-lifecycle",
+      "path": "/login",
+      "source": "apps/contract-lifecycle/frontend/src/App.js",
+      "kind": "route",
+      "reason": "Container, marketing, authentication or infrastructure; included within the shared workspace rather than as a duplicate feature."
+    }
+  ],
+  "unmappedSources": [],
+  "withoutSource": [],
+  "mergedGroups": [
+    {
+      "id": "clients",
+      "title": "Clients",
+      "sources": 13
+    },
+    {
+      "id": "matters",
+      "title": "Matters & cases",
+      "sources": 17
+    },
+    {
+      "id": "contacts",
+      "title": "Contacts",
+      "sources": 5
+    },
+    {
+      "id": "leads",
+      "title": "Leads & intake",
+      "sources": 10
+    },
+    {
+      "id": "tasks",
+      "title": "Tasks",
+      "sources": 11
+    },
+    {
+      "id": "calendar",
+      "title": "Calendar & court dates",
+      "sources": 9
+    },
+    {
+      "id": "deadlines",
+      "title": "Deadlines & reminders",
+      "sources": 12
+    },
+    {
+      "id": "conflicts",
+      "title": "Conflict checks",
+      "sources": 12
+    },
+    {
+      "id": "reports",
+      "title": "Reports & analytics",
+      "sources": 19
+    },
+    {
+      "id": "documents",
+      "title": "Documents",
+      "sources": 12
+    },
+    {
+      "id": "drafting",
+      "title": "Document drafting",
+      "sources": 18
+    },
+    {
+      "id": "templates",
+      "title": "Document templates",
+      "sources": 5
+    },
+    {
+      "id": "contract-review",
+      "title": "Contract review",
+      "sources": 15
+    },
+    {
+      "id": "summaries",
+      "title": "Document summaries",
+      "sources": 7
+    },
+    {
+      "id": "research",
+      "title": "Legal research & citations",
+      "sources": 18
+    },
+    {
+      "id": "discovery",
+      "title": "Discovery & evidence review",
+      "sources": 4
+    },
+    {
+      "id": "ocr",
+      "title": "OCR & document extraction",
+      "sources": 4
+    },
+    {
+      "id": "transcription",
+      "title": "Voice notes & transcription",
+      "sources": 3
+    },
+    {
+      "id": "translation",
+      "title": "Translation & language detection",
+      "sources": 5
+    },
+    {
+      "id": "case-analysis",
+      "title": "Case assessment & strategy",
+      "sources": 8
+    },
+    {
+      "id": "opponent-analysis",
+      "title": "Opponent research",
+      "sources": 4
+    },
+    {
+      "id": "compliance",
+      "title": "Multi-jurisdiction compliance",
+      "sources": 8
+    },
+    {
+      "id": "glossary",
+      "title": "Legal glossary",
+      "sources": 2
+    },
+    {
+      "id": "time",
+      "title": "Time tracking",
+      "sources": 8
+    },
+    {
+      "id": "billing",
+      "title": "Invoices & billing",
+      "sources": 16
+    },
+    {
+      "id": "trust",
+      "title": "Trust accounts & ledgers",
+      "sources": 7
+    },
+    {
+      "id": "trust-reconciliation",
+      "title": "Trust & retainer reconciliation",
+      "sources": 3
+    },
+    {
+      "id": "payments",
+      "title": "Payment processing",
+      "sources": 9
+    },
+    {
+      "id": "family-documents",
+      "title": "Family law documents",
+      "sources": 2
+    },
+    {
+      "id": "custody",
+      "title": "Child custody planning",
+      "sources": 2
+    },
+    {
+      "id": "custody-assessment",
+      "title": "Custody scenario assessment",
+      "sources": 2
+    },
+    {
+      "id": "child-support",
+      "title": "Child support planning",
+      "sources": 4
+    },
+    {
+      "id": "alimony",
+      "title": "Alimony planning",
+      "sources": 2
+    },
+    {
+      "id": "asset-division",
+      "title": "Asset division",
+      "sources": 2
+    },
+    {
+      "id": "property",
+      "title": "Property & valuations",
+      "sources": 5
+    },
+    {
+      "id": "financial-disclosure",
+      "title": "Financial disclosure",
+      "sources": 2
+    },
+    {
+      "id": "parenting",
+      "title": "Parenting plans & coordination",
+      "sources": 4
+    },
+    {
+      "id": "mediation",
+      "title": "Mediation",
+      "sources": 3
+    },
+    {
+      "id": "family-settlement",
+      "title": "Family settlement agreements",
+      "sources": 2
+    },
+    {
+      "id": "family-filing",
+      "title": "Family court filing guidance",
+      "sources": 2
+    },
+    {
+      "id": "family-rights",
+      "title": "Family law & state guidance",
+      "sources": 4
+    },
+    {
+      "id": "family-timeline",
+      "title": "Divorce timeline",
+      "sources": 2
+    },
+    {
+      "id": "wills",
+      "title": "Wills",
+      "sources": 2
+    },
+    {
+      "id": "trust-planning",
+      "title": "Trust planning",
+      "sources": 2
+    },
+    {
+      "id": "power-of-attorney",
+      "title": "Power of attorney",
+      "sources": 2
+    },
+    {
+      "id": "healthcare-directives",
+      "title": "Healthcare directives",
+      "sources": 2
+    },
+    {
+      "id": "beneficiaries",
+      "title": "Beneficiaries & suitability",
+      "sources": 3
+    },
+    {
+      "id": "digital-assets",
+      "title": "Digital assets & accounts",
+      "sources": 5
+    },
+    {
+      "id": "legacy-messages",
+      "title": "Legacy messages & delivery plans",
+      "sources": 3
+    },
+    {
+      "id": "insurance",
+      "title": "Insurance policies",
+      "sources": 2
+    },
+    {
+      "id": "estate-timeline",
+      "title": "Estate timeline",
+      "sources": 2
+    },
+    {
+      "id": "executor",
+      "title": "Executor tasks & access packets",
+      "sources": 3
+    },
+    {
+      "id": "estate-advisor",
+      "title": "Estate planning advisor",
+      "sources": 2
+    },
+    {
+      "id": "long-term-care",
+      "title": "Long-term care planning",
+      "sources": 2
+    },
+    {
+      "id": "account-consolidation",
+      "title": "Account consolidation",
+      "sources": 2
+    },
+    {
+      "id": "family-meetings",
+      "title": "Family meetings",
+      "sources": 2
+    },
+    {
+      "id": "beneficiary-portal",
+      "title": "Beneficiary portal",
+      "sources": 2
+    },
+    {
+      "id": "international-estates",
+      "title": "International estate planning",
+      "sources": 2
+    },
+    {
+      "id": "visas",
+      "title": "Visa categories & pathways",
+      "sources": 5
+    },
+    {
+      "id": "immigration-forms",
+      "title": "Immigration form assistance",
+      "sources": 3
+    },
+    {
+      "id": "immigration-compliance",
+      "title": "Immigration compliance",
+      "sources": 2
+    },
+    {
+      "id": "uscis-tracking",
+      "title": "USCIS receipt & status tracking",
+      "sources": 3
+    },
+    {
+      "id": "immigration-interview",
+      "title": "Immigration interview preparation",
+      "sources": 3
+    },
+    {
+      "id": "rfe",
+      "title": "Requests for evidence",
+      "sources": 2
+    },
+    {
+      "id": "immigration-plan",
+      "title": "Immigration case planning",
+      "sources": 2
+    },
+    {
+      "id": "immigration-timeline",
+      "title": "Immigration processing scenarios",
+      "sources": 2
+    },
+    {
+      "id": "hearing-prep",
+      "title": "Hearing preparation & coaching",
+      "sources": 2
+    },
+    {
+      "id": "evidence",
+      "title": "Evidence organization",
+      "sources": 6
+    },
+    {
+      "id": "settlement",
+      "title": "Settlement evaluation",
+      "sources": 4
+    },
+    {
+      "id": "court-procedure",
+      "title": "Court procedure checklists",
+      "sources": 3
+    },
+    {
+      "id": "witness-statements",
+      "title": "Witness statements",
+      "sources": 3
+    },
+    {
+      "id": "appeals",
+      "title": "Appeal assessment",
+      "sources": 3
+    },
+    {
+      "id": "collection",
+      "title": "Judgment collection",
+      "sources": 2
+    },
+    {
+      "id": "messages",
+      "title": "Messages & correspondence",
+      "sources": 4
+    },
+    {
+      "id": "notifications",
+      "title": "Notification plans",
+      "sources": 5
+    },
+    {
+      "id": "client-portal",
+      "title": "Client portal",
+      "sources": 10
+    },
+    {
+      "id": "portal-assistant",
+      "title": "Client portal assistant",
+      "sources": 2
+    },
+    {
+      "id": "team",
+      "title": "Team & access directory",
+      "sources": 2
+    },
+    {
+      "id": "surveys",
+      "title": "Client feedback surveys",
+      "sources": 2
+    },
+    {
+      "id": "cle",
+      "title": "Continuing education",
+      "sources": 2
+    },
+    {
+      "id": "malpractice",
+      "title": "Malpractice insurance",
+      "sources": 2
+    },
+    {
+      "id": "audit",
+      "title": "Activity & audit log",
+      "sources": 5
+    },
+    {
+      "id": "esign",
+      "title": "E-signatures",
+      "sources": 6
+    },
+    {
+      "id": "court-records",
+      "title": "Court records & PACER",
+      "sources": 2
+    },
+    {
+      "id": "email",
+      "title": "Email delivery & archive",
+      "sources": 2
+    },
+    {
+      "id": "calendar-sync",
+      "title": "Calendar synchronization",
+      "sources": 6
+    },
+    {
+      "id": "webhooks",
+      "title": "Webhooks & advisor connections",
+      "sources": 5
+    },
+    {
+      "id": "intake-forms",
+      "title": "Intake form builder",
+      "sources": 8
+    },
+    {
+      "id": "saved-views",
+      "title": "Saved views & dashboards",
+      "sources": 20
+    },
+    {
+      "id": "connections",
+      "title": "Connection settings",
+      "sources": 4
+    },
+    {
+      "id": "security",
+      "title": "Security & access settings",
+      "sources": 4
+    },
+    {
+      "id": "tenancies",
+      "title": "Tenancies & leases",
+      "sources": 3
+    },
+    {
+      "id": "eviction-defense",
+      "title": "Eviction defense preparation",
+      "sources": 2
+    },
+    {
+      "id": "legal-resources",
+      "title": "Legal aid & tenant resources",
+      "sources": 3
+    },
+    {
+      "id": "legal-referrals",
+      "title": "Legal expert referral requests",
+      "sources": 2
+    },
+    {
+      "id": "contracts",
+      "title": "Contracts",
+      "sources": 4
+    },
+    {
+      "id": "clauses",
+      "title": "Clause library",
+      "sources": 5
+    },
+    {
+      "id": "obligations",
+      "title": "Contract obligations",
+      "sources": 3
+    },
+    {
+      "id": "contract-approvals",
+      "title": "Contract approval reviews",
+      "sources": 6
+    },
+    {
+      "id": "amendments",
+      "title": "Contract amendments",
+      "sources": 4
+    },
+    {
+      "id": "renewals",
+      "title": "Contract renewals",
+      "sources": 8
+    },
+    {
+      "id": "contract-milestones",
+      "title": "Contract milestones",
+      "sources": 2
+    },
+    {
+      "id": "negotiations",
+      "title": "Negotiation rounds & simulations",
+      "sources": 7
+    },
+    {
+      "id": "redlines",
+      "title": "Redlines & version comparison",
+      "sources": 6
+    },
+    {
+      "id": "contract-benchmarks",
+      "title": "Standard terms & market comparison",
+      "sources": 4
+    },
+    {
+      "id": "plain-language",
+      "title": "Plain-language explanations",
+      "sources": 2
+    },
+    {
+      "id": "negotiation-playbooks",
+      "title": "Negotiation playbooks & fallback matrix",
+      "sources": 4
+    },
+    {
+      "id": "contract-advisor",
+      "title": "Contract questions",
+      "sources": 3
+    },
+    {
+      "id": "lease-analysis",
+      "title": "Lease analysis",
+      "sources": 4
+    },
+    {
+      "id": "regulatory-impact",
+      "title": "Regulatory change assessments",
+      "sources": 4
+    }
+  ]
+}

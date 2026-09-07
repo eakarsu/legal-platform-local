@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients - LegalPracticeAI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="/css/practice-management.css" rel="stylesheet">
+    <link href="/css/skeleton.css" rel="stylesheet">
+    <style>
+        .pm-navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .pm-navbar .navbar-brand .brand-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pm-navbar .nav-link {
+            color: rgba(255,255,255,0.85) !important;
+        }
+        .pm-navbar .nav-link:hover, .pm-navbar .nav-link.active {
+            color: #fff !important;
+        }
+        .pm-navbar .dropdown-menu {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Inter', sans-serif;
+        }
+        .bulk-toolbar {
+            display: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            align-items: center;
+            gap: 12px;
+        }
+        .bulk-toolbar.active {
+            display: flex;
+        }
+        .bulk-toolbar .bulk-count {
+            font-weight: 600;
+        }
+        tr.row-selected {
+            background-color: #e8f0fe !important;
+        }
+        .checkbox-cell {
+            width: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <%- include('../partials/pm-nav') %>
+
+    <div class="container-fluid py-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h2><i class="fas fa-users me-2"></i>Clients</h2>
+                <p class="text-muted mb-0">Manage your client relationships</p>
+            </div>
+            <a href="/clients/new" class="btn btn-primary">
+                <i class="fas fa-plus me-2"></i>Add Client
+            </a>
+        </div>
+
+        <!-- Filters -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <form method="GET" class="row g-3">
+                    <div class="col-md-3">
+                        <label class="form-label">Status</label>
+                        <select name="status" class="form-select">
+                            <option value="all" <%= filters.status === 'all' ? 'selected' : '' %>>All Status</option>
+                            <option value="active" <%= filters.status === 'active' ? 'selected' : '' %>>Active</option>
+                            <option value="inactive" <%= filters.status === 'inactive' ? 'selected' : '' %>>Inactive</option>
+                            <option value="archived" <%= filters.status === 'archived' ? 'selected' : '' %>>Archived</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Type</label>
+                        <select name="type" class="form-select">
+                            <option value="all" <%= filters.type === 'all' ? 'selected' : '' %>>All Types</option>
+                            <option value="individual" <%= filters.type === 'individual' ? 'selected' : '' %>>Individual</option>
+                            <option value="business" <%= filters.type === 'business' ? 'selected' : '' %>>Business</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Search</label>
+                        <input type="text" name="search" class="form-control" placeholder="Name, email..." value="<%= filters.search || '' %>">
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn btn-secondary w-100">
+                            <i class="fas fa-search me-1"></i>Filter
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bulk Action Toolbar -->
+        <div class="bulk-toolbar" id="bulkToolbar">
+            <span class="bulk-count"><span id="selectedCount">0</span> selected</span>
+            <div class="dropdown">
+                <button class="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fas fa-edit me-1"></i>Update Status
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" onclick="bulkUpdateClients('active')">Active</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="bulkUpdateClients('inactive')">Inactive</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="bulkUpdateClients('archived')">Archived</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-sm btn-danger" onclick="bulkDeleteClients()">
+                <i class="fas fa-trash me-1"></i>Delete Selected
+            </button>
+            <button class="btn btn-sm btn-outline-light ms-auto" onclick="clearSelection()">
+                <i class="fas fa-times me-1"></i>Clear
+            </button>
+        </div>
+
+        <!-- Skeleton Loading -->
+        <%- include('../partials/skeleton-table', { skeletonRows: 8 }) %>
+
+        <!-- Clients Table -->
+        <div class="card" id="clientsTableCard">
+            <div class="card-body p-0">
+                <% if (clients.length === 0) { %>
+                    <div class="text-center py-5">
+                        <i class="fas fa-users fa-3x text-muted mb-3"></i>
+                        <p class="text-muted">No clients found. <a href="/clients/new">Add your first client</a></p>
+                    </div>
+                <% } else { %>
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="checkbox-cell">
+                                        <input type="checkbox" class="form-check-input" id="selectAll" title="Select All">
+                                    </th>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Contact</th>
+                                    <th>Cases</th>
+                                    <th>Total Billed</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% clients.forEach(client => { %>
+                                    <tr class="clickable-row" data-href="/clients/<%= client.id %>" style="cursor: pointer;">
+                                        <td class="checkbox-cell actions-cell" onclick="event.stopPropagation();">
+                                            <input type="checkbox" class="form-check-input row-checkbox" data-id="<%= client.id %>">
+                                        </td>
+                                        <td>
+                                            <span class="fw-semibold">
+                                                <% if (client.client_type === 'business') { %>
+                                                    <i class="fas fa-building me-1 text-muted"></i>
+                                                    <%= client.company_name %>
+                                                <% } else { %>
+                                                    <i class="fas fa-user me-1 text-muted"></i>
+                                                    <%= client.first_name %> <%= client.last_name %>
+                                                <% } %>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-<%= client.client_type === 'business' ? 'info' : 'secondary' %>">
+                                                <%= client.client_type %>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <% if (client.email) { %>
+                                                <small><i class="fas fa-envelope me-1"></i><%= client.email %></small><br>
+                                            <% } %>
+                                            <% if (client.phone) { %>
+                                                <small><i class="fas fa-phone me-1"></i><%= client.phone %></small>
+                                            <% } %>
+                                        </td>
+                                        <td><%= client.case_count || 0 %></td>
+                                        <td>$<%= parseFloat(client.total_billed || 0).toLocaleString('en-US', { minimumFractionDigits: 2 }) %></td>
+                                        <td>
+                                            <span class="badge bg-<%= client.status === 'active' ? 'success' : client.status === 'inactive' ? 'warning' : 'secondary' %>">
+                                                <%= client.status %>
+                                            </span>
+                                        </td>
+                                        <td class="actions-cell">
+                                            <div class="btn-group btn-group-sm">
+                                                <a href="/clients/<%= client.id %>/edit" class="btn btn-outline-secondary" title="Edit">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                                <button class="btn btn-outline-danger btn-delete-client" data-id="<%= client.id %>" data-name="<%= client.company_name || client.first_name + ' ' + client.last_name %>" title="Delete">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                <% }) %>
+                            </tbody>
+                        </table>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../partials/confirmation-modal') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/confirmation-dialog.js"></script>
+    <script>
+        // Hide skeleton, show content
+        document.addEventListener('DOMContentLoaded', function() {
+            var skeleton = document.getElementById('skeletonTable');
+            if (skeleton) skeleton.style.display = 'none';
+        });
+
+        // Clickable rows
+        document.querySelectorAll('.clickable-row').forEach(function(row) {
+            row.addEventListener('click', function(e) {
+                if (e.target.closest('.actions-cell') || e.target.closest('button') || e.target.closest('a') || e.target.closest('input[type="checkbox"]')) return;
+                window.location.href = this.dataset.href;
+            });
+        });
+
+        // Select All checkbox
+        document.getElementById('selectAll')?.addEventListener('change', function() {
+            var checked = this.checked;
+            document.querySelectorAll('.row-checkbox').forEach(function(cb) {
+                cb.checked = checked;
+                cb.closest('tr').classList.toggle('row-selected', checked);
+            });
+            updateBulkToolbar();
+        });
+
+        // Individual checkboxes
+        document.querySelectorAll('.row-checkbox').forEach(function(cb) {
+            cb.addEventListener('change', function() {
+                this.closest('tr').classList.toggle('row-selected', this.checked);
+                var allChecked = document.querySelectorAll('.row-checkbox').length === document.querySelectorAll('.row-checkbox:checked').length;
+                var selectAll = document.getElementById('selectAll');
+                if (selectAll) selectAll.checked = allChecked;
+                updateBulkToolbar();
+            });
+        });
+
+        function updateBulkToolbar() {
+            var count = document.querySelectorAll('.row-checkbox:checked').length;
+            document.getElementById('selectedCount').textContent = count;
+            document.getElementById('bulkToolbar').classList.toggle('active', count > 0);
+        }
+
+        function getSelectedIds() {
+            return Array.from(document.querySelectorAll('.row-checkbox:checked')).map(function(cb) { return cb.dataset.id; });
+        }
+
+        function clearSelection() {
+            document.querySelectorAll('.row-checkbox').forEach(function(cb) {
+                cb.checked = false;
+                cb.closest('tr').classList.remove('row-selected');
+            });
+            var selectAll = document.getElementById('selectAll');
+            if (selectAll) selectAll.checked = false;
+            updateBulkToolbar();
+        }
+
+        // Delete client buttons
+        document.querySelectorAll('.btn-delete-client').forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                var id = this.dataset.id;
+                var name = this.dataset.name;
+                showConfirmDialog({
+                    title: 'Delete Client',
+                    message: 'Are you sure you want to delete client "' + name + '"? This action cannot be undone.',
+                    confirmText: 'Delete',
+                    confirmClass: 'btn-danger',
+                    onConfirm: function() { deleteClient(id); }
+                });
+            });
+        });
+
+        function deleteClient(id) {
+            fetch('/api/clients/' + id, {
+                method: 'DELETE',
+                headers: { 'Content-Type': 'application/json' }
+            })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (data.success) location.reload();
+                else alert('Error: ' + (data.error || 'Unknown error'));
+            })
+            .catch(function(err) { alert('Error: ' + err.message); });
+        }
+
+        function bulkDeleteClients() {
+            var ids = getSelectedIds();
+            if (ids.length === 0) return;
+            showConfirmDialog({
+                title: 'Delete ' + ids.length + ' Clients',
+                message: 'Are you sure you want to delete ' + ids.length + ' selected client(s)? This action cannot be undone.',
+                confirmText: 'Delete All',
+                confirmClass: 'btn-danger',
+                onConfirm: function() {
+                    fetch('/api/clients/bulk-delete', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ ids: ids })
+                    })
+                    .then(function(r) { return r.json(); })
+                    .then(function(data) {
+                        if (data.success) location.reload();
+                        else alert('Error: ' + (data.error || 'Unknown error'));
+                    })
+                    .catch(function(err) { alert('Error: ' + err.message); });
+                }
+            });
+        }
+
+        function bulkUpdateClients(status) {
+            var ids = getSelectedIds();
+            if (ids.length === 0) return;
+            fetch('/api/clients/bulk-update', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ids: ids, updates: { status: status } })
+            })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                if (data.success) location.reload();
+                else alert('Error: ' + (data.error || 'Unknown error'));
+            })
+            .catch(function(err) { alert('Error: ' + err.message); });
+        }
+    </script>
+
+    <%- include('../partials/footer') %>
+</body>
+</html>

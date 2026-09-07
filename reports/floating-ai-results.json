@@ -1,0 +1,21 @@
+[
+  {
+    "id": "legal-platform-local",
+    "status": "passed",
+    "floatingPanel": true,
+    "rowAndRecordContext": true,
+    "pageContext": true,
+    "followups": true,
+    "navigationPersistence": true,
+    "reloadHistory": true,
+    "newChatClearsContext": true,
+    "formattedAnswers": true,
+    "wordLimit": true,
+    "errorRecovery": true,
+    "keyboard": true,
+    "mobile": true,
+    "attachmentRefreshKeepsSinglePanel": true,
+    "provider": "mocked",
+    "verifiedAt": "2026-09-07T23:13:02.701Z"
+  }
+]

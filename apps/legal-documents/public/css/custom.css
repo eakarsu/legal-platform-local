@@ -1,0 +1,881 @@
+/* Custom styles for Legal Forms Generator */
+/* CSS Loading Test - if you see this comment in browser dev tools, CSS is loading */
+
+/* Performance optimizations */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    loading: lazy;
+}
+
+/* Critical CSS - Above the fold styles */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Enhanced Hero Section with better mobile support */
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="1000,100 1000,0 0,100"/></svg>') no-repeat bottom;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.hero-features {
+    margin-bottom: 2rem;
+}
+
+.feature-item {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.floating-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-20px); 
+    }
+}
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Section Styling */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 3rem;
+}
+
+/* Form Cards */
+.form-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.form-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.form-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Feature Boxes */
+.feature-box {
+    padding: 2rem 1rem;
+}
+
+.feature-icon-large {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.btn-outline-primary {
+    border: 2px solid #667eea;
+    color: #667eea;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: transparent;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-lg {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+}
+
+/* Generated Document */
+.generated-document {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 15px;
+    padding: 2rem;
+    white-space: pre-wrap;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    max-height: 600px;
+    overflow-y: auto;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    padding: 1.5rem;
+}
+
+/* Alerts */
+.alert-info {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border: none;
+    border-radius: 15px;
+    color: #1976d2;
+    padding: 1.5rem;
+}
+
+.alert-warning {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border: none;
+    border-radius: 10px;
+    color: #f57c00;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 4rem 0 2rem;
+    margin-top: 5rem;
+}
+
+.footer h5, .footer h6 {
+    color: white;
+}
+
+.footer .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Form Elements */
+.form-label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+}
+
+.form-control, .form-select {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    transform: translateY(-1px);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #6c757d;
+}
+
+.breadcrumb-item a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+/* Modal */
+.modal-xl {
+    max-width: 90%;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom: none;
+    padding: 2rem;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 1rem 2rem 2rem;
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+        min-height: 60vh;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .floating-card {
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+    }
+    
+    .feature-icon-large {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+    
+    .form-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .navbar-brand .brand-text {
+        font-size: 1.3rem;
+    }
+    
+    .btn-lg {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .form-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .feature-box {
+        padding: 1.5rem 0.5rem;
+    }
+}
+
+/* Performance improvements */
+.form-card, .feature-box {
+    will-change: transform;
+}
+
+.form-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Accessibility improvements */
+.btn:focus, .form-control:focus, .form-select:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Skip to main content link for screen readers */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #667eea;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Print styles */
+@media print {
+    .navbar, .footer, .btn, .modal {
+        display: none !important;
+    }
+    
+    .generated-document {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Text Colors */
+.text-primary {
+    color: #667eea !important;
+}
+
+/* Brand Styling */
+.brand-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.brand-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #2c3e50 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #667eea !important;
+}
+
+.nav-link.active {
+    color: #667eea !important;
+    font-weight: 600;
+}
+
+/* Social Links */
+.social-links a {
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #667eea !important;
+}
+
+/* Footer Links */
+.footer a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #667eea !important;
+}
+
+/* Utility Classes */
+.shadow-soft {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Additional Animations */
+.form-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.feature-box {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Trust signals */
+.trust-signals {
+    margin-top: 2rem;
+}
+
+.trust-badge {
+    padding: 0.5rem;
+}
+
+.trust-badge i {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Image optimization */
+img {
+    max-width: 100%;
+    height: auto;
+    loading: lazy;
+}
+
+/* SEO-friendly image classes */
+.hero-image img {
+    alt: "AI-powered legal document generation platform";
+}
+
+.feature-image img {
+    alt: "Professional legal document templates";
+}
+
+/* Testimonials section */
+.testimonial-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.testimonial-rating {
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.testimonial-title {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* FAQ accordion improvements */
+.accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+    color: #667eea;
+}
+
+.accordion-button:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+}
+
+/* ===== Voice Input Styles ===== */
+
+/* Voice input button active state with pulsing animation */
+#voiceInputBtn.btn-danger {
+    animation: voicePulse 1.5s infinite;
+    position: relative;
+}
+
+@keyframes voicePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
+}
+
+/* Voice button transitions */
+#voiceInputBtn {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#voiceInputBtn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+#voiceInputBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Voice icon animation when listening */
+#voiceInputBtn.btn-danger #voiceIcon {
+    animation: iconPulse 0.8s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Voice status container */
+#voiceStatus {
+    transition: all 0.3s ease;
+}
+
+#voiceStatus .alert {
+    border-left: 4px solid;
+    transition: all 0.3s ease;
+    animation: slideDown 0.3s ease;
+}
+
+#voiceStatus .alert-info {
+    border-left-color: #0dcaf0;
+    background-color: #cff4fc;
+    color: #055160;
+}
+
+#voiceStatus .alert-success {
+    border-left-color: #198754;
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+#voiceStatus .alert-danger {
+    border-left-color: #dc3545;
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Voice status text animation */
+#voiceStatusText {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+#voiceStatusText strong {
+    color: inherit;
+    font-weight: 600;
+}
+
+/* Spinner in voice status */
+#voiceStatus .spinner-border {
+    flex-shrink: 0;
+}
+
+/* Input group voice button styling */
+.input-group #voiceInputBtn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 1px solid #dee2e6;
+    min-width: 100px;
+}
+
+/* Ensure voice button works well with textarea */
+.input-group:has(textarea) #voiceInputBtn {
+    align-self: flex-start;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 576px) {
+    .input-group {
+        flex-wrap: wrap;
+    }
+
+    .input-group textarea {
+        width: 100%;
+        border-radius: 10px !important;
+        margin-bottom: 0.5rem;
+    }
+
+    .input-group #voiceInputBtn,
+    .input-group #parseNLBtn {
+        flex: 1;
+        border-radius: 10px !important;
+        margin: 0 0.25rem;
+    }
+
+    #voiceStatus .alert {
+        font-size: 0.85rem;
+        padding: 0.75rem;
+    }
+}
+
+/* Accessibility improvements for voice input */
+#voiceInputBtn:focus-visible {
+    outline: 3px solid rgba(220, 53, 69, 0.5);
+    outline-offset: 2px;
+}
+
+/* Voice input button tooltip enhancement */
+#voiceInputBtn[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    pointer-events: none;
+    margin-bottom: 5px;
+    z-index: 1000;
+}
+
+/* Natural language input textarea focus when voice is active */
+#naturalLanguageInput:has(~ #voiceInputBtn.btn-danger) {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Voice visualization effect (optional) */
+@keyframes voiceWave {
+    0%, 100% {
+        height: 10px;
+    }
+    50% {
+        height: 20px;
+    }
+}
+
+/* Microphone icon color transitions */
+#voiceIcon {
+    transition: all 0.3s ease;
+}
+
+#voiceInputBtn:hover #voiceIcon {
+    transform: scale(1.1);
+}
+
+/* Parse button adjustment to work well with voice button */
+#parseNLBtn {
+    min-width: 100px;
+}
+
+/* Success state for completed voice input */
+#voiceStatus.success .alert {
+    animation: successPulse 0.6s ease;
+}
+
+@keyframes successPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
